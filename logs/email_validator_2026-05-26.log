@@ -1,0 +1,621 @@
+==================================================
+  EMAIL VALIDATION SUMMARY REPORT
+==================================================
+  Total Emails   : 131
+--------------------------------------------------
+  ACCESS_DENIED         :     1  (0.8%)
+  CATCH_ALL             :    19  (14.5%)
+  INVALID_DOMAIN        :    56  (42.7%)
+  INVALID_FORMAT        :     9  (6.9%)
+  INVALID_MAILBOX       :    28  (21.4%)
+  TEMPORARY_FAILURE     :     5  (3.8%)
+  VALID                 :    13  (9.9%)
+==================================================
+
+
+
+2026-05-26 22:57:52 | INFO     | __main__ | ============================================================
+2026-05-26 22:57:52 | INFO     | __main__ | Email Validation System – starting
+2026-05-26 22:57:52 | INFO     | __main__ | Input file: D:\Send_Mail_Automation\email_validator_clean\input\Raw_email.xlsx
+2026-05-26 22:57:52 | INFO     | excel_handler | Reading input file: D:\Send_Mail_Automation\email_validator_clean\input\Raw_email.xlsx
+2026-05-26 22:57:52 | INFO     | excel_handler | Using column 'Unnamed: 0' for email addresses
+2026-05-26 22:57:52 | INFO     | excel_handler | Found 131 email addresses
+2026-05-26 22:57:52 | INFO     | __main__ | Validating 131 emails with 10 workers…
+2026-05-26 22:57:52 | DEBUG    | syntax_validator | SYNTAX FAIL (regex) | email | Failed basic format check: 'email'
+2026-05-26 22:57:52 | INFO     | __main__ | INVALID FORMAT | email
+2026-05-26 22:57:52 | DEBUG    | syntax_validator | SYNTAX OK | support@live-a-bit.com
+2026-05-26 22:57:52 | DEBUG    | syntax_validator | SYNTAX OK | hello@amrutam.co.in
+2026-05-26 22:57:52 | DEBUG    | syntax_validator | SYNTAX OK | hello@spicta.com
+2026-05-26 22:57:52 | DEBUG    | syntax_validator | SYNTAX OK | support@spruceshaveclub.com
+2026-05-26 22:57:52 | DEBUG    | syntax_validator | SYNTAX OK | info@angbooti.com
+2026-05-26 22:57:52 | DEBUG    | syntax_validator | SYNTAX OK | info@yashram.com
+2026-05-26 22:57:52 | DEBUG    | syntax_validator | SYNTAX OK | support@oracura.in
+2026-05-26 22:57:52 | DEBUG    | syntax_validator | SYNTAX OK | hello@abhayhealth.com
+2026-05-26 22:57:52 | DEBUG    | syntax_validator | SYNTAX OK | contact@antinorm.in
+2026-05-26 22:57:53 | DEBUG    | syntax_validator | SYNTAX OK | hello@asancup.com
+2026-05-26 22:57:57 | DEBUG    | dns_checker | DNS OK | hello@amrutam.co.in | MX: ['smtp.google.com']
+2026-05-26 22:57:57 | DEBUG    | dns_checker | DNS OK | support@spruceshaveclub.com | MX: ['aspmx.l.google.com', 'alt1.aspmx.l.google.com', 'alt2.aspmx.l.google.com', 'aspmx2.googlemail.com', 'aspmx3.googlemail.com']
+2026-05-26 22:57:57 | DEBUG    | dns_checker | DNS OK | hello@abhayhealth.com | MX: ['abhayhealth-com.mail.protection.outlook.com']
+2026-05-26 22:57:57 | DEBUG    | dns_checker | DNS OK | support@live-a-bit.com | MX: ['liveabit-com01f.mail.protection.outlook.com']
+2026-05-26 22:57:57 | DEBUG    | dns_checker | DNS FAIL (no A/AAAA) | info@angbooti.com | Domain 'angbooti.com' does not exist (no DNS record)
+2026-05-26 22:57:57 | INFO     | __main__ | INVALID DOMAIN | info@angbooti.com | Domain 'angbooti.com' does not exist (no DNS record)
+2026-05-26 22:57:57 | DEBUG    | syntax_validator | SYNTAX OK | hello@worldofasaya.com
+2026-05-26 22:57:57 | DEBUG    | dns_checker | DNS FAIL (no MX) | contact@antinorm.in | Domain 'antinorm.in' has no MX records
+2026-05-26 22:57:57 | INFO     | __main__ | INVALID DOMAIN | contact@antinorm.in | Domain 'antinorm.in' has no MX records
+2026-05-26 22:57:57 | DEBUG    | dns_checker | DNS OK | support@oracura.in | MX: ['aspmx.l.google.com', 'alt1.aspmx.l.google.com', 'alt2.aspmx.l.google.com', 'aspmx2.googlemail.com', 'aspmx3.googlemail.com']
+2026-05-26 22:57:57 | DEBUG    | dns_checker | DNS FAIL (no A/AAAA) | hello@spicta.com | Domain 'spicta.com' does not exist (no DNS record)
+2026-05-26 22:57:57 | INFO     | __main__ | INVALID DOMAIN | hello@spicta.com | Domain 'spicta.com' does not exist (no DNS record)
+2026-05-26 22:57:57 | DEBUG    | syntax_validator | SYNTAX OK | hello@asesaa.in
+2026-05-26 22:57:57 | DEBUG    | dns_checker | DNS OK | info@yashram.com | MX: ['aspmx.l.google.com', 'alt2.aspmx.l.google.com', 'alt1.aspmx.l.google.com', 'alt3.aspmx.l.google.com', 'alt4.aspmx.l.google.com']
+2026-05-26 22:57:57 | DEBUG    | dns_checker | DNS OK | hello@asancup.com | MX: ['aspmx.l.google.com', 'alt1.aspmx.l.google.com', 'alt2.aspmx.l.google.com', 'alt4.aspmx.l.google.com', 'alt3.aspmx.l.google.com']
+2026-05-26 22:57:57 | DEBUG    | syntax_validator | SYNTAX OK | info@astonealabs.com
+2026-05-26 22:57:57 | DEBUG    | smtp_validator | SMTP INVALID_MAILBOX | hello@abhayhealth.com | MX=abhayhealth-com.mail.protection.outlook.com | 550 5.7.1 Service unavailable, Client host [223.185.132.130] blocked using Spamhaus. To request removal from this list see https://www.spamhaus.org/query/ip/223.185.132.130 AS(1450) [MA1PEPF000072B0.INDPRD01.PROD.OUTLOOK.COM 2026-05-26T17:27:58.578Z 08DEB6F25C286F9A]
+2026-05-26 22:57:57 | DEBUG    | smtp_validator | SMTP INVALID_MAILBOX | support@live-a-bit.com | MX=liveabit-com01f.mail.protection.outlook.com | 550 5.7.1 Service unavailable, Client host [223.185.132.130] blocked using Spamhaus. To request removal from this list see https://www.spamhaus.org/query/ip/223.185.132.130 AS(1450) [MA1PEPF00007265.INDPRD01.PROD.OUTLOOK.COM 2026-05-26T17:27:58.666Z 08DEB6E4CB36AC1B]
+2026-05-26 22:57:58 | DEBUG    | smtp_validator | SMTP INVALID_MAILBOX | support@spruceshaveclub.com | MX=aspmx.l.google.com | 550 5.1.1 The email account that you tried to reach does not exist. Please try
+5.1.1 double-checking the recipient's email address for typos or
+5.1.1 unnecessary spaces. For more information, go to
+5.1.1  https://support.google.com/mail/?p=NoSuchUser d2e1a72fcca58-841650593c9si28186966b3a.220 - gsmtp
+2026-05-26 22:57:58 | DEBUG    | smtp_validator | SMTP INVALID_MAILBOX | hello@asancup.com | MX=aspmx.l.google.com | 550 5.1.1 The email account that you tried to reach does not exist. Please try
+5.1.1 double-checking the recipient's email address for typos or
+5.1.1 unnecessary spaces. For more information, go to
+5.1.1  https://support.google.com/mail/?p=NoSuchUser d2e1a72fcca58-841650754a1si24375267b3a.242 - gsmtp
+2026-05-26 22:57:58 | DEBUG    | smtp_validator | SMTP VALID | info@yashram.com | MX=aspmx.l.google.com | 250 2.1.5 OK 41be03b00d2f7-c8520603d77si22444109a12.345 - gsmtp
+2026-05-26 22:57:58 | DEBUG    | smtp_validator | SMTP INVALID_MAILBOX | hello@amrutam.co.in | MX=smtp.google.com | 550 5.1.1 The email account that you tried to reach does not exist. Please try
+5.1.1 double-checking the recipient's email address for typos or
+5.1.1 unnecessary spaces. For more information, go to
+5.1.1  https://support.google.com/mail/?p=NoSuchUser d2e1a72fcca58-8416502ce95si27936392b3a.185 - gsmtp
+2026-05-26 22:57:58 | DEBUG    | smtp_validator | SMTP VALID | support@oracura.in | MX=aspmx.l.google.com | 250 2.1.5 OK 41be03b00d2f7-c852062455fsi24958057a12.400 - gsmtp
+2026-05-26 22:57:59 | INFO     | __main__ | INVALID_MAILBOX | hello@abhayhealth.com | Mailbox does not exist
+2026-05-26 22:57:59 | DEBUG    | syntax_validator | SYNTAX OK | info@attarayurveda.com
+2026-05-26 22:57:59 | INFO     | __main__ | INVALID_MAILBOX | support@live-a-bit.com | Mailbox does not exist
+2026-05-26 22:57:59 | DEBUG    | syntax_validator | SYNTAX OK | care@axora.in
+2026-05-26 22:58:00 | INFO     | __main__ | INVALID_MAILBOX | hello@asancup.com | Mailbox does not exist
+2026-05-26 22:58:00 | INFO     | __main__ | INVALID_MAILBOX | support@spruceshaveclub.com | Mailbox does not exist
+2026-05-26 22:58:00 | DEBUG    | syntax_validator | SYNTAX OK | care@babyorgano.com
+2026-05-26 22:58:00 | DEBUG    | syntax_validator | SYNTAX OK | care@barebody.in
+2026-05-26 22:58:00 | INFO     | __main__ | INVALID_MAILBOX | hello@amrutam.co.in | Mailbox does not exist
+2026-05-26 22:58:00 | DEBUG    | syntax_validator | SYNTAX OK | info@bathelement.com
+2026-05-26 22:58:01 | DEBUG    | dns_checker | DNS FAIL (no A/AAAA) | hello@asesaa.in | Domain 'asesaa.in' does not exist (no DNS record)
+2026-05-26 22:58:01 | INFO     | __main__ | INVALID DOMAIN | hello@asesaa.in | Domain 'asesaa.in' does not exist (no DNS record)
+2026-05-26 22:58:01 | DEBUG    | syntax_validator | SYNTAX OK | hello@beclinical.in
+2026-05-26 22:58:01 | DEBUG    | dns_checker | DNS OK | hello@worldofasaya.com | MX: ['mx.email-messaging.com']
+2026-05-26 22:58:01 | DEBUG    | dns_checker | DNS FAIL (no A/AAAA) | info@astonealabs.com | Domain 'astonealabs.com' does not exist (no DNS record)
+2026-05-26 22:58:01 | INFO     | __main__ | INVALID DOMAIN | info@astonealabs.com | Domain 'astonealabs.com' does not exist (no DNS record)
+2026-05-26 22:58:01 | DEBUG    | syntax_validator | SYNTAX FAIL (regex) | high performance hydr. | Failed basic format check: 'high performance hydr.'
+2026-05-26 22:58:01 | INFO     | __main__ | INVALID FORMAT | high performance hydr.
+2026-05-26 22:58:01 | DEBUG    | syntax_validator | SYNTAX OK | care@beautybybie.com
+2026-05-26 22:58:02 | DEBUG    | smtp_validator | SMTP INVALID_MAILBOX | zz_catchall_probe_xyz123@oracura.in | MX=aspmx.l.google.com | 550 5.1.1 The email account that you tried to reach does not exist. Please try
+5.1.1 double-checking the recipient's email address for typos or
+5.1.1 unnecessary spaces. For more information, go to
+5.1.1  https://support.google.com/mail/?p=NoSuchUser d9443c01a7336-2beb5a579efsi306798345ad.146 - gsmtp
+2026-05-26 22:58:02 | DEBUG    | smtp_validator | SMTP VALID | zz_catchall_probe_xyz123@yashram.com | MX=aspmx.l.google.com | 250 2.1.5 OK d2e1a72fcca58-84164aff9b8si28516078b3a.81 - gsmtp
+2026-05-26 22:58:02 | DEBUG    | smtp_validator | SMTP ACCESS_DENIED | hello@worldofasaya.com | MX=mx.email-messaging.com | 530 Invalid recipient
+2026-05-26 22:58:03 | DEBUG    | dns_checker | DNS OK | info@attarayurveda.com | MX: ['mx.zoho.com', 'mx2.zoho.com', 'mx3.zoho.com']
+2026-05-26 22:58:04 | DEBUG    | catch_all_detector | NOT catch-all | oracura.in | probe rejected (INVALID_MAILBOX)
+2026-05-26 22:58:04 | INFO     | __main__ | VALID | support@oracura.in
+2026-05-26 22:58:04 | DEBUG    | catch_all_detector | CATCH-ALL detected | yashram.com | probe accepted
+2026-05-26 22:58:04 | INFO     | __main__ | CATCH-ALL | info@yashram.com
+2026-05-26 22:58:04 | DEBUG    | syntax_validator | SYNTAX OK | hello@beautyfyn.com
+2026-05-26 22:58:04 | DEBUG    | syntax_validator | SYNTAX OK | support@bhoomiherbal.cominfo
+2026-05-26 22:58:04 | INFO     | __main__ | ACCESS_DENIED | hello@worldofasaya.com | Access denied by server
+2026-05-26 22:58:04 | DEBUG    | syntax_validator | SYNTAX OK | hello@bimba.com
+2026-05-26 22:58:05 | DEBUG    | dns_checker | DNS OK | care@barebody.in | MX: ['barebody-in.mail.protection.outlook.com']
+2026-05-26 22:58:05 | DEBUG    | dns_checker | DNS OK | care@babyorgano.com | MX: ['aspmx.l.google.com', 'alt1.aspmx.l.google.com', 'alt2.aspmx.l.google.com', 'alt4.aspmx.l.google.com']
+2026-05-26 22:58:05 | DEBUG    | dns_checker | DNS OK | info@bathelement.com | MX: ['aspmx.l.google.com', 'alt1.aspmx.l.google.com', 'alt2.aspmx.l.google.com', 'alt3.aspmx.l.google.com', 'alt4.aspmx.l.google.com']
+2026-05-26 22:58:05 | DEBUG    | smtp_validator | SMTP INVALID_MAILBOX | care@barebody.in | MX=barebody-in.mail.protection.outlook.com | 550 5.7.1 Service unavailable, Client host [223.185.132.130] blocked using Spamhaus. To request removal from this list see https://www.spamhaus.org/query/ip/223.185.132.130 AS(1450) [PN1PEPF000062B8.INDPRD01.PROD.OUTLOOK.COM 2026-05-26T17:28:06.424Z 08DEB6E7D5E3612B]
+2026-05-26 22:58:05 | DEBUG    | dns_checker | DNS FAIL (no MX) | hello@beclinical.in | Domain 'beclinical.in' has no MX records
+2026-05-26 22:58:05 | INFO     | __main__ | INVALID DOMAIN | hello@beclinical.in | Domain 'beclinical.in' has no MX records
+2026-05-26 22:58:05 | DEBUG    | syntax_validator | SYNTAX OK | info@biomin.co.in
+2026-05-26 22:58:06 | DEBUG    | dns_checker | DNS OK | care@beautybybie.com | MX: ['aspmx.l.google.com', 'alt1.aspmx.l.google.com', 'alt2.aspmx.l.google.com', 'alt3.aspmx.l.google.com', 'alt4.aspmx.l.google.com']
+2026-05-26 22:58:06 | DEBUG    | smtp_validator | SMTP INVALID_MAILBOX | info@attarayurveda.com | MX=mx.zoho.com | 550 Mail rejected by <Zoho Mail> for policy reasons. We generally do not accept email from dynamic IP's as they are typically used to deliver unauthenticated SMTP e-mail to an Internet mail server. http://www.spamhaus.org maintains lists of dynamic and residential IP addresses. If you are not an email/network admin please contact your E-mail/Internet Service Provider for help. Email/network admins, please contact <support@zohomail.com> for email delivery information and support
+2026-05-26 22:58:06 | DEBUG    | smtp_validator | SMTP INVALID_MAILBOX | info@bathelement.com | MX=aspmx.l.google.com | 550 5.1.1 The email account that you tried to reach does not exist. Please try
+5.1.1 double-checking the recipient's email address for typos or
+5.1.1 unnecessary spaces. For more information, go to
+5.1.1  https://support.google.com/mail/?p=NoSuchUser d2e1a72fcca58-84164fd4ddesi29344643b3a.132 - gsmtp
+2026-05-26 22:58:07 | DEBUG    | smtp_validator | SMTP VALID | care@babyorgano.com | MX=aspmx.l.google.com | 250 2.1.5 OK 41be03b00d2f7-c852059fbefsi22530339a12.196 - gsmtp
+2026-05-26 22:58:07 | INFO     | __main__ | INVALID_MAILBOX | care@barebody.in | Mailbox does not exist
+2026-05-26 22:58:07 | DEBUG    | syntax_validator | SYNTAX OK | team@boondfragrances.com
+2026-05-26 22:58:07 | DEBUG    | smtp_validator | SMTP VALID | care@beautybybie.com | MX=aspmx.l.google.com | 250 2.1.5 OK 41be03b00d2f7-c85205fef88si22384984a12.308 - gsmtp
+2026-05-26 22:58:08 | INFO     | __main__ | INVALID_MAILBOX | info@attarayurveda.com | Mailbox does not exist
+2026-05-26 22:58:08 | INFO     | __main__ | INVALID_MAILBOX | info@bathelement.com | Mailbox does not exist
+2026-05-26 22:58:08 | DEBUG    | syntax_validator | SYNTAX OK | user@boondh.co
+2026-05-26 22:58:08 | DEBUG    | syntax_validator | SYNTAX OK | info@brownbear.in
+2026-05-26 22:58:08 | DEBUG    | dns_checker | DNS FAIL (no A/AAAA) | support@bhoomiherbal.cominfo | Domain 'bhoomiherbal.cominfo' does not exist (no DNS record)
+2026-05-26 22:58:08 | INFO     | __main__ | INVALID DOMAIN | support@bhoomiherbal.cominfo | Domain 'bhoomiherbal.cominfo' does not exist (no DNS record)
+2026-05-26 22:58:08 | DEBUG    | syntax_validator | SYNTAX OK | info@cannarma.com
+2026-05-26 22:58:08 | DEBUG    | dns_checker | DNS OK | hello@beautyfyn.com | MX: ['smtp.secureserver.net', 'mailstore1.secureserver.net']
+2026-05-26 22:58:09 | DEBUG    | smtp_validator | SMTP disconnect | hello@beautyfyn.com | Server disconnected (smtp.secureserver.net): Connection unexpectedly closed
+2026-05-26 22:58:09 | DEBUG    | dns_checker | DNS OK | hello@bimba.com | MX: ['eu-smtp-inbound-1.mimecast.com', 'eu-smtp-inbound-2.mimecast.com']
+2026-05-26 22:58:09 | DEBUG    | dns_checker | DNS FAIL (no A/AAAA) | care@axora.in | Domain 'axora.in' does not exist (no DNS record)
+2026-05-26 22:58:09 | INFO     | __main__ | INVALID DOMAIN | care@axora.in | Domain 'axora.in' does not exist (no DNS record)
+2026-05-26 22:58:09 | DEBUG    | syntax_validator | SYNTAX OK | care@mycarmesi.com
+2026-05-26 22:58:09 | DEBUG    | dns_checker | DNS FAIL (no A/AAAA) | info@biomin.co.in | Domain 'biomin.co.in' does not exist (no DNS record)
+2026-05-26 22:58:09 | INFO     | __main__ | INVALID DOMAIN | info@biomin.co.in | Domain 'biomin.co.in' does not exist (no DNS record)
+2026-05-26 22:58:09 | DEBUG    | syntax_validator | SYNTAX OK | hello@clayco.in
+2026-05-26 22:58:10 | DEBUG    | smtp_validator | SMTP VALID | zz_catchall_probe_xyz123@babyorgano.com | MX=aspmx.l.google.com | 250 2.1.5 OK d2e1a72fcca58-8416502bd4asi28779961b3a.181 - gsmtp
+2026-05-26 22:58:10 | DEBUG    | smtp_validator | SMTP VALID | zz_catchall_probe_xyz123@beautybybie.com | MX=aspmx.l.google.com | 250 2.1.5 OK d9443c01a7336-2beb590aacasi234978385ad.109 - gsmtp
+2026-05-26 22:58:11 | DEBUG    | smtp_validator | SMTP disconnect | hello@beautyfyn.com | Server disconnected (mailstore1.secureserver.net): Connection unexpectedly closed
+2026-05-26 22:58:11 | DEBUG    | dns_checker | DNS OK | team@boondfragrances.com | MX: ['aspmx.l.google.com', 'alt1.aspmx.l.google.com', 'alt2.aspmx.l.google.com', 'alt3.aspmx.l.google.com', 'alt4.aspmx.l.google.com']
+2026-05-26 22:58:11 | DEBUG    | smtp_validator | SMTP INVALID_MAILBOX | hello@bimba.com | MX=eu-smtp-inbound-1.mimecast.com | 550 zen.mimecast.org Listed by PBL, see https://check.spamhaus.org/query/ip/223.185.132.130. - https://community.mimecast.com/docs/DOC-1369#550 [OGrXaeDaPbODQrR3D_RusA.uk304]
+2026-05-26 22:58:12 | DEBUG    | catch_all_detector | CATCH-ALL detected | babyorgano.com | probe accepted
+2026-05-26 22:58:12 | INFO     | __main__ | CATCH-ALL | care@babyorgano.com
+2026-05-26 22:58:12 | DEBUG    | syntax_validator | SYNTAX OK | hello@clockworkrituals.in
+2026-05-26 22:58:12 | DEBUG    | catch_all_detector | CATCH-ALL detected | beautybybie.com | probe accepted
+2026-05-26 22:58:12 | INFO     | __main__ | CATCH-ALL | care@beautybybie.com
+2026-05-26 22:58:12 | DEBUG    | syntax_validator | SYNTAX OK | care@dabtofab.co
+2026-05-26 22:58:12 | DEBUG    | dns_checker | DNS OK | info@brownbear.in | MX: ['aspmx.l.google.com', 'alt1.aspmx.l.google.com', 'alt2.aspmx.l.google.com', 'aspmx2.googlemail.com', 'aspmx3.googlemail.com']
+2026-05-26 22:58:12 | DEBUG    | dns_checker | DNS OK | user@boondh.co | MX: ['mx.zoho.com', 'mx2.zoho.com', 'mx3.zoho.com']
+2026-05-26 22:58:12 | DEBUG    | dns_checker | DNS OK | info@cannarma.com | MX: ['aspmx.l.google.com', 'alt1.aspmx.l.google.com', 'alt2.aspmx.l.google.com', 'alt3.aspmx.l.google.com', 'alt4.aspmx.l.google.com']
+2026-05-26 22:58:13 | DEBUG    | smtp_validator | SMTP VALID | team@boondfragrances.com | MX=aspmx.l.google.com | 250 2.1.5 OK 98e67ed59e1d1-36a72adf440si30575060a91.5 - gsmtp
+2026-05-26 22:58:13 | DEBUG    | smtp_validator | SMTP exhausted all hosts | hello@beautyfyn.com | Server disconnected (mailstore1.secureserver.net): Connection unexpectedly closed
+2026-05-26 22:58:13 | INFO     | __main__ | TEMPORARY_FAILURE | hello@beautyfyn.com | Server disconnected (mailstore1.secureserver.net): Connection unexpectedly closed
+2026-05-26 22:58:13 | DEBUG    | syntax_validator | SYNTAX OK | care@daybreak.in
+2026-05-26 22:58:13 | DEBUG    | dns_checker | DNS OK | care@mycarmesi.com | MX: ['aspmx.l.google.com', 'alt1.aspmx.l.google.com', 'alt2.aspmx.l.google.com', 'aspmx2.googlemail.com', 'aspmx3.googlemail.com']
+2026-05-26 22:58:13 | INFO     | __main__ | INVALID_MAILBOX | hello@bimba.com | Mailbox does not exist
+2026-05-26 22:58:13 | DEBUG    | syntax_validator | SYNTAX OK | hello@daysahead.in
+2026-05-26 22:58:14 | DEBUG    | dns_checker | DNS OK | hello@clayco.in | MX: ['smtp.google.com', 'mx.email-messaging.com']
+2026-05-26 22:58:14 | DEBUG    | smtp_validator | SMTP VALID | info@cannarma.com | MX=aspmx.l.google.com | 250 2.1.5 OK 98e67ed59e1d1-36a72d79b98si31851719a91.14 - gsmtp
+2026-05-26 22:58:14 | DEBUG    | smtp_validator | SMTP VALID | info@brownbear.in | MX=aspmx.l.google.com | 250 2.1.5 OK 41be03b00d2f7-c85205fd2fesi22526059a12.310 - gsmtp
+2026-05-26 22:58:14 | DEBUG    | smtp_validator | SMTP INVALID_MAILBOX | user@boondh.co | MX=mx.zoho.com | 550 Mail rejected by <Zoho Mail> for policy reasons. We generally do not accept email from dynamic IP's as they are typically used to deliver unauthenticated SMTP e-mail to an Internet mail server. http://www.spamhaus.org maintains lists of dynamic and residential IP addresses. If you are not an email/network admin please contact your E-mail/Internet Service Provider for help. Email/network admins, please contact <support@zohomail.com> for email delivery information and support
+2026-05-26 22:58:15 | DEBUG    | smtp_validator | SMTP VALID | care@mycarmesi.com | MX=aspmx.l.google.com | 250 2.1.5 OK 41be03b00d2f7-c85202d1845si20745644a12.107 - gsmtp
+2026-05-26 22:58:15 | DEBUG    | smtp_validator | SMTP VALID | hello@clayco.in | MX=smtp.google.com | 250 2.1.5 OK 41be03b00d2f7-c85206192b0si20274538a12.391 - gsmtp
+2026-05-26 22:58:16 | DEBUG    | smtp_validator | SMTP VALID | zz_catchall_probe_xyz123@boondfragrances.com | MX=aspmx.l.google.com | 250 2.1.5 OK d2e1a72fcca58-84164ac5333si29821743b3a.8 - gsmtp
+2026-05-26 22:58:16 | DEBUG    | dns_checker | DNS FAIL (no A/AAAA) | hello@clockworkrituals.in | Domain 'clockworkrituals.in' does not exist (no DNS record)
+2026-05-26 22:58:16 | INFO     | __main__ | INVALID DOMAIN | hello@clockworkrituals.in | Domain 'clockworkrituals.in' does not exist (no DNS record)
+2026-05-26 22:58:16 | DEBUG    | syntax_validator | SYNTAX OK | hello@thedearist.com
+2026-05-26 22:58:16 | INFO     | __main__ | INVALID_MAILBOX | user@boondh.co | Mailbox does not exist
+2026-05-26 22:58:16 | DEBUG    | syntax_validator | SYNTAX OK | care@dentalkart.com
+2026-05-26 22:58:17 | DEBUG    | dns_checker | DNS OK | care@dabtofab.co | MX: ['aspmx.l.google.com', 'alt1.aspmx.l.google.com', 'alt2.aspmx.l.google.com', 'alt3.aspmx.l.google.com', 'alt4.aspmx.l.google.com']
+2026-05-26 22:58:17 | DEBUG    | smtp_validator | SMTP INVALID_MAILBOX | zz_catchall_probe_xyz123@cannarma.com | MX=aspmx.l.google.com | 550 5.1.1 The email account that you tried to reach does not exist. Please try
+5.1.1 double-checking the recipient's email address for typos or
+5.1.1 unnecessary spaces. For more information, go to
+5.1.1  https://support.google.com/mail/?p=NoSuchUser d9443c01a7336-2beb582ebdfsi302082655ad.73 - gsmtp
+2026-05-26 22:58:17 | DEBUG    | smtp_validator | SMTP INVALID_MAILBOX | zz_catchall_probe_xyz123@brownbear.in | MX=aspmx.l.google.com | 550 5.1.1 The email account that you tried to reach does not exist. Please try
+5.1.1 double-checking the recipient's email address for typos or
+5.1.1 unnecessary spaces. For more information, go to
+5.1.1  https://support.google.com/mail/?p=NoSuchUser 41be03b00d2f7-c85202a860asi20259790a12.22 - gsmtp
+2026-05-26 22:58:18 | DEBUG    | dns_checker | DNS OK | hello@daysahead.in | MX: ['aspmx.l.google.com', 'alt1.aspmx.l.google.com', 'alt2.aspmx.l.google.com', 'alt3.aspmx.l.google.com', 'alt4.aspmx.l.google.com']
+2026-05-26 22:58:18 | DEBUG    | dns_checker | DNS FAIL (no MX) | care@daybreak.in | Domain 'daybreak.in' has no MX records
+2026-05-26 22:58:18 | INFO     | __main__ | INVALID DOMAIN | care@daybreak.in | Domain 'daybreak.in' has no MX records
+2026-05-26 22:58:18 | DEBUG    | syntax_validator | SYNTAX OK | care@drickle.com
+2026-05-26 22:58:18 | DEBUG    | smtp_validator | SMTP VALID | care@dabtofab.co | MX=aspmx.l.google.com | 250 2.1.5 OK 98e67ed59e1d1-36a72af29desi30462426a91.7 - gsmtp
+2026-05-26 22:58:18 | DEBUG    | catch_all_detector | CATCH-ALL detected | boondfragrances.com | probe accepted
+2026-05-26 22:58:18 | INFO     | __main__ | CATCH-ALL | team@boondfragrances.com
+2026-05-26 22:58:18 | DEBUG    | syntax_validator | SYNTAX OK | info@ecofemme.org
+2026-05-26 22:58:18 | DEBUG    | smtp_validator | SMTP VALID | zz_catchall_probe_xyz123@clayco.in | MX=smtp.google.com | 250 2.1.5 OK 41be03b00d2f7-c85205ff097si23545443a12.325 - gsmtp
+2026-05-26 22:58:18 | DEBUG    | smtp_validator | SMTP INVALID_MAILBOX | zz_catchall_probe_xyz123@mycarmesi.com | MX=aspmx.l.google.com | 550 5.1.1 The email account that you tried to reach does not exist. Please try
+5.1.1 double-checking the recipient's email address for typos or
+5.1.1 unnecessary spaces. For more information, go to
+5.1.1  https://support.google.com/mail/?p=NoSuchUser d2e1a72fcca58-84164aea811si28674030b3a.63 - gsmtp
+2026-05-26 22:58:19 | DEBUG    | smtp_validator | SMTP INVALID_MAILBOX | hello@daysahead.in | MX=aspmx.l.google.com | 550 5.1.1 The email account that you tried to reach does not exist. Please try
+5.1.1 double-checking the recipient's email address for typos or
+5.1.1 unnecessary spaces. For more information, go to
+5.1.1  https://support.google.com/mail/?p=NoSuchUser d2e1a72fcca58-84164ac4d90si29606062b3a.11 - gsmtp
+2026-05-26 22:58:19 | DEBUG    | catch_all_detector | NOT catch-all | cannarma.com | probe rejected (INVALID_MAILBOX)
+2026-05-26 22:58:19 | INFO     | __main__ | VALID | info@cannarma.com
+2026-05-26 22:58:19 | DEBUG    | syntax_validator | SYNTAX OK | kriti@ecosattva.in
+2026-05-26 22:58:19 | DEBUG    | catch_all_detector | NOT catch-all | brownbear.in | probe rejected (INVALID_MAILBOX)
+2026-05-26 22:58:19 | INFO     | __main__ | VALID | info@brownbear.in
+2026-05-26 22:58:19 | DEBUG    | syntax_validator | SYNTAX OK | help.ekesvaraorganic@gmail.com
+2026-05-26 22:58:20 | DEBUG    | dns_checker | DNS OK | care@dentalkart.com | MX: ['mx.zoho.in', 'mx.zoho.in', 'mx.zoho.in']
+2026-05-26 22:58:20 | DEBUG    | catch_all_detector | CATCH-ALL detected | clayco.in | probe accepted
+2026-05-26 22:58:20 | INFO     | __main__ | CATCH-ALL | hello@clayco.in
+2026-05-26 22:58:20 | DEBUG    | syntax_validator | SYNTAX OK | hello@elittybeauty.com
+2026-05-26 22:58:20 | DEBUG    | catch_all_detector | NOT catch-all | mycarmesi.com | probe rejected (INVALID_MAILBOX)
+2026-05-26 22:58:20 | INFO     | __main__ | VALID | care@mycarmesi.com
+2026-05-26 22:58:20 | DEBUG    | syntax_validator | SYNTAX FAIL (regex) | hello@fangoralcare.com,smile@fangoral.com | Failed basic format check: 'hello@fangoralcare.com,smile@fangoral.com'
+2026-05-26 22:58:20 | INFO     | __main__ | INVALID FORMAT | hello@fangoralcare.com,smile@fangoral.com
+2026-05-26 22:58:20 | DEBUG    | syntax_validator | SYNTAX OK | hello@feminy.in
+2026-05-26 22:58:20 | DEBUG    | dns_checker | DNS OK | hello@thedearist.com | MX: ['aspmx.l.google.com', 'alt1.aspmx.l.google.com', 'alt2.aspmx.l.google.com', 'alt3.aspmx.l.google.com', 'alt4.aspmx.l.google.com']
+2026-05-26 22:58:21 | INFO     | __main__ | INVALID_MAILBOX | hello@daysahead.in | Mailbox does not exist
+2026-05-26 22:58:21 | DEBUG    | syntax_validator | SYNTAX OK | hello@fiorelabs.com
+2026-05-26 22:58:21 | DEBUG    | smtp_validator | SMTP VALID | zz_catchall_probe_xyz123@dabtofab.co | MX=aspmx.l.google.com | 250 2.1.5 OK 41be03b00d2f7-c85202a7993si22961563a12.37 - gsmtp
+2026-05-26 22:58:21 | DEBUG    | smtp_validator | SMTP INVALID_MAILBOX | care@dentalkart.com | MX=mx.zoho.in | 550 Mail rejected by <Zoho Mail> for policy reasons. We generally do not accept email from dynamic IP's as they are typically used to deliver unauthenticated SMTP e-mail to an Internet mail server. http://www.spamhaus.org maintains lists of dynamic and residential IP addresses. If you are not an email/network admin please contact your E-mail/Internet Service Provider for help. Email/network admins, please contact <support@zohomail.com> for email delivery information and support
+2026-05-26 22:58:22 | DEBUG    | smtp_validator | SMTP INVALID_MAILBOX | hello@thedearist.com | MX=aspmx.l.google.com | 550 5.1.1 The email account that you tried to reach does not exist. Please try
+5.1.1 double-checking the recipient's email address for typos or
+5.1.1 unnecessary spaces. For more information, go to
+5.1.1  https://support.google.com/mail/?p=NoSuchUser 98e67ed59e1d1-36b18b3e6a5si3063866a91.15 - gsmtp
+2026-05-26 22:58:22 | DEBUG    | dns_checker | DNS FAIL (no MX) | care@drickle.com | Domain 'drickle.com' has no MX records
+2026-05-26 22:58:22 | INFO     | __main__ | INVALID DOMAIN | care@drickle.com | Domain 'drickle.com' has no MX records
+2026-05-26 22:58:22 | DEBUG    | syntax_validator | SYNTAX OK | hello@fixmycurls.com
+2026-05-26 22:58:22 | DEBUG    | dns_checker | DNS OK | info@ecofemme.org | MX: ['smtp.google.com']
+2026-05-26 22:58:23 | DEBUG    | catch_all_detector | CATCH-ALL detected | dabtofab.co | probe accepted
+2026-05-26 22:58:23 | INFO     | __main__ | CATCH-ALL | care@dabtofab.co
+2026-05-26 22:58:23 | DEBUG    | syntax_validator | SYNTAX OK | service@forestessentialsindia.com
+2026-05-26 22:58:23 | INFO     | __main__ | INVALID_MAILBOX | care@dentalkart.com | Mailbox does not exist
+2026-05-26 22:58:23 | DEBUG    | syntax_validator | SYNTAX OK | hello@fridayfeeling.co
+2026-05-26 22:58:24 | DEBUG    | dns_checker | DNS OK | help.ekesvaraorganic@gmail.com | MX: ['gmail-smtp-in.l.google.com', 'alt1.gmail-smtp-in.l.google.com', 'alt2.gmail-smtp-in.l.google.com', 'alt3.gmail-smtp-in.l.google.com', 'alt4.gmail-smtp-in.l.google.com']
+2026-05-26 22:58:24 | DEBUG    | dns_checker | DNS OK | kriti@ecosattva.in | MX: ['smtp.google.com']
+2026-05-26 22:58:24 | INFO     | __main__ | INVALID_MAILBOX | hello@thedearist.com | Mailbox does not exist
+2026-05-26 22:58:24 | DEBUG    | syntax_validator | SYNTAX OK | care@fulixxa.com
+2026-05-26 22:58:24 | DEBUG    | smtp_validator | SMTP VALID | info@ecofemme.org | MX=smtp.google.com | 250 2.1.5 OK d9443c01a7336-2beb5a73294si229142595ad.170 - gsmtp
+2026-05-26 22:58:24 | DEBUG    | dns_checker | DNS FAIL (no A/AAAA) | hello@feminy.in | Domain 'feminy.in' does not exist (no DNS record)
+2026-05-26 22:58:24 | INFO     | __main__ | INVALID DOMAIN | hello@feminy.in | Domain 'feminy.in' does not exist (no DNS record)
+2026-05-26 22:58:24 | DEBUG    | syntax_validator | SYNTAX OK | hello@gappu.co
+2026-05-26 22:58:25 | DEBUG    | dns_checker | DNS OK | hello@elittybeauty.com | MX: ['aspmx.l.google.com', 'alt1.aspmx.l.google.com', 'alt2.aspmx.l.google.com', 'alt3.aspmx.l.google.com', 'alt4.aspmx.l.google.com']
+2026-05-26 22:58:25 | DEBUG    | smtp_validator | SMTP INVALID_MAILBOX | kriti@ecosattva.in | MX=smtp.google.com | 550 5.1.1 The email account that you tried to reach does not exist. Please try
+5.1.1 double-checking the recipient's email address for typos or
+5.1.1 unnecessary spaces. For more information, go to
+5.1.1  https://support.google.com/mail/?p=NoSuchUser 41be03b00d2f7-c852059fee7si21806980a12.192 - gsmtp
+2026-05-26 22:58:25 | DEBUG    | smtp_validator | SMTP VALID | help.ekesvaraorganic@gmail.com | MX=gmail-smtp-in.l.google.com | 250 2.1.5 OK d2e1a72fcca58-84165077910si24341393b3a.240 - gsmtp
+2026-05-26 22:58:25 | DEBUG    | dns_checker | DNS OK | hello@fiorelabs.com | MX: ['mx1.titan.email', 'mx2.titan.email']
+2026-05-26 22:58:26 | DEBUG    | smtp_validator | SMTP VALID | hello@elittybeauty.com | MX=aspmx.l.google.com | 250 2.1.5 OK 41be03b00d2f7-c85202a7eabsi26295773a12.77 - gsmtp
+2026-05-26 22:58:26 | DEBUG    | dns_checker | DNS OK | hello@fixmycurls.com | MX: ['aspmx.l.google.com', 'alt1.aspmx.l.google.com', 'alt2.aspmx.l.google.com', 'alt3.aspmx.l.google.com', 'alt4.aspmx.l.google.com']
+2026-05-26 22:58:27 | INFO     | __main__ | INVALID_MAILBOX | kriti@ecosattva.in | Mailbox does not exist
+2026-05-26 22:58:27 | DEBUG    | syntax_validator | SYNTAX FAIL (regex) | support@gharsoaps.in sales@gharsoaps.in | Failed basic format check: 'support@gharsoaps.in sales@gharsoaps.in'
+2026-05-26 22:58:27 | INFO     | __main__ | INVALID FORMAT | support@gharsoaps.in sales@gharsoaps.in
+2026-05-26 22:58:27 | DEBUG    | syntax_validator | SYNTAX OK | care@golisodastore.com
+2026-05-26 22:58:27 | DEBUG    | smtp_validator | SMTP INVALID_MAILBOX | zz_catchall_probe_xyz123@ecofemme.org | MX=smtp.google.com | 550 5.1.1 The email account that you tried to reach does not exist. Please try
+5.1.1 double-checking the recipient's email address for typos or
+5.1.1 unnecessary spaces. For more information, go to
+5.1.1  https://support.google.com/mail/?p=NoSuchUser 41be03b00d2f7-c85205ffdd5si23414912a12.326 - gsmtp
+2026-05-26 22:58:27 | DEBUG    | dns_checker | DNS OK | service@forestessentialsindia.com | MX: ['forestessentialsindia-com.mail.protection.outlook.com']
+2026-05-26 22:58:28 | DEBUG    | dns_checker | DNS OK | hello@fridayfeeling.co | MX: ['aspmx.l.google.com', 'alt1.aspmx.l.google.com', 'alt2.aspmx.l.google.com', 'alt3.aspmx.l.google.com', 'alt4.aspmx.l.google.com']
+2026-05-26 22:58:28 | DEBUG    | smtp_validator | SMTP INVALID_MAILBOX | service@forestessentialsindia.com | MX=forestessentialsindia-com.mail.protection.outlook.com | 550 5.7.1 Service unavailable, Client host [223.185.132.130] blocked using Spamhaus. To request removal from this list see https://www.spamhaus.org/query/ip/223.185.132.130 AS(1450) [PN1PEPF000062B8.INDPRD01.PROD.OUTLOOK.COM 2026-05-26T17:28:29.227Z 08DEB6E7D5E3764F]
+2026-05-26 22:58:28 | DEBUG    | dns_checker | DNS OK | care@fulixxa.com | MX: ['aspmx.l.google.com', 'alt1.aspmx.l.google.com', 'alt2.aspmx.l.google.com', 'alt3.aspmx.l.google.com', 'alt4.aspmx.l.google.com']
+2026-05-26 22:58:28 | DEBUG    | smtp_validator | SMTP INVALID_MAILBOX | zz_catchall_probe_xyz123@gmail.com | MX=gmail-smtp-in.l.google.com | 550 5.1.1 The email account that you tried to reach does not exist. Please try
+5.1.1 double-checking the recipient's email address for typos or
+5.1.1 unnecessary spaces. For more information, go to
+5.1.1  https://support.google.com/mail/?p=NoSuchUser d2e1a72fcca58-84164ac53ddsi28236341b3a.10 - gsmtp
+2026-05-26 22:58:28 | DEBUG    | smtp_validator | SMTP VALID | hello@fixmycurls.com | MX=aspmx.l.google.com | 250 2.1.5 OK 98e67ed59e1d1-36a72b23be6si31020345a91.8 - gsmtp
+2026-05-26 22:58:29 | DEBUG    | dns_checker | DNS OK | hello@gappu.co | MX: ['mx.zoho.in', 'mx2.zoho.in', 'mx3.zoho.in']
+2026-05-26 22:58:29 | DEBUG    | smtp_validator | SMTP VALID | hello@fridayfeeling.co | MX=aspmx.l.google.com | 250 2.1.5 OK 41be03b00d2f7-c85202c9d59si25252572a12.96 - gsmtp
+2026-05-26 22:58:29 | DEBUG    | smtp_validator | SMTP INVALID_MAILBOX | hello@gappu.co | MX=mx.zoho.in | 550 Mail rejected by <Zoho Mail> for policy reasons. We generally do not accept email from dynamic IP's as they are typically used to deliver unauthenticated SMTP e-mail to an Internet mail server. http://www.spamhaus.org maintains lists of dynamic and residential IP addresses. If you are not an email/network admin please contact your E-mail/Internet Service Provider for help. Email/network admins, please contact <support@zohomail.com> for email delivery information and support
+2026-05-26 22:58:29 | DEBUG    | catch_all_detector | NOT catch-all | ecofemme.org | probe rejected (INVALID_MAILBOX)
+2026-05-26 22:58:29 | INFO     | __main__ | VALID | info@ecofemme.org
+2026-05-26 22:58:29 | DEBUG    | syntax_validator | SYNTAX FAIL (regex) | info@greenloom.in, contact@thegreenloom.com | Failed basic format check: 'info@greenloom.in, contact@thegreenloom.com'
+2026-05-26 22:58:29 | INFO     | __main__ | INVALID FORMAT | info@greenloom.in, contact@thegreenloom.com
+2026-05-26 22:58:29 | DEBUG    | syntax_validator | SYNTAX OK | contact@greeniecan.com
+2026-05-26 22:58:30 | DEBUG    | smtp_validator | SMTP INVALID_MAILBOX | care@fulixxa.com | MX=aspmx.l.google.com | 550 5.1.1 The email account that you tried to reach does not exist. Please try
+5.1.1 double-checking the recipient's email address for typos or
+5.1.1 unnecessary spaces. For more information, go to
+5.1.1  https://support.google.com/mail/?p=NoSuchUser 41be03b00d2f7-c85206107cesi24758493a12.370 - gsmtp
+2026-05-26 22:58:30 | INFO     | __main__ | INVALID_MAILBOX | service@forestessentialsindia.com | Mailbox does not exist
+2026-05-26 22:58:30 | DEBUG    | syntax_validator | SYNTAX OK | hello@gulbonda.com
+2026-05-26 22:58:30 | DEBUG    | smtp_validator | SMTP INVALID_MAILBOX | zz_catchall_probe_xyz123@elittybeauty.com | MX=aspmx.l.google.com | 550 5.1.1 The email account that you tried to reach does not exist. Please try
+5.1.1 double-checking the recipient's email address for typos or
+5.1.1 unnecessary spaces. For more information, go to
+5.1.1  https://support.google.com/mail/?p=NoSuchUser 41be03b00d2f7-c85205bdf6asi21078599a12.207 - gsmtp
+2026-05-26 22:58:30 | DEBUG    | catch_all_detector | NOT catch-all | gmail.com | probe rejected (INVALID_MAILBOX)
+2026-05-26 22:58:30 | INFO     | __main__ | VALID | help.ekesvaraorganic@gmail.com
+2026-05-26 22:58:30 | DEBUG    | syntax_validator | SYNTAX OK | contact@gunambeauty.com
+2026-05-26 22:58:31 | DEBUG    | dns_checker | DNS OK | care@golisodastore.com | MX: ['aspmx.l.google.com', 'alt2.aspmx.l.google.com', 'alt1.aspmx.l.google.com', 'alt4.aspmx.l.google.com', 'alt3.aspmx.l.google.com']
+2026-05-26 22:58:31 | INFO     | __main__ | INVALID_MAILBOX | hello@gappu.co | Mailbox does not exist
+2026-05-26 22:58:31 | DEBUG    | syntax_validator | SYNTAX OK | care@gynocup.com
+2026-05-26 22:58:32 | INFO     | __main__ | INVALID_MAILBOX | care@fulixxa.com | Mailbox does not exist
+2026-05-26 22:58:32 | DEBUG    | syntax_validator | SYNTAX OK | hello@habbits.in
+2026-05-26 22:58:32 | DEBUG    | smtp_validator | SMTP INVALID_MAILBOX | zz_catchall_probe_xyz123@fixmycurls.com | MX=aspmx.l.google.com | 550 5.1.1 The email account that you tried to reach does not exist. Please try
+5.1.1 double-checking the recipient's email address for typos or
+5.1.1 unnecessary spaces. For more information, go to
+5.1.1  https://support.google.com/mail/?p=NoSuchUser 41be03b00d2f7-c852059e00dsi20793107a12.139 - gsmtp
+2026-05-26 22:58:32 | DEBUG    | catch_all_detector | NOT catch-all | elittybeauty.com | probe rejected (INVALID_MAILBOX)
+2026-05-26 22:58:32 | INFO     | __main__ | VALID | hello@elittybeauty.com
+2026-05-26 22:58:32 | DEBUG    | syntax_validator | SYNTAX OK | hello@hashtagjungle.com
+2026-05-26 22:58:32 | DEBUG    | smtp_validator | SMTP VALID | zz_catchall_probe_xyz123@fridayfeeling.co | MX=aspmx.l.google.com | 250 2.1.5 OK 41be03b00d2f7-c85206105f4si25912148a12.367 - gsmtp
+2026-05-26 22:58:33 | DEBUG    | smtp_validator | SMTP VALID | care@golisodastore.com | MX=aspmx.l.google.com | 250 2.1.5 OK d9443c01a7336-2beb5912076si231880015ad.84 - gsmtp
+2026-05-26 22:58:33 | DEBUG    | smtp_validator | SMTP INVALID_MAILBOX | hello@fiorelabs.com | MX=mx1.titan.email | 554 5.7.1 <hello@fiorelabs.com>: Relay access denied
+2026-05-26 22:58:33 | DEBUG    | dns_checker | DNS FAIL (no MX) | contact@greeniecan.com | Domain 'greeniecan.com' has no MX records
+2026-05-26 22:58:33 | INFO     | __main__ | INVALID DOMAIN | contact@greeniecan.com | Domain 'greeniecan.com' has no MX records
+2026-05-26 22:58:33 | DEBUG    | syntax_validator | SYNTAX OK | support@havintha.in
+2026-05-26 22:58:34 | DEBUG    | catch_all_detector | NOT catch-all | fixmycurls.com | probe rejected (INVALID_MAILBOX)
+2026-05-26 22:58:34 | INFO     | __main__ | VALID | hello@fixmycurls.com
+2026-05-26 22:58:34 | DEBUG    | syntax_validator | SYNTAX OK | hello@healthfab.in
+2026-05-26 22:58:34 | DEBUG    | dns_checker | DNS OK | hello@gulbonda.com | MX: ['mx.zoho.in', 'mx2.zoho.in', 'mx3.zoho.in']
+2026-05-26 22:58:34 | DEBUG    | smtp_validator | SMTP INVALID_MAILBOX | hello@gulbonda.com | MX=mx.zoho.in | 550 Mail rejected by <Zoho Mail> for policy reasons. We generally do not accept email from dynamic IP's as they are typically used to deliver unauthenticated SMTP e-mail to an Internet mail server. http://www.spamhaus.org maintains lists of dynamic and residential IP addresses. If you are not an email/network admin please contact your E-mail/Internet Service Provider for help. Email/network admins, please contact <support@zohomail.com> for email delivery information and support
+2026-05-26 22:58:34 | DEBUG    | dns_checker | DNS OK | contact@gunambeauty.com | MX: ['aspmx.l.google.com', 'alt1.aspmx.l.google.com', 'alt2.aspmx.l.google.com', 'alt3.aspmx.l.google.com', 'alt4.aspmx.l.google.com']
+2026-05-26 22:58:34 | DEBUG    | catch_all_detector | CATCH-ALL detected | fridayfeeling.co | probe accepted
+2026-05-26 22:58:34 | INFO     | __main__ | CATCH-ALL | hello@fridayfeeling.co
+2026-05-26 22:58:34 | DEBUG    | syntax_validator | SYNTAX OK | hello@hibiscusmonkey.com
+2026-05-26 22:58:35 | INFO     | __main__ | INVALID_MAILBOX | hello@fiorelabs.com | Mailbox does not exist
+2026-05-26 22:58:35 | DEBUG    | syntax_validator | SYNTAX OK | info@houseofmakeup.com
+2026-05-26 22:58:35 | DEBUG    | dns_checker | DNS OK | care@gynocup.com | MX: ['aspmx.l.google.com', 'alt1.aspmx.l.google.com', 'alt2.aspmx.l.google.com', 'aspmx2.googlemail.com', 'aspmx3.googlemail.com']
+2026-05-26 22:58:36 | DEBUG    | dns_checker | DNS OK | hello@habbits.in | MX: ['aspmx.l.google.com', 'alt1.aspmx.l.google.com', 'alt2.aspmx.l.google.com', 'alt3.aspmx.l.google.com', 'alt4.aspmx.l.google.com']
+2026-05-26 22:58:36 | DEBUG    | smtp_validator | SMTP VALID | contact@gunambeauty.com | MX=aspmx.l.google.com | 250 2.1.5 OK 41be03b00d2f7-c85205c5dd3si22458444a12.236 - gsmtp
+2026-05-26 22:58:36 | DEBUG    | smtp_validator | SMTP INVALID_MAILBOX | zz_catchall_probe_xyz123@golisodastore.com | MX=aspmx.l.google.com | 550 5.1.1 The email account that you tried to reach does not exist. Please try
+5.1.1 double-checking the recipient's email address for typos or
+5.1.1 unnecessary spaces. For more information, go to
+5.1.1  https://support.google.com/mail/?p=NoSuchUser d2e1a72fcca58-84165033099si28756334b3a.192 - gsmtp
+2026-05-26 22:58:36 | DEBUG    | dns_checker | DNS FAIL (no MX) | hello@hashtagjungle.com | Domain 'hashtagjungle.com' has no MX records
+2026-05-26 22:58:36 | INFO     | __main__ | INVALID DOMAIN | hello@hashtagjungle.com | Domain 'hashtagjungle.com' has no MX records
+2026-05-26 22:58:36 | DEBUG    | syntax_validator | SYNTAX FAIL (regex) | care@imbuenatural.com,contact@imbuenatural.com | Failed basic format check: 'care@imbuenatural.com,contact@imbuenatural.com'
+2026-05-26 22:58:36 | INFO     | __main__ | INVALID FORMAT | care@imbuenatural.com,contact@imbuenatural.com
+2026-05-26 22:58:36 | DEBUG    | syntax_validator | SYNTAX OK | hello@hashtagjungle.com
+2026-05-26 22:58:36 | INFO     | __main__ | INVALID_MAILBOX | hello@gulbonda.com | Mailbox does not exist
+2026-05-26 22:58:36 | DEBUG    | syntax_validator | SYNTAX OK | info@kformula.in
+2026-05-26 22:58:37 | DEBUG    | smtp_validator | SMTP VALID | care@gynocup.com | MX=aspmx.l.google.com | 250 2.1.5 OK d2e1a72fcca58-84164afe3absi29574263b3a.86 - gsmtp
+2026-05-26 22:58:37 | DEBUG    | smtp_validator | SMTP VALID | hello@habbits.in | MX=aspmx.l.google.com | 250 2.1.5 OK d9443c01a7336-2beb5a7a4e8si309676255ad.178 - gsmtp
+2026-05-26 22:58:38 | DEBUG    | dns_checker | DNS OK | support@havintha.in | MX: ['mx.zoho.in', 'mx2.zoho.in', 'mx3.zoho.in']
+2026-05-26 22:58:38 | DEBUG    | catch_all_detector | NOT catch-all | golisodastore.com | probe rejected (INVALID_MAILBOX)
+2026-05-26 22:58:38 | INFO     | __main__ | VALID | care@golisodastore.com
+2026-05-26 22:58:38 | DEBUG    | syntax_validator | SYNTAX OK | care@kformula.in
+2026-05-26 22:58:38 | DEBUG    | smtp_validator | SMTP INVALID_MAILBOX | support@havintha.in | MX=mx.zoho.in | 550 Mail rejected by <Zoho Mail> for policy reasons. We generally do not accept email from dynamic IP's as they are typically used to deliver unauthenticated SMTP e-mail to an Internet mail server. http://www.spamhaus.org maintains lists of dynamic and residential IP addresses. If you are not an email/network admin please contact your E-mail/Internet Service Provider for help. Email/network admins, please contact <support@zohomail.com> for email delivery information and support
+2026-05-26 22:58:38 | DEBUG    | dns_checker | DNS OK | hello@healthfab.in | MX: ['mx.zoho.in', 'mx2.zoho.in', 'mx3.zoho.in']
+2026-05-26 22:58:38 | DEBUG    | smtp_validator | SMTP INVALID_MAILBOX | hello@healthfab.in | MX=mx.zoho.in | 550 Mail rejected by <Zoho Mail> for policy reasons. We generally do not accept email from dynamic IP's as they are typically used to deliver unauthenticated SMTP e-mail to an Internet mail server. http://www.spamhaus.org maintains lists of dynamic and residential IP addresses. If you are not an email/network admin please contact your E-mail/Internet Service Provider for help. Email/network admins, please contact <support@zohomail.com> for email delivery information and support
+2026-05-26 22:58:39 | DEBUG    | dns_checker | DNS OK | hello@hibiscusmonkey.com | MX: ['hibiscusmonkey-com.mail.protection.outlook.com']
+2026-05-26 22:58:39 | DEBUG    | smtp_validator | SMTP INVALID_MAILBOX | hello@hibiscusmonkey.com | MX=hibiscusmonkey-com.mail.protection.outlook.com | 550 5.7.1 Service unavailable, Client host [223.185.132.130] blocked using Spamhaus. To request removal from this list see https://www.spamhaus.org/query/ip/223.185.132.130 AS(1450) [MA1PEPF000072B1.INDPRD01.PROD.OUTLOOK.COM 2026-05-26T17:28:40.593Z 08DEB70DF44464D3]
+2026-05-26 22:58:39 | DEBUG    | smtp_validator | SMTP INVALID_MAILBOX | zz_catchall_probe_xyz123@gunambeauty.com | MX=aspmx.l.google.com | 550 5.1.1 The email account that you tried to reach does not exist. Please try
+5.1.1 double-checking the recipient's email address for typos or
+5.1.1 unnecessary spaces. For more information, go to
+5.1.1  https://support.google.com/mail/?p=NoSuchUser 41be03b00d2f7-c852059fecfsi21623314a12.160 - gsmtp
+2026-05-26 22:58:39 | DEBUG    | dns_checker | DNS OK | info@houseofmakeup.com | MX: ['aspmx.l.google.com', 'alt1.aspmx.l.google.com', 'alt2.aspmx.l.google.com', 'mxa.mailgun.org', 'mxb.mailgun.org', 'aspmx2.googlemail.com', 'aspmx3.googlemail.com']
+2026-05-26 22:58:40 | DEBUG    | dns_checker | DNS FAIL (no MX) | hello@hashtagjungle.com | Domain 'hashtagjungle.com' has no MX records
+ d9443c01a7336-2beb5a73351si234285275ad.173 - gsmtp
+2026-05-26 22:58:40 | INFO     | __main__ | INVALID_MAILBOX | hello@healthfab.in | Mailbox does not exist
+2026-05-26 22:58:40 | DEBUG    | syntax_validator | SYNTAX OK | care@kamaayurveda.com
+2026-05-26 22:58:40 | INFO     | __main__ | INVALID DOMAIN | hello@hashtagjungle.com | Domain 'hashtagjungle.com' has no MX records
+2026-05-26 22:58:40 | DEBUG    | dns_checker | DNS FAIL (no A/AAAA) | info@kformula.in | Domain 'kformula.in' does not exist (no DNS record)
+2026-05-26 22:58:40 | DEBUG    | syntax_validator | SYNTAX OK | hello@keyci.care
+2026-05-26 22:58:40 | INFO     | __main__ | INVALID DOMAIN | info@kformula.in | Domain 'kformula.in' does not exist (no DNS record)
+2026-05-26 22:58:40 | DEBUG    | syntax_validator | SYNTAX OK | hello@laani.com
+2026-05-26 22:58:40 | DEBUG    | syntax_validator | SYNTAX OK | hello@lemmebe.com
+2026-05-26 22:58:40 | DEBUG    | smtp_validator | SMTP VALID | zz_catchall_probe_xyz123@habbits.in | MX=aspmx.l.google.com | 250 2.1.5 OK d9443c01a7336-2beb5825492si230305845ad.69 - gsmtp
+2026-05-26 22:58:41 | DEBUG    | smtp_validator | SMTP VALID | info@houseofmakeup.com | MX=aspmx.l.google.com | 250 2.1.5 OK d2e1a72fcca58-84165024e6asi28952177b3a.166 - gsmtp
+2026-05-26 22:58:41 | INFO     | __main__ | INVALID_MAILBOX | hello@hibiscusmonkey.com | Mailbox does not exist
+2026-05-26 22:58:41 | DEBUG    | syntax_validator | SYNTAX OK | care@lemmebe.com
+2026-05-26 22:58:41 | DEBUG    | catch_all_detector | NOT catch-all | gunambeauty.com | probe rejected (INVALID_MAILBOX)
+2026-05-26 22:58:41 | INFO     | __main__ | VALID | contact@gunambeauty.com
+2026-05-26 22:58:41 | DEBUG    | syntax_validator | SYNTAX OK | hello@liveabit.in
+2026-05-26 22:58:42 | DEBUG    | catch_all_detector | CATCH-ALL detected | gynocup.com | probe accepted
+.in' does not exist (no DNS record)
+2026-05-26 22:58:43 | INFO     | __main__ | CATCH-ALL | care@gynocup.com
+2026-05-26 22:58:42 | DEBUG    | catch_all_detector | CATCH-ALL detected | habbits.in | probe accepted
+2026-05-26 22:58:43 | INFO     | __main__ | INVALID DOMAIN | care@kformula.in | Domain 'kformula.in' does not exist (no DNS record)
+2026-05-26 22:58:43 | DEBUG    | syntax_validator | SYNTAX OK | hello@lonnue.com
+2026-05-26 22:58:43 | INFO     | __main__ | CATCH-ALL | hello@habbits.in
+2026-05-26 22:58:43 | DEBUG    | syntax_validator | SYNTAX OK | hello@mahinaperiod.com
+2026-05-26 22:58:43 | DEBUG    | syntax_validator | SYNTAX OK | hello@mahinaperiod.com
+2026-05-26 22:58:44 | DEBUG    | smtp_validator | SMTP INVALID_MAILBOX | zz_catchall_probe_xyz123@houseofmakeup.com | MX=aspmx.l.google.com | 550 5.1.1 The email account that you tried to reach does not exist. Please try
+5.1.1 double-checking the recipient's email address for typos or
+5.1.1 unnecessary spaces. For more information, go to
+5.1.1  https://support.google.com/mail/?p=NoSuchUser d2e1a72fcca58-84164fd4ddesi29347613b3a.132 - gsmtp
+2026-05-26 22:58:44 | DEBUG    | dns_checker | DNS FAIL (no A/AAAA) | hello@keyci.care | Domain 'keyci.care' does not exist (no DNS record)
+2026-05-26 22:58:44 | INFO     | __main__ | INVALID DOMAIN | hello@keyci.care | Domain 'keyci.care' does not exist (no DNS record)
+2026-05-26 22:58:44 | DEBUG    | syntax_validator | SYNTAX OK | hello@mahina.in
+2026-05-26 22:58:44 | DEBUG    | dns_checker | DNS OK | care@kamaayurveda.com | MX: ['kamaayurveda-com.mail.protection.outlook.com']
+2026-05-26 22:58:44 | DEBUG    | dns_checker | DNS FAIL (no MX) | hello@lemmebe.com | Domain 'lemmebe.com' has no MX records
+2026-05-26 22:58:44 | INFO     | __main__ | INVALID DOMAIN | hello@lemmebe.com | Domain 'lemmebe.com' has no MX records
+2026-05-26 22:58:44 | DEBUG    | syntax_validator | SYNTAX OK | hello@merakk.com
+2026-05-26 22:58:45 | DEBUG    | smtp_validator | SMTP INVALID_MAILBOX | care@kamaayurveda.com | MX=kamaayurveda-com.mail.protection.outlook.com | 550 5.7.1 Service unavailable, Client host [223.185.132.130] blocked using Spamhaus. To request removal from this list see https://www.spamhaus.org/query/ip/223.185.132.130 AS(1450) [MA1PEPF000072B2.INDPRD01.PROD.OUTLOOK.COM 2026-05-26T17:28:46.162Z 08DEB6FFCC210C57]
+2026-05-26 22:58:45 | DEBUG    | dns_checker | DNS FAIL (no MX) | hello@laani.com | Domain 'laani.com' has no MX records
+2026-05-26 22:58:45 | INFO     | __main__ | INVALID DOMAIN | hello@laani.com | Domain 'laani.com' has no MX records
+2026-05-26 22:58:45 | DEBUG    | syntax_validator | SYNTAX OK | hello@merakk.com
+2026-05-26 22:58:45 | DEBUG    | dns_checker | DNS FAIL (no MX) | care@lemmebe.com | Domain 'lemmebe.com' has no MX records
+2026-05-26 22:58:45 | INFO     | __main__ | INVALID DOMAIN | care@lemmebe.com | Domain 'lemmebe.com' has no MX records
+2026-05-26 22:58:45 | DEBUG    | syntax_validator | SYNTAX OK | hello@mitraorganics.in
+2026-05-26 22:58:45 | DEBUG    | dns_checker | DNS FAIL (no A/AAAA) | hello@liveabit.in | Domain 'liveabit.in' does not exist (no DNS record)
+2026-05-26 22:58:45 | INFO     | __main__ | INVALID DOMAIN | hello@liveabit.in | Domain 'liveabit.in' does not exist (no DNS record)
+2026-05-26 22:58:45 | DEBUG    | syntax_validator | SYNTAX OK | hello@naarica.com
+2026-05-26 22:58:46 | DEBUG    | catch_all_detector | NOT catch-all | houseofmakeup.com | probe rejected (INVALID_MAILBOX)
+2026-05-26 22:58:46 | INFO     | __main__ | VALID | info@houseofmakeup.com
+2026-05-26 22:58:46 | DEBUG    | syntax_validator | SYNTAX OK | hello@naarica.com
+2026-05-26 22:58:47 | INFO     | __main__ | INVALID_MAILBOX | care@kamaayurveda.com | Mailbox does not exist
+2026-05-26 22:58:47 | DEBUG    | syntax_validator | SYNTAX FAIL (regex) | care@nathabit.in collab@nathabit.in | Failed basic format check: 'care@nathabit.in collab@nathabit.in'
+2026-05-26 22:58:47 | INFO     | __main__ | INVALID FORMAT | care@nathabit.in collab@nathabit.in
+2026-05-26 22:58:47 | DEBUG    | syntax_validator | SYNTAX OK | care@naturepro.shop
+2026-05-26 22:58:48 | DEBUG    | dns_checker | DNS FAIL (no A/AAAA) | hello@mahinaperiod.com | Domain 'mahinaperiod.com' does not exist (no DNS record)
+2026-05-26 22:58:49 | INFO     | __main__ | INVALID DOMAIN | hello@mahinaperiod.com | Domain 'mahinaperiod.com' does not exist (no DNS record)
+2026-05-26 22:58:48 | DEBUG    | dns_checker | DNS FAIL (no A/AAAA) | hello@mahinaperiod.com | Domain 'mahinaperiod.com' does not exist (no DNS record)
+2026-05-26 22:58:49 | INFO     | __main__ | INVALID DOMAIN | hello@mahinaperiod.com | Domain 'mahinaperiod.com' does not exist (no DNS record)
+2026-05-26 22:58:48 | DEBUG    | dns_checker | DNS FAIL (no A/AAAA) | hello@mahina.in | Domain 'mahina.in' does not exist (no DNS record)
+2026-05-26 22:58:49 | DEBUG    | syntax_validator | SYNTAX OK | care@naturepro.shop
+2026-05-26 22:58:49 | INFO     | __main__ | INVALID DOMAIN | hello@mahina.in | Domain 'mahina.in' does not exist (no DNS record)
+2026-05-26 22:58:49 | DEBUG    | dns_checker | DNS OK | hello@merakk.com | MX: ['aspmx.l.google.com', 'alt1.aspmx.l.google.com', 'alt2.aspmx.l.google.com', 'alt3.aspmx.l.google.com', 'alt4.aspmx.l.google.com']
+2026-05-26 22:58:49 | DEBUG    | syntax_validator | SYNTAX OK | info@nishhair.com
+2026-05-26 22:58:49 | DEBUG    | dns_checker | DNS OK | hello@merakk.com | MX: ['aspmx.l.google.com', 'alt1.aspmx.l.google.com', 'alt2.aspmx.l.google.com', 'alt3.aspmx.l.google.com', 'alt4.aspmx.l.google.com']
+2026-05-26 22:58:49 | DEBUG    | dns_checker | DNS FAIL (no A/AAAA) | hello@mitraorganics.in | Domain 'mitraorganics.in' does not exist (no DNS record)
+2026-05-26 22:58:49 | INFO     | __main__ | INVALID DOMAIN | hello@mitraorganics.in | Domain 'mitraorganics.in' does not exist (no DNS record)
+2026-05-26 22:58:49 | DEBUG    | syntax_validator | SYNTAX OK | care@nuawoman.com
+2026-05-26 22:58:49 | DEBUG    | syntax_validator | SYNTAX OK | care@nushu.in
+2026-05-26 22:58:50 | DEBUG    | dns_checker | DNS FAIL (no MX) | hello@naarica.com | Domain 'naarica.com' has no MX records
+2026-05-26 22:58:50 | INFO     | __main__ | INVALID DOMAIN | hello@naarica.com | Domain 'naarica.com' has no MX records
+2026-05-26 22:58:50 | DEBUG    | syntax_validator | SYNTAX OK | care@nushu.in
+2026-05-26 22:58:50 | DEBUG    | dns_checker | DNS FAIL (no MX) | hello@naarica.com | Domain 'naarica.com' has no MX records
+2026-05-26 22:58:50 | INFO     | __main__ | INVALID DOMAIN | hello@naarica.com | Domain 'naarica.com' has no MX records
+2026-05-26 22:58:50 | DEBUG    | syntax_validator | SYNTAX OK | hello@nuutjob.com
+2026-05-26 22:58:50 | DEBUG    | dns_checker | DNS FAIL (no A/AAAA) | hello@lonnue.com | Domain 'lonnue.com' does not exist (no DNS record)
+2026-05-26 22:58:50 | INFO     | __main__ | INVALID DOMAIN | hello@lonnue.com | Domain 'lonnue.com' does not exist (no DNS record)
+2026-05-26 22:58:50 | DEBUG    | syntax_validator | SYNTAX OK | care@olivlife.in
+2026-05-26 22:58:51 | DEBUG    | smtp_validator | SMTP VALID | hello@merakk.com | MX=aspmx.l.google.com | 250 2.1.5 OK d9443c01a7336-2beb590a96dsi217582805ad.85 - gsmtp
+2026-05-26 22:58:51 | DEBUG    | smtp_validator | SMTP VALID | hello@merakk.com | MX=aspmx.l.google.com | 250 2.1.5 OK 98e67ed59e1d1-36a71dc706fsi31076164a91.7 - gsmtp
+2026-05-26 22:58:51 | DEBUG    | dns_checker | DNS OK | care@naturepro.shop | MX: ['smtp.secureserver.net', 'mailstore1.secureserver.net']
+2026-05-26 22:58:52 | DEBUG    | smtp_validator | SMTP disconnect | care@naturepro.shop | Server disconnected (smtp.secureserver.net): Connection unexpectedly closed
+2026-05-26 22:58:54 | DEBUG    | dns_checker | DNS OK | care@naturepro.shop | MX: ['smtp.secureserver.net', 'mailstore1.secureserver.net']
+2026-05-26 22:58:54 | DEBUG    | dns_checker | DNS OK | care@nuawoman.com | MX: ['aspmx.l.google.com', 'alt1.aspmx.l.google.com', 'alt2.aspmx.l.google.com', 'alt3.aspmx.l.google.com', 'alt4.aspmx.l.google.com']
+2026-05-26 22:58:54 | DEBUG    | dns_checker | DNS OK | care@nushu.in | MX: ['aspmx.l.google.com', 'alt1.aspmx.l.google.com', 'alt2.aspmx.l.google.com', 'alt3.aspmx.l.google.com', 'alt4.aspmx.l.google.com']
+2026-05-26 22:58:54 | DEBUG    | dns_checker | DNS OK | info@nishhair.com | MX: ['aspmx.l.google.com', 'alt1.aspmx.l.google.com', 'alt2.aspmx.l.google.com', 'alt3.aspmx.l.google.com', 'alt4.aspmx.l.google.com']
+2026-05-26 22:58:54 | DEBUG    | smtp_validator | SMTP disconnect | care@naturepro.shop | Server disconnected (smtp.secureserver.net): Connection unexpectedly closed
+2026-05-26 22:58:54 | DEBUG    | dns_checker | DNS OK | care@nushu.in | MX: ['aspmx.l.google.com', 'alt1.aspmx.l.google.com', 'alt2.aspmx.l.google.com', 'alt3.aspmx.l.google.com', 'alt4.aspmx.l.google.com']
+2026-05-26 22:58:54 | DEBUG    | smtp_validator | SMTP VALID | zz_catchall_probe_xyz123@merakk.com | MX=aspmx.l.google.com | 250 2.1.5 OK 41be03b00d2f7-c85205c5c49si25414376a12.215 - gsmtp
+2026-05-26 22:58:54 | DEBUG    | smtp_validator | SMTP VALID | zz_catchall_probe_xyz123@merakk.com | MX=aspmx.l.google.com | 250 2.1.5 OK 41be03b00d2f7-c85202d2e58si22759465a12.113 - gsmtp
+2026-05-26 22:58:54 | DEBUG    | smtp_validator | SMTP disconnect | care@naturepro.shop | Server disconnected (mailstore1.secureserver.net): Connection unexpectedly closed
+2026-05-26 22:58:55 | DEBUG    | dns_checker | DNS OK | care@olivlife.in | MX: ['olivlife-in.mail.protection.outlook.com']
+2026-05-26 22:58:55 | DEBUG    | dns_checker | DNS OK | hello@nuutjob.com | MX: ['aspmx.l.google.com', 'alt1.aspmx.l.google.com', 'alt2.aspmx.l.google.com', 'alt4.aspmx.l.google.com', 'alt3.aspmx.l.google.com']
+2026-05-26 22:58:55 | DEBUG    | smtp_validator | SMTP INVALID_MAILBOX | care@nushu.in | MX=aspmx.l.google.com | 550 5.1.1 The email account that you tried to reach does not exist. Please try
+5.1.1 double-checking the recipient's email address for typos or
+5.1.1 unnecessary spaces. For more information, go to
+5.1.1  https://support.google.com/mail/?p=NoSuchUser 41be03b00d2f7-c8536f27102si12181874a12.3 - gsmtp
+2026-05-26 22:58:55 | DEBUG    | smtp_validator | SMTP VALID | care@nuawoman.com | MX=aspmx.l.google.com | 250 2.1.5 OK d2e1a72fcca58-84164fd3a19si23170825b3a.92 - gsmtp
+2026-05-26 22:58:55 | DEBUG    | smtp_validator | SMTP VALID | info@nishhair.com | MX=aspmx.l.google.com | 250 2.1.5 OK d2e1a72fcca58-84164ac54a6si28817471b3a.41 - gsmtp
+2026-05-26 22:58:55 | DEBUG    | smtp_validator | SMTP INVALID_MAILBOX | care@olivlife.in | MX=olivlife-in.mail.protection.outlook.com | 550 5.7.1 Service unavailable, Client host [223.185.132.130] blocked using Spamhaus. To request removal from this list see https://www.spamhaus.org/query/ip/223.185.132.130 AS(1450) [PN1PEPF000062BB.INDPRD01.PROD.OUTLOOK.COM 2026-05-26T17:28:56.591Z 08DEB700DBEBE0F8]
+2026-05-26 22:58:55 | DEBUG    | smtp_validator | SMTP INVALID_MAILBOX | care@nushu.in | MX=aspmx.l.google.com | 550 5.1.1 The email account that you tried to reach does not exist. Please try
+5.1.1 double-checking the recipient's email address for typos or
+5.1.1 unnecessary spaces. For more information, go to
+5.1.1  https://support.google.com/mail/?p=NoSuchUser 41be03b00d2f7-c85202a7c77si24047237a12.73 - gsmtp
+2026-05-26 22:58:56 | DEBUG    | catch_all_detector | CATCH-ALL detected | merakk.com | probe accepted
+2026-05-26 22:58:56 | INFO     | __main__ | CATCH-ALL | hello@merakk.com
+2026-05-26 22:58:56 | DEBUG    | syntax_validator | SYNTAX OK | care@olivlife.in
+2026-05-26 22:58:56 | DEBUG    | catch_all_detector | CATCH-ALL detected | merakk.com | probe accepted
+2026-05-26 22:58:56 | INFO     | __main__ | CATCH-ALL | hello@merakk.com
+2026-05-26 22:58:56 | DEBUG    | syntax_validator | SYNTAX OK | info@orangewood.in
+2026-05-26 22:58:56 | DEBUG    | smtp_validator | SMTP exhausted all hosts | care@naturepro.shop | Server disconnected (mailstore1.secureserver.net): Connection unexpectedly closed
+2026-05-26 22:58:56 | INFO     | __main__ | TEMPORARY_FAILURE | care@naturepro.shop | Server disconnected (mailstore1.secureserver.net): Connection unexpectedly closed
+2026-05-26 22:58:56 | DEBUG    | syntax_validator | SYNTAX OK | info@orangewood.in
+2026-05-26 22:58:56 | DEBUG    | smtp_validator | SMTP VALID | hello@nuutjob.com | MX=aspmx.l.google.com | 250 2.1.5 OK d2e1a72fcca58-8416505858dsi26979332b3a.219 - gsmtp
+2026-05-26 22:58:56 | DEBUG    | smtp_validator | SMTP disconnect | care@naturepro.shop | Server disconnected (mailstore1.secureserver.net): Connection unexpectedly closed
+2026-05-26 22:58:58 | INFO     | __main__ | INVALID_MAILBOX | care@olivlife.in | Mailbox does not exist
+2026-05-26 22:58:58 | INFO     | __main__ | INVALID_MAILBOX | care@nushu.in | Mailbox does not exist
+2026-05-26 22:58:58 | DEBUG    | syntax_validator | SYNTAX OK | support@organicb.in
+2026-05-26 22:58:58 | INFO     | __main__ | INVALID_MAILBOX | care@nushu.in | Mailbox does not exist
+2026-05-26 22:58:58 | DEBUG    | syntax_validator | SYNTAX OK | hello@ounceorganics.com
+2026-05-26 22:58:58 | DEBUG    | syntax_validator | SYNTAX OK | hello@paradyes.in
+2026-05-26 22:58:58 | DEBUG    | smtp_validator | SMTP exhausted all hosts | care@naturepro.shop | Server disconnected (mailstore1.secureserver.net): Connection unexpectedly closed
+2026-05-26 22:58:58 | INFO     | __main__ | TEMPORARY_FAILURE | care@naturepro.shop | Server disconnected (mailstore1.secureserver.net): Connection unexpectedly closed
+2026-05-26 22:58:58 | DEBUG    | syntax_validator | SYNTAX OK | care@plushforher.com
+2026-05-26 22:58:59 | DEBUG    | smtp_validator | SMTP INVALID_MAILBOX | zz_catchall_probe_xyz123@nuawoman.com | MX=aspmx.l.google.com | 550 5.1.1 The email account that you tried to reach does not exist. Please try
+5.1.1 double-checking the recipient's email address for typos or
+5.1.1 unnecessary spaces. For more information, go to
+5.1.1  https://support.google.com/mail/?p=NoSuchUser d2e1a72fcca58-84164ac5328si29420069b3a.5 - gsmtp
+2026-05-26 22:58:59 | DEBUG    | smtp_validator | SMTP VALID | zz_catchall_probe_xyz123@nishhair.com | MX=aspmx.l.google.com | 250 2.1.5 OK 41be03b00d2f7-c8520600129si25648296a12.321 - gsmtp
+2026-05-26 22:59:00 | DEBUG    | smtp_validator | SMTP VALID | zz_catchall_probe_xyz123@nuutjob.com | MX=aspmx.l.google.com | 250 2.1.5 OK d2e1a72fcca58-84164ac53ddsi28238449b3a.10 - gsmtp
+2026-05-26 22:59:00 | DEBUG    | dns_checker | DNS OK | care@olivlife.in | MX: ['olivlife-in.mail.protection.outlook.com']
+2026-05-26 22:59:00 | DEBUG    | dns_checker | DNS FAIL (no MX) | info@orangewood.in | Domain 'orangewood.in' has no MX records
+2026-05-26 22:59:00 | INFO     | __main__ | INVALID DOMAIN | info@orangewood.in | Domain 'orangewood.in' has no MX records
+2026-05-26 22:59:00 | DEBUG    | syntax_validator | SYNTAX OK | hello@polr.care
+2026-05-26 22:59:00 | DEBUG    | smtp_validator | SMTP INVALID_MAILBOX | care@olivlife.in | MX=olivlife-in.mail.protection.outlook.com | 550 5.7.1 Service unavailable, Client host [223.185.132.130] blocked using Spamhaus. To request removal from this list see https://www.spamhaus.org/query/ip/223.185.132.130 AS(1450) [PN1PEPF000062BB.INDPRD01.PROD.OUTLOOK.COM 2026-05-26T17:29:01.807Z 08DEB700DBEBE5EC]
+2026-05-26 22:59:00 | DEBUG    | dns_checker | DNS FAIL (no MX) | info@orangewood.in | Domain 'orangewood.in' has no MX records
+2026-05-26 22:59:00 | INFO     | __main__ | INVALID DOMAIN | info@orangewood.in | Domain 'orangewood.in' has no MX records
+2026-05-26 22:59:00 | DEBUG    | syntax_validator | SYNTAX OK | care@praush.com
+2026-05-26 22:59:01 | DEBUG    | catch_all_detector | NOT catch-all | nuawoman.com | probe rejected (INVALID_MAILBOX)
+2026-05-26 22:59:01 | INFO     | __main__ | VALID | care@nuawoman.com
+2026-05-26 22:59:01 | DEBUG    | syntax_validator | SYNTAX OK | care@praush.com
+2026-05-26 22:59:01 | DEBUG    | catch_all_detector | CATCH-ALL detected | nishhair.com | probe accepted
+2026-05-26 22:59:01 | INFO     | __main__ | CATCH-ALL | info@nishhair.com
+2026-05-26 22:59:01 | DEBUG    | syntax_validator | SYNTAX OK | hello@proactive.com
+2026-05-26 22:59:02 | DEBUG    | catch_all_detector | CATCH-ALL detected | nuutjob.com | probe accepted
+2026-05-26 22:59:02 | INFO     | __main__ | CATCH-ALL | hello@nuutjob.com
+2026-05-26 22:59:02 | DEBUG    | syntax_validator | SYNTAX OK | hello@reliefpad.in
+2026-05-26 22:59:02 | DEBUG    | dns_checker | DNS OK | support@organicb.in | MX: ['mx1.hostinger.com', 'mx2.hostinger.com']
+2026-05-26 22:59:02 | DEBUG    | dns_checker | DNS OK | hello@ounceorganics.com | MX: ['aspmx.l.google.com', 'alt1.aspmx.l.google.com', 'alt2.aspmx.l.google.com', 'alt3.aspmx.l.google.com', 'alt4.aspmx.l.google.com']
+2026-05-26 22:59:02 | DEBUG    | dns_checker | DNS OK | hello@paradyes.in | MX: ['localhost']
+2026-05-26 22:59:02 | INFO     | __main__ | INVALID_MAILBOX | care@olivlife.in | Mailbox does not exist
+2026-05-26 22:59:02 | DEBUG    | syntax_validator | SYNTAX OK | support@rotoris.com
+2026-05-26 22:59:03 | DEBUG    | dns_checker | DNS OK | care@plushforher.com | MX: ['aspmx.l.google.com', 'alt1.aspmx.l.google.com', 'alt2.aspmx.l.google.com', 'alt3.aspmx.l.google.com', 'alt4.aspmx.l.google.com']
+2026-05-26 22:59:04 | DEBUG    | smtp_validator | SMTP INVALID_MAILBOX | hello@ounceorganics.com | MX=aspmx.l.google.com | 550 5.1.1 The email account that you tried to reach does not exist. Please try
+5.1.1 double-checking the recipient's email address for typos or
+5.1.1 unnecessary spaces. For more information, go to
+5.1.1  https://support.google.com/mail/?p=NoSuchUser d9443c01a7336-2beb7272fd0si221196935ad.39 - gsmtp
+2026-05-26 22:59:04 | DEBUG    | smtp_validator | SMTP VALID | care@plushforher.com | MX=aspmx.l.google.com | 250 2.1.5 OK 41be03b00d2f7-c85205fe489si24370024a12.319 - gsmtp
+2026-05-26 22:59:04 | DEBUG    | dns_checker | DNS FAIL (no A/AAAA) | hello@polr.care | Domain 'polr.care' does not exist (no DNS record)
+2026-05-26 22:59:04 | INFO     | __main__ | INVALID DOMAIN | hello@polr.care | Domain 'polr.care' does not exist (no DNS record)
+2026-05-26 22:59:04 | DEBUG    | syntax_validator | SYNTAX OK | info@sacredherbs.in
+2026-05-26 22:59:05 | DEBUG    | dns_checker | DNS OK | care@praush.com | MX: ['aspmx.l.google.com', 'alt1.aspmx.l.google.com', 'alt2.aspmx.l.google.com', 'alt3.aspmx.l.google.com', 'alt4.aspmx.l.google.com']
+2026-05-26 22:59:05 | DEBUG    | dns_checker | DNS OK | care@praush.com | MX: ['aspmx.l.google.com', 'alt1.aspmx.l.google.com', 'alt2.aspmx.l.google.com', 'alt3.aspmx.l.google.com', 'alt4.aspmx.l.google.com']
+2026-05-26 22:59:06 | INFO     | __main__ | INVALID_MAILBOX | hello@ounceorganics.com | Mailbox does not exist
+2026-05-26 22:59:06 | DEBUG    | syntax_validator | SYNTAX OK | info@sacredherbs.in
+2026-05-26 22:59:06 | DEBUG    | dns_checker | DNS OK | hello@reliefpad.in | MX: ['mail.reliefpad.in']
+2026-05-26 22:59:06 | DEBUG    | smtp_validator | SMTP VALID | care@praush.com | MX=aspmx.l.google.com | 250 2.1.5 OK 41be03b00d2f7-c852059defdsi24526316a12.121 - gsmtp
+2026-05-26 22:59:06 | DEBUG    | smtp_validator | SMTP OS error | hello@paradyes.in | Network error (localhost): [WinError 10061] No connection could be made because the target machine actively refused it
+2026-05-26 22:59:06 | DEBUG    | dns_checker | DNS OK | support@rotoris.com | MX: ['smtp.google.com', 'mxa.mailgun.org']
+2026-05-26 22:59:07 | DEBUG    | smtp_validator | SMTP VALID | care@praush.com | MX=aspmx.l.google.com | 250 2.1.5 OK d2e1a72fcca58-84164ac48cdsi30222908b3a.17 - gsmtp
+2026-05-26 22:59:08 | DEBUG    | smtp_validator | SMTP VALID | zz_catchall_probe_xyz123@plushforher.com | MX=aspmx.l.google.com | 250 2.1.5 OK d2e1a72fcca58-84164ac48b3si29629762b3a.27 - gsmtp
+2026-05-26 22:59:08 | DEBUG    | smtp_validator | SMTP VALID | support@rotoris.com | MX=smtp.google.com | 250 2.1.5 OK 41be03b00d2f7-c852059f89esi20600484a12.170 - gsmtp
+2026-05-26 22:59:08 | DEBUG    | dns_checker | DNS FAIL (no A/AAAA) | hello@proactive.com | Domain 'proactive.com' does not exist (no DNS record)
+2026-05-26 22:59:08 | INFO     | __main__ | INVALID DOMAIN | hello@proactive.com | Domain 'proactive.com' does not exist (no DNS record)
+2026-05-26 22:59:08 | DEBUG    | syntax_validator | SYNTAX OK | hello@saltoralcare.com
+2026-05-26 22:59:08 | DEBUG    | smtp_validator | SMTP exhausted all hosts | hello@paradyes.in | Network error (localhost): [WinError 10061] No connection could be made because the target machine actively refused it
+2026-05-26 22:59:08 | INFO     | __main__ | TEMPORARY_FAILURE | hello@paradyes.in | Network error (localhost): [WinError 10061] No connection could be made because the target machine actively refused it
+2026-05-26 22:59:08 | DEBUG    | syntax_validator | SYNTAX OK | care@sanfe.in
+2026-05-26 22:59:08 | DEBUG    | dns_checker | DNS OK | info@sacredherbs.in | MX: ['aspmx.l.google.com', 'alt1.aspmx.l.google.com', 'alt2.aspmx.l.google.com', 'alt3.aspmx.l.google.com', 'alt4.aspmx.l.google.com']
+2026-05-26 22:59:08 | DEBUG    | smtp_validator | SMTP VALID | support@organicb.in | MX=mx1.hostinger.com | 250 2.1.5 Ok
+2026-05-26 22:59:09 | DEBUG    | smtp_validator | SMTP VALID | zz_catchall_probe_xyz123@praush.com | MX=aspmx.l.google.com | 250 2.1.5 OK d2e1a72fcca58-84164fd81a9si29516601b3a.91 - gsmtp
+2026-05-26 22:59:10 | DEBUG    | catch_all_detector | CATCH-ALL detected | plushforher.com | probe accepted
+2026-05-26 22:59:10 | INFO     | __main__ | CATCH-ALL | care@plushforher.com
+2026-05-26 22:59:10 | DEBUG    | syntax_validator | SYNTAX OK | hello@secretwish.in
+2026-05-26 22:59:10 | DEBUG    | dns_checker | DNS OK | info@sacredherbs.in | MX: ['aspmx.l.google.com', 'alt1.aspmx.l.google.com', 'alt2.aspmx.l.google.com', 'alt3.aspmx.l.google.com', 'alt4.aspmx.l.google.com']
+2026-05-26 22:59:10 | DEBUG    | smtp_validator | SMTP VALID | info@sacredherbs.in | MX=aspmx.l.google.com | 250 2.1.5 OK d2e1a72fcca58-84164ac5328si29420746b3a.5 - gsmtp
+2026-05-26 22:59:10 | DEBUG    | smtp_validator | SMTP VALID | zz_catchall_probe_xyz123@praush.com | MX=aspmx.l.google.com | 250 2.1.5 OK 98e67ed59e1d1-36a71d7bdfesi24421415a91.4 - gsmtp
+2026-05-26 22:59:11 | DEBUG    | smtp_validator | SMTP VALID | info@sacredherbs.in | MX=aspmx.l.google.com | 250 2.1.5 OK 41be03b00d2f7-c85202a8488si21100397a12.18 - gsmtp
+2026-05-26 22:59:11 | DEBUG    | catch_all_detector | CATCH-ALL detected | praush.com | probe accepted
+2026-05-26 22:59:11 | INFO     | __main__ | CATCH-ALL | care@praush.com
+2026-05-26 22:59:11 | DEBUG    | syntax_validator | SYNTAX OK | hello@serekobeauty.com
+2026-05-26 22:59:11 | DEBUG    | smtp_validator | SMTP VALID | zz_catchall_probe_xyz123@rotoris.com | MX=smtp.google.com | 250 2.1.5 OK d2e1a72fcca58-841650756a1si28807744b3a.243 - gsmtp
+2026-05-26 22:59:12 | DEBUG    | catch_all_detector | CATCH-ALL detected | praush.com | probe accepted
+2026-05-26 22:59:12 | INFO     | __main__ | CATCH-ALL | care@praush.com
+2026-05-26 22:59:12 | DEBUG    | syntax_validator | SYNTAX OK | info@sevenoralcare.com
+2026-05-26 22:59:12 | DEBUG    | dns_checker | DNS FAIL (no MX) | hello@saltoralcare.com | Domain 'saltoralcare.com' has no MX records
+2026-05-26 22:59:12 | INFO     | __main__ | INVALID DOMAIN | hello@saltoralcare.com | Domain 'saltoralcare.com' has no MX records
+2026-05-26 22:59:12 | DEBUG    | syntax_validator | SYNTAX OK | help@shecup.com
+2026-05-26 22:59:12 | DEBUG    | dns_checker | DNS FAIL (no A/AAAA) | help@shecup.com | Domain 'shecup.com' does not exist (no DNS record)
+2026-05-26 22:59:12 | INFO     | __main__ | INVALID DOMAIN | help@shecup.com | Domain 'shecup.com' does not exist (no DNS record)
+2026-05-26 22:59:12 | DEBUG    | syntax_validator | SYNTAX OK | hello@shistaka.com
+2026-05-26 22:59:12 | DEBUG    | dns_checker | DNS FAIL (no A/AAAA) | hello@shistaka.com | Domain 'shistaka.com' does not exist (no DNS record)
+2026-05-26 22:59:12 | INFO     | __main__ | INVALID DOMAIN | hello@shistaka.com | Domain 'shistaka.com' does not exist (no DNS record)
+2026-05-26 22:59:12 | DEBUG    | syntax_validator | SYNTAX OK | hello@shistaka.com
+2026-05-26 22:59:12 | DEBUG    | dns_checker | DNS FAIL (no A/AAAA) | hello@shistaka.com | Domain 'shistaka.com' does not exist (no DNS record)
+2026-05-26 22:59:12 | INFO     | __main__ | INVALID DOMAIN | hello@shistaka.com | Domain 'shistaka.com' does not exist (no DNS record)
+2026-05-26 22:59:12 | DEBUG    | syntax_validator | SYNTAX OK | hello@shunyam.org
+2026-05-26 22:59:12 | DEBUG    | dns_checker | DNS FAIL (no A/AAAA) | hello@shunyam.org | Domain 'shunyam.org' does not exist (no DNS record)
+2026-05-26 22:59:12 | INFO     | __main__ | INVALID DOMAIN | hello@shunyam.org | Domain 'shunyam.org' does not exist (no DNS record)
+2026-05-26 22:59:12 | DEBUG    | syntax_validator | SYNTAX OK | info@silkycup.com
+2026-05-26 22:59:12 | DEBUG    | dns_checker | DNS FAIL (no MX) | care@sanfe.in | Domain 'sanfe.in' has no MX records
+2026-05-26 22:59:12 | INFO     | __main__ | INVALID DOMAIN | care@sanfe.in | Domain 'sanfe.in' has no MX records
+2026-05-26 22:59:12 | DEBUG    | syntax_validator | SYNTAX OK | hello@simplynam.com
+2026-05-26 22:59:12 | DEBUG    | dns_checker | DNS FAIL (no A/AAAA) | info@silkycup.com | Domain 'silkycup.com' does not exist (no DNS record)
+2026-05-26 22:59:12 | INFO     | __main__ | INVALID DOMAIN | info@silkycup.com | Domain 'silkycup.com' does not exist (no DNS record)
+2026-05-26 22:59:12 | DEBUG    | syntax_validator | SYNTAX OK | info@thesirona.com
+2026-05-26 22:59:12 | DEBUG    | dns_checker | DNS FAIL (no A/AAAA) | hello@simplynam.com | Domain 'simplynam.com' does not exist (no DNS record)
+2026-05-26 22:59:12 | INFO     | __main__ | INVALID DOMAIN | hello@simplynam.com | Domain 'simplynam.com' does not exist (no DNS record)
+2026-05-26 22:59:12 | DEBUG    | syntax_validator | SYNTAX OK | hello@spicta.com
+2026-05-26 22:59:12 | DEBUG    | dns_checker | DNS FAIL (no A/AAAA) | info@thesirona.com | Domain 'thesirona.com' does not exist (no DNS record)
+2026-05-26 22:59:12 | INFO     | __main__ | INVALID DOMAIN | info@thesirona.com | Domain 'thesirona.com' does not exist (no DNS record)
+2026-05-26 22:59:12 | DEBUG    | syntax_validator | SYNTAX OK | hello@spruceshave.com
+2026-05-26 22:59:12 | DEBUG    | dns_checker | DNS FAIL (no A/AAAA) | hello@spicta.com | Domain 'spicta.com' does not exist (no DNS record)
+2026-05-26 22:59:12 | INFO     | __main__ | INVALID DOMAIN | hello@spicta.com | Domain 'spicta.com' does not exist (no DNS record)
+2026-05-26 22:59:12 | DEBUG    | syntax_validator | SYNTAX FAIL (regex) | hello@stayzy.com, care.stayzy@gmail.com | Failed basic format check: 'hello@stayzy.com, care.stayzy@gmail.com'
+2026-05-26 22:59:12 | INFO     | __main__ | INVALID FORMAT | hello@stayzy.com, care.stayzy@gmail.com
+2026-05-26 22:59:12 | DEBUG    | syntax_validator | SYNTAX OK | hello@steloswipe.com
+2026-05-26 22:59:12 | DEBUG    | dns_checker | DNS FAIL (no A/AAAA) | hello@spruceshave.com | Domain 'spruceshave.com' does not exist (no DNS record)
+2026-05-26 22:59:12 | INFO     | __main__ | INVALID DOMAIN | hello@spruceshave.com | Domain 'spruceshave.com' does not exist (no DNS record)
+2026-05-26 22:59:12 | DEBUG    | syntax_validator | SYNTAX FAIL (regex) | contact@stonesoup.in /support@stonesoup.in | Failed basic format check: 'contact@stonesoup.in /support@stonesoup.in'
+2026-05-26 22:59:12 | INFO     | __main__ | INVALID FORMAT | contact@stonesoup.in /support@stonesoup.in
+2026-05-26 22:59:12 | DEBUG    | syntax_validator | SYNTAX OK | support@supertails.com
+2026-05-26 22:59:12 | DEBUG    | dns_checker | DNS FAIL (no A/AAAA) | hello@steloswipe.com | Domain 'steloswipe.com' does not exist (no DNS record)
+2026-05-26 22:59:12 | INFO     | __main__ | INVALID DOMAIN | hello@steloswipe.com | Domain 'steloswipe.com' does not exist (no DNS record)
+2026-05-26 22:59:12 | DEBUG    | syntax_validator | SYNTAX OK | info@sustainablestree.in
+2026-05-26 22:59:12 | DEBUG    | dns_checker | DNS FAIL (no A/AAAA) | support@supertails.com | Domain 'supertails.com' does not exist (no DNS record)
+2026-05-26 22:59:12 | INFO     | __main__ | INVALID DOMAIN | support@supertails.com | Domain 'supertails.com' does not exist (no DNS record)
+2026-05-26 22:59:12 | DEBUG    | syntax_validator | SYNTAX OK | info@swarababy.com
+2026-05-26 22:59:12 | DEBUG    | dns_checker | DNS FAIL (no A/AAAA) | info@sustainablestree.in | Domain 'sustainablestree.in' does not exist (no DNS record)
+2026-05-26 22:59:12 | INFO     | __main__ | INVALID DOMAIN | info@sustainablestree.in | Domain 'sustainablestree.in' does not exist (no DNS record)
+2026-05-26 22:59:12 | DEBUG    | syntax_validator | SYNTAX OK | contact@thebamboobae.com
+2026-05-26 22:59:12 | DEBUG    | dns_checker | DNS FAIL (no A/AAAA) | info@swarababy.com | Domain 'swarababy.com' does not exist (no DNS record)
+2026-05-26 22:59:12 | INFO     | __main__ | INVALID DOMAIN | info@swarababy.com | Domain 'swarababy.com' does not exist (no DNS record)
+2026-05-26 22:59:12 | DEBUG    | syntax_validator | SYNTAX OK | support@honesthome.in
+2026-05-26 22:59:12 | DEBUG    | dns_checker | DNS FAIL (no A/AAAA) | contact@thebamboobae.com | Domain 'thebamboobae.com' does not exist (no DNS record)
+2026-05-26 22:59:12 | INFO     | __main__ | INVALID DOMAIN | contact@thebamboobae.com | Domain 'thebamboobae.com' does not exist (no DNS record)
+2026-05-26 22:59:12 | DEBUG    | syntax_validator | SYNTAX OK | support@wholisticyou.co.in
+2026-05-26 22:59:12 | DEBUG    | dns_checker | DNS FAIL (no A/AAAA) | support@honesthome.in | Domain 'honesthome.in' does not exist (no DNS record)
+2026-05-26 22:59:12 | INFO     | __main__ | INVALID DOMAIN | support@honesthome.in | Domain 'honesthome.in' does not exist (no DNS record)
+2026-05-26 22:59:12 | DEBUG    | syntax_validator | SYNTAX OK | care@winstonindia.com
+2026-05-26 22:59:12 | DEBUG    | dns_checker | DNS FAIL (no A/AAAA) | support@wholisticyou.co.in | Domain 'wholisticyou.co.in' does not exist (no DNS record)
+2026-05-26 22:59:12 | INFO     | __main__ | INVALID DOMAIN | support@wholisticyou.co.in | Domain 'wholisticyou.co.in' does not exist (no DNS record)
+2026-05-26 22:59:12 | DEBUG    | dns_checker | DNS FAIL (no A/AAAA) | care@winstonindia.com | Domain 'winstonindia.com' does not exist (no DNS record)
+2026-05-26 22:59:12 | INFO     | __main__ | INVALID DOMAIN | care@winstonindia.com | Domain 'winstonindia.com' does not exist (no DNS record)
+2026-05-26 22:59:13 | DEBUG    | dns_checker | DNS FAIL (no A/AAAA) | hello@serekobeauty.com | Domain 'serekobeauty.com' does not exist (no DNS record)
+2026-05-26 22:59:13 | INFO     | __main__ | INVALID DOMAIN | hello@serekobeauty.com | Domain 'serekobeauty.com' does not exist (no DNS record)
+2026-05-26 22:59:13 | DEBUG    | catch_all_detector | CATCH-ALL detected | rotoris.com | probe accepted
+2026-05-26 22:59:13 | INFO     | __main__ | CATCH-ALL | support@rotoris.com
+2026-05-26 22:59:14 | DEBUG    | dns_checker | DNS FAIL (no MX) | hello@secretwish.in | Domain 'secretwish.in' has no MX records
+2026-05-26 22:59:14 | INFO     | __main__ | INVALID DOMAIN | hello@secretwish.in | Domain 'secretwish.in' has no MX records
+2026-05-26 22:59:14 | DEBUG    | dns_checker | DNS FAIL (no A/AAAA) | info@sevenoralcare.com | Domain 'sevenoralcare.com' does not exist (no DNS record)
+2026-05-26 22:59:14 | INFO     | __main__ | INVALID DOMAIN | info@sevenoralcare.com | Domain 'sevenoralcare.com' does not exist (no DNS record)
+2026-05-26 22:59:16 | DEBUG    | smtp_validator | SMTP disconnect | hello@reliefpad.in | Server disconnected (mail.reliefpad.in): Connection unexpectedly closed: timed out
+2026-05-26 22:59:19 | DEBUG    | smtp_validator | SMTP exhausted all hosts | hello@reliefpad.in | Server disconnected (mail.reliefpad.in): Connection unexpectedly closed: timed out
+2026-05-26 22:59:19 | INFO     | __main__ | TEMPORARY_FAILURE | hello@reliefpad.in | Server disconnected (mail.reliefpad.in): Connection unexpectedly closed: timed out
+2026-05-26 22:59:21 | DEBUG    | smtp_validator | SMTP disconnect | zz_catchall_probe_xyz123@organicb.in | Server disconnected (mx1.hostinger.com): Connection unexpectedly closed: timed out
+2026-05-26 22:59:22 | DEBUG    | smtp_validator | SMTP disconnect | zz_catchall_probe_xyz123@sacredherbs.in | Server disconnected (aspmx.l.google.com): Connection unexpectedly closed: timed out
+2026-05-26 22:59:23 | DEBUG    | smtp_validator | SMTP timeout | zz_catchall_probe_xyz123@sacredherbs.in | Timeout connecting to aspmx.l.google.com
+2026-05-26 22:59:46 | DEBUG    | smtp_validator | SMTP INVALID_MAILBOX | zz_catchall_probe_xyz123@organicb.in | MX=mx2.hostinger.com | 550 5.1.1 <zz_catchall_probe_xyz123@organicb.in>: Recipient address rejected: undeliverable address: host de-fra-smtpin5.hostinger.io[private/dovecot-lmtp] said: 550 5.1.1 <zz_catchall_probe_xyz123@organicb.in> User doesn't exist: zz_catchall_probe_xyz123@organicb.in (in reply to RCPT TO command)
+2026-05-26 22:59:47 | DEBUG    | smtp_validator | SMTP VALID | zz_catchall_probe_xyz123@sacredherbs.in | MX=alt1.aspmx.l.google.com | 250 2.1.5 OK d9443c01a7336-2beb581f35dsi235634705ad.64 - gsmtp
+2026-05-26 22:59:47 | DEBUG    | smtp_validator | SMTP VALID | zz_catchall_probe_xyz123@sacredherbs.in | MX=alt1.aspmx.l.google.com | 250 2.1.5 OK d2e1a72fcca58-84164fd67f6si28766989b3a.125 - gsmtp
+2026-05-26 22:59:48 | DEBUG    | catch_all_detector | NOT catch-all | organicb.in | probe rejected (INVALID_MAILBOX)
+2026-05-26 22:59:48 | INFO     | __main__ | VALID | support@organicb.in
+2026-05-26 22:59:49 | DEBUG    | catch_all_detector | CATCH-ALL detected | sacredherbs.in | probe accepted
+2026-05-26 22:59:51 | INFO     | __main__ | CATCH-ALL | info@sacredherbs.in
+2026-05-26 22:59:49 | DEBUG    | catch_all_detector | CATCH-ALL detected | sacredherbs.in | probe accepted
+2026-05-26 22:59:51 | INFO     | __main__ | CATCH-ALL | info@sacredherbs.in
+2026-05-26 22:59:51 | INFO     | __main__ | Validation complete in 120.2 seconds
+2026-05-26 23:00:08 | INFO     | excel_handler | Results saved → output/validation_results.xlsx
+2026-05-26 23:00:08 | INFO     | excel_handler | Failed emails saved → output/failed_emails.xlsx (118 rows)
+2026-05-26 23:00:08 | INFO     | __main__ | Summary report saved → output/summary_report.txt
+2026-05-26 23:00:08 | INFO     | __main__ | All done. Check the 'output/' folder for results.

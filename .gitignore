@@ -4,16 +4,6 @@ __pycache__/
 *.pyo
 *.pyd
 
-# Input/Output directories (contains Excel data/reports)
-input/
-output/
-*.xlsx
-
-
-# Logs
-logs/
-*.log
-
 # Environments
 .env
 .venv
