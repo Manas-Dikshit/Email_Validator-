@@ -1,0 +1,695 @@
+2026-07-03 20:06:39 | INFO     | __main__ | ============================================================
+2026-07-03 20:06:39 | INFO     | __main__ | Email Validation System – starting
+2026-07-03 20:06:39 | INFO     | __main__ | Input file: input/Raw_Email.slsx
+2026-07-03 20:06:39 | INFO     | excel_handler | Reading input file: input/Raw_Email.slsx
+2026-07-03 20:07:24 | INFO     | __main__ | ============================================================
+2026-07-03 20:07:24 | INFO     | __main__ | Email Validation System – starting
+2026-07-03 20:07:24 | INFO     | __main__ | Input file: input/Raw_Email.slsx
+2026-07-03 20:07:24 | INFO     | excel_handler | Reading input file: input/Raw_Email.slsx
+2026-07-03 20:07:41 | INFO     | __main__ | ============================================================
+2026-07-03 20:07:41 | INFO     | __main__ | Email Validation System – starting
+2026-07-03 20:07:41 | INFO     | __main__ | Input file: input/Raw_Email.xlsx
+2026-07-03 20:07:41 | INFO     | excel_handler | Reading input file: input/Raw_Email.xlsx
+2026-07-03 20:07:41 | INFO     | excel_handler | Using column 'Scraped_Email' for email addresses
+2026-07-03 20:07:41 | INFO     | excel_handler | Found 26 email addresses
+2026-07-03 20:07:41 | INFO     | __main__ | Validating 26 emails with 10 workers…
+2026-07-03 20:07:41 | DEBUG    | syntax_validator | SYNTAX OK | usainfo@koraorganics.com
+2026-07-03 20:07:41 | DEBUG    | syntax_validator | SYNTAX OK | info@nakedallnatural.com
+2026-07-03 20:07:41 | DEBUG    | syntax_validator | SYNTAX OK | press@oneloveorganics.com
+2026-07-03 20:07:41 | DEBUG    | syntax_validator | SYNTAX OK | support@wareiq.com
+2026-07-03 20:07:41 | DEBUG    | syntax_validator | SYNTAX OK | jane@theorganicriot.com
+2026-07-03 20:07:41 | DEBUG    | syntax_validator | SYNTAX OK | john@forest-riot.com
+2026-07-03 20:07:41 | DEBUG    | syntax_validator | SYNTAX OK | sales@nakednature.in
+2026-07-03 20:07:41 | DEBUG    | syntax_validator | SYNTAX OK | collaboration@nakednature.in
+2026-07-03 20:07:41 | DEBUG    | syntax_validator | SYNTAX OK | cuma.meroan@gq.comal
+2026-07-03 20:07:41 | DEBUG    | syntax_validator | SYNTAX OK | support@oracura.in
+2026-07-03 20:07:51 | DEBUG    | dns_checker | DNS FAIL (no A/AAAA) | john@forest-riot.com | Domain 'forest-riot.com' does not exist (no DNS record)
+2026-07-03 20:07:51 | INFO     | __main__ | INVALID DOMAIN | john@forest-riot.com | Domain 'forest-riot.com' does not exist (no DNS record)
+2026-07-03 20:07:51 | DEBUG    | dns_checker | DNS FAIL (no A/AAAA) | support@oracura.in | Domain 'oracura.in' does not exist (no DNS record)
+2026-07-03 20:07:51 | INFO     | __main__ | INVALID DOMAIN | support@oracura.in | Domain 'oracura.in' does not exist (no DNS record)
+2026-07-03 20:07:51 | DEBUG    | dns_checker | DNS FAIL (no A/AAAA) | usainfo@koraorganics.com | Domain 'koraorganics.com' does not exist (no DNS record)
+2026-07-03 20:07:51 | INFO     | __main__ | INVALID DOMAIN | usainfo@koraorganics.com | Domain 'koraorganics.com' does not exist (no DNS record)
+2026-07-03 20:07:51 | DEBUG    | dns_checker | DNS FAIL (no A/AAAA) | cuma.meroan@gq.comal | Domain 'gq.comal' does not exist (no DNS record)
+2026-07-03 20:07:51 | INFO     | __main__ | INVALID DOMAIN | cuma.meroan@gq.comal | Domain 'gq.comal' does not exist (no DNS record)
+2026-07-03 20:07:51 | DEBUG    | dns_checker | DNS FAIL (no A/AAAA) | collaboration@nakednature.in | Domain 'nakednature.in' does not exist (no DNS record)
+2026-07-03 20:07:51 | INFO     | __main__ | INVALID DOMAIN | collaboration@nakednature.in | Domain 'nakednature.in' does not exist (no DNS record)
+2026-07-03 20:07:51 | DEBUG    | dns_checker | DNS FAIL (no A/AAAA) | sales@nakednature.in | Domain 'nakednature.in' does not exist (no DNS record)
+2026-07-03 20:07:51 | INFO     | __main__ | INVALID DOMAIN | sales@nakednature.in | Domain 'nakednature.in' does not exist (no DNS record)
+2026-07-03 20:07:51 | DEBUG    | dns_checker | DNS FAIL (no A/AAAA) | support@wareiq.com | Domain 'wareiq.com' does not exist (no DNS record)
+2026-07-03 20:07:51 | INFO     | __main__ | INVALID DOMAIN | support@wareiq.com | Domain 'wareiq.com' does not exist (no DNS record)
+2026-07-03 20:07:51 | DEBUG    | dns_checker | DNS FAIL (no A/AAAA) | jane@theorganicriot.com | Domain 'theorganicriot.com' does not exist (no DNS record)
+2026-07-03 20:07:51 | INFO     | __main__ | INVALID DOMAIN | jane@theorganicriot.com | Domain 'theorganicriot.com' does not exist (no DNS record)
+2026-07-03 20:07:51 | DEBUG    | dns_checker | DNS FAIL (no A/AAAA) | press@oneloveorganics.com | Domain 'oneloveorganics.com' does not exist (no DNS record)
+2026-07-03 20:07:51 | INFO     | __main__ | INVALID DOMAIN | press@oneloveorganics.com | Domain 'oneloveorganics.com' does not exist (no DNS record)
+2026-07-03 20:07:51 | DEBUG    | dns_checker | DNS FAIL (no A/AAAA) | info@nakedallnatural.com | Domain 'nakedallnatural.com' does not exist (no DNS record)
+2026-07-03 20:07:51 | INFO     | __main__ | INVALID DOMAIN | info@nakedallnatural.com | Domain 'nakedallnatural.com' does not exist (no DNS record)
+2026-07-03 20:07:51 | DEBUG    | syntax_validator | SYNTAX OK | hr@oracura.in
+2026-07-03 20:07:51 | DEBUG    | syntax_validator | SYNTAX OK | info@cannarma.com
+2026-07-03 20:07:51 | DEBUG    | syntax_validator | SYNTAX OK | support@cannarma.com
+2026-07-03 20:07:51 | DEBUG    | syntax_validator | SYNTAX OK | example@gmail.com
+2026-07-03 20:07:51 | DEBUG    | syntax_validator | SYNTAX OK | info@thebrownbear.ca
+2026-07-03 20:07:51 | DEBUG    | syntax_validator | SYNTAX OK | care@mycarmesi.com
+2026-07-03 20:07:51 | DEBUG    | syntax_validator | SYNTAX OK | support@daybreak-official.com
+2026-07-03 20:07:51 | DEBUG    | syntax_validator | SYNTAX OK | mohammadweex21@gmail.com
+2026-07-03 20:07:51 | DEBUG    | syntax_validator | SYNTAX OK | community@thedearist.com
+2026-07-03 20:07:51 | DEBUG    | syntax_validator | SYNTAX OK | admin@thedearist.com
+2026-07-03 20:08:01 | DEBUG    | dns_checker | DNS FAIL (no A/AAAA) | hr@oracura.in | Domain 'oracura.in' does not exist (no DNS record)
+2026-07-03 20:08:01 | INFO     | __main__ | INVALID DOMAIN | hr@oracura.in | Domain 'oracura.in' does not exist (no DNS record)
+2026-07-03 20:08:01 | DEBUG    | dns_checker | DNS FAIL (no A/AAAA) | info@cannarma.com | Domain 'cannarma.com' does not exist (no DNS record)
+2026-07-03 20:08:01 | INFO     | __main__ | INVALID DOMAIN | info@cannarma.com | Domain 'cannarma.com' does not exist (no DNS record)
+2026-07-03 20:08:01 | DEBUG    | syntax_validator | SYNTAX OK | customersupport@betterdaysco.com
+2026-07-03 20:08:01 | DEBUG    | syntax_validator | SYNTAX OK | info@daysahead.nl
+2026-07-03 20:08:01 | DEBUG    | dns_checker | DNS FAIL (no A/AAAA) | support@cannarma.com | Domain 'cannarma.com' does not exist (no DNS record)
+2026-07-03 20:08:01 | INFO     | __main__ | INVALID DOMAIN | support@cannarma.com | Domain 'cannarma.com' does not exist (no DNS record)
+2026-07-03 20:08:01 | DEBUG    | dns_checker | DNS FAIL (no A/AAAA) | admin@thedearist.com | Domain 'thedearist.com' does not exist (no DNS record)
+2026-07-03 20:08:01 | INFO     | __main__ | INVALID DOMAIN | admin@thedearist.com | Domain 'thedearist.com' does not exist (no DNS record)
+2026-07-03 20:08:01 | DEBUG    | dns_checker | DNS FAIL (no A/AAAA) | example@gmail.com | Domain 'gmail.com' does not exist (no DNS record)
+2026-07-03 20:08:01 | INFO     | __main__ | INVALID DOMAIN | example@gmail.com | Domain 'gmail.com' does not exist (no DNS record)
+2026-07-03 20:08:01 | DEBUG    | dns_checker | DNS FAIL (no A/AAAA) | community@thedearist.com | Domain 'thedearist.com' does not exist (no DNS record)
+2026-07-03 20:08:01 | INFO     | __main__ | INVALID DOMAIN | community@thedearist.com | Domain 'thedearist.com' does not exist (no DNS record)
+2026-07-03 20:08:01 | DEBUG    | dns_checker | DNS FAIL (no A/AAAA) | info@thebrownbear.ca | Domain 'thebrownbear.ca' does not exist (no DNS record)
+2026-07-03 20:08:01 | INFO     | __main__ | INVALID DOMAIN | info@thebrownbear.ca | Domain 'thebrownbear.ca' does not exist (no DNS record)
+2026-07-03 20:08:01 | DEBUG    | dns_checker | DNS FAIL (no A/AAAA) | support@daybreak-official.com | Domain 'daybreak-official.com' does not exist (no DNS record)
+2026-07-03 20:08:01 | INFO     | __main__ | INVALID DOMAIN | support@daybreak-official.com | Domain 'daybreak-official.com' does not exist (no DNS record)
+2026-07-03 20:08:01 | DEBUG    | dns_checker | DNS FAIL (no A/AAAA) | mohammadweex21@gmail.com | Domain 'gmail.com' does not exist (no DNS record)
+2026-07-03 20:08:01 | INFO     | __main__ | INVALID DOMAIN | mohammadweex21@gmail.com | Domain 'gmail.com' does not exist (no DNS record)
+2026-07-03 20:08:01 | DEBUG    | dns_checker | DNS FAIL (no A/AAAA) | care@mycarmesi.com | Domain 'mycarmesi.com' does not exist (no DNS record)
+2026-07-03 20:08:01 | INFO     | __main__ | INVALID DOMAIN | care@mycarmesi.com | Domain 'mycarmesi.com' does not exist (no DNS record)
+2026-07-03 20:08:01 | DEBUG    | syntax_validator | SYNTAX OK | messages@territoryahead.com
+2026-07-03 20:08:01 | DEBUG    | syntax_validator | SYNTAX OK | support@dentalkart.com
+2026-07-03 20:08:01 | DEBUG    | syntax_validator | SYNTAX OK | returns@dentalkart.com
+2026-07-03 20:08:01 | DEBUG    | syntax_validator | SYNTAX OK | cs@dentalkart.com
+2026-07-03 20:08:11 | DEBUG    | dns_checker | DNS FAIL (no A/AAAA) | info@daysahead.nl | Domain 'daysahead.nl' does not exist (no DNS record)
+2026-07-03 20:08:11 | INFO     | __main__ | INVALID DOMAIN | info@daysahead.nl | Domain 'daysahead.nl' does not exist (no DNS record)
+2026-07-03 20:08:11 | DEBUG    | dns_checker | DNS FAIL (no A/AAAA) | customersupport@betterdaysco.com | Domain 'betterdaysco.com' does not exist (no DNS record)
+2026-07-03 20:08:11 | INFO     | __main__ | INVALID DOMAIN | customersupport@betterdaysco.com | Domain 'betterdaysco.com' does not exist (no DNS record)
+2026-07-03 20:08:11 | DEBUG    | dns_checker | DNS FAIL (no A/AAAA) | messages@territoryahead.com | Domain 'territoryahead.com' does not exist (no DNS record)
+2026-07-03 20:08:11 | INFO     | __main__ | INVALID DOMAIN | messages@territoryahead.com | Domain 'territoryahead.com' does not exist (no DNS record)
+2026-07-03 20:08:11 | DEBUG    | dns_checker | DNS FAIL (no A/AAAA) | support@dentalkart.com | Domain 'dentalkart.com' does not exist (no DNS record)
+2026-07-03 20:08:11 | DEBUG    | dns_checker | DNS FAIL (no A/AAAA) | cs@dentalkart.com | Domain 'dentalkart.com' does not exist (no DNS record)
+2026-07-03 20:08:11 | DEBUG    | dns_checker | DNS FAIL (no A/AAAA) | returns@dentalkart.com | Domain 'dentalkart.com' does not exist (no DNS record)
+2026-07-03 20:08:11 | INFO     | __main__ | INVALID DOMAIN | support@dentalkart.com | Domain 'dentalkart.com' does not exist (no DNS record)
+2026-07-03 20:08:11 | INFO     | __main__ | INVALID DOMAIN | cs@dentalkart.com | Domain 'dentalkart.com' does not exist (no DNS record)
+2026-07-03 20:08:11 | INFO     | __main__ | INVALID DOMAIN | returns@dentalkart.com | Domain 'dentalkart.com' does not exist (no DNS record)
+2026-07-03 20:08:12 | INFO     | __main__ | Validation complete in 30.1 seconds
+2026-07-03 20:08:12 | INFO     | excel_handler | Results saved → output/validation_results.xlsx
+2026-07-03 20:08:12 | INFO     | excel_handler | Failed emails saved → output/failed_emails.xlsx (26 rows)
+2026-07-03 20:08:12 | INFO     | __main__ | Summary report saved → output/summary_report.txt
+2026-07-03 20:08:12 | INFO     | __main__ | All done. Check the 'output/' folder for results.
+2026-07-03 20:34:05 | INFO     | MainThread | __main__ | ============================================================
+2026-07-03 20:34:05 | INFO     | MainThread | __main__ | Email Validation System - starting
+2026-07-03 20:34:05 | INFO     | MainThread | __main__ | Input file: input\Raw_Email.xlsx
+2026-07-03 20:34:05 | INFO     | MainThread | excel_handler | Reading input file: input\Raw_Email.xlsx
+2026-07-03 20:34:05 | INFO     | MainThread | excel_handler | Using column 'Scraped_Email' for email addresses
+2026-07-03 20:34:05 | INFO     | MainThread | excel_handler | Found 26 email address(es)
+2026-07-03 20:34:05 | INFO     | MainThread | __main__ | Validating 26 emails with 10 workers (max 3 concurrent per domain)…
+2026-07-03 20:34:05 | DEBUG    | ThreadPoolExecutor-0_0 | syntax_validator | SYNTAX OK | usainfo@koraorganics.com
+2026-07-03 20:34:05 | DEBUG    | ThreadPoolExecutor-0_1 | syntax_validator | SYNTAX OK | press@oneloveorganics.com
+2026-07-03 20:34:05 | DEBUG    | ThreadPoolExecutor-0_3 | syntax_validator | SYNTAX OK | jane@theorganicriot.com
+2026-07-03 20:34:05 | DEBUG    | ThreadPoolExecutor-0_2 | syntax_validator | SYNTAX OK | support@wareiq.com
+2026-07-03 20:34:05 | DEBUG    | ThreadPoolExecutor-0_4 | syntax_validator | SYNTAX OK | john@forest-riot.com
+2026-07-03 20:34:05 | DEBUG    | ThreadPoolExecutor-0_5 | syntax_validator | SYNTAX OK | info@nakedallnatural.com
+2026-07-03 20:34:05 | DEBUG    | ThreadPoolExecutor-0_6 | syntax_validator | SYNTAX OK | sales@nakednature.in
+2026-07-03 20:34:05 | DEBUG    | ThreadPoolExecutor-0_7 | syntax_validator | SYNTAX OK | collaboration@nakednature.in
+2026-07-03 20:34:05 | DEBUG    | ThreadPoolExecutor-0_8 | syntax_validator | SYNTAX OK | cuma.meroan@gq.comal
+2026-07-03 20:34:05 | DEBUG    | ThreadPoolExecutor-0_9 | syntax_validator | SYNTAX OK | support@oracura.in
+2026-07-03 20:34:10 | DEBUG    | ThreadPoolExecutor-0_3 | dns_checker | DNS transient error | theorganicriot.com | MX | attempt 1/2 | The resolution lifetime expired after 5.013 seconds: Server Do53:218.248.112.193@53 answered The DNS operation timed out.
+2026-07-03 20:34:10 | DEBUG    | ThreadPoolExecutor-0_0 | dns_checker | DNS transient error | koraorganics.com | MX | attempt 1/2 | The resolution lifetime expired after 5.015 seconds: Server Do53:218.248.112.193@53 answered The DNS operation timed out.
+2026-07-03 20:34:10 | DEBUG    | ThreadPoolExecutor-0_1 | dns_checker | DNS transient error | oneloveorganics.com | MX | attempt 1/2 | The resolution lifetime expired after 5.015 seconds: Server Do53:218.248.112.193@53 answered The DNS operation timed out.
+2026-07-03 20:34:10 | DEBUG    | ThreadPoolExecutor-0_7 | dns_checker | DNS transient error | nakednature.in | MX | attempt 1/2 | The resolution lifetime expired after 5.009 seconds: Server Do53:218.248.112.193@53 answered The DNS operation timed out.
+2026-07-03 20:34:10 | DEBUG    | ThreadPoolExecutor-0_5 | dns_checker | DNS transient error | nakedallnatural.com | MX | attempt 1/2 | The resolution lifetime expired after 5.011 seconds: Server Do53:218.248.112.193@53 answered The DNS operation timed out.
+2026-07-03 20:34:10 | DEBUG    | ThreadPoolExecutor-0_6 | dns_checker | DNS transient error | nakednature.in | MX | attempt 1/2 | The resolution lifetime expired after 5.011 seconds: Server Do53:218.248.112.193@53 answered The DNS operation timed out.
+2026-07-03 20:34:10 | DEBUG    | ThreadPoolExecutor-0_4 | dns_checker | DNS transient error | forest-riot.com | MX | attempt 1/2 | The resolution lifetime expired after 5.013 seconds: Server Do53:218.248.112.193@53 answered The DNS operation timed out.
+2026-07-03 20:34:10 | DEBUG    | ThreadPoolExecutor-0_8 | dns_checker | DNS transient error | gq.comal | MX | attempt 1/2 | The resolution lifetime expired after 5.010 seconds: Server Do53:218.248.112.193@53 answered The DNS operation timed out.
+2026-07-03 20:34:10 | DEBUG    | ThreadPoolExecutor-0_2 | dns_checker | DNS transient error | wareiq.com | MX | attempt 1/2 | The resolution lifetime expired after 5.015 seconds: Server Do53:218.248.112.193@53 answered The DNS operation timed out.
+2026-07-03 20:34:10 | DEBUG    | ThreadPoolExecutor-0_9 | dns_checker | DNS transient error | oracura.in | MX | attempt 1/2 | The resolution lifetime expired after 5.009 seconds: Server Do53:218.248.112.193@53 answered The DNS operation timed out.
+2026-07-03 20:34:15 | DEBUG    | ThreadPoolExecutor-0_8 | dns_checker | DNS transient error | gq.comal | MX | attempt 2/2 | The resolution lifetime expired after 5.010 seconds: Server Do53:218.248.112.193@53 answered The DNS operation timed out.
+2026-07-03 20:34:15 | DEBUG    | ThreadPoolExecutor-0_8 | dns_checker | DNS lookup exhausted retries | gq.comal | MX | last error: The resolution lifetime expired after 5.010 seconds: Server Do53:218.248.112.193@53 answered The DNS operation timed out.
+2026-07-03 20:34:15 | DEBUG    | ThreadPoolExecutor-0_0 | dns_checker | DNS transient error | koraorganics.com | MX | attempt 2/2 | The resolution lifetime expired after 5.015 seconds: Server Do53:218.248.112.193@53 answered The DNS operation timed out.
+2026-07-03 20:34:15 | DEBUG    | ThreadPoolExecutor-0_0 | dns_checker | DNS lookup exhausted retries | koraorganics.com | MX | last error: The resolution lifetime expired after 5.015 seconds: Server Do53:218.248.112.193@53 answered The DNS operation timed out.
+2026-07-03 20:34:15 | DEBUG    | ThreadPoolExecutor-0_7 | dns_checker | DNS transient error | nakednature.in | MX | attempt 2/2 | The resolution lifetime expired after 5.014 seconds: Server Do53:218.248.112.193@53 answered The DNS operation timed out.
+2026-07-03 20:34:15 | DEBUG    | ThreadPoolExecutor-0_4 | dns_checker | DNS transient error | forest-riot.com | MX | attempt 2/2 | The resolution lifetime expired after 5.012 seconds: Server Do53:218.248.112.193@53 answered The DNS operation timed out.
+2026-07-03 20:34:15 | DEBUG    | ThreadPoolExecutor-0_6 | dns_checker | DNS transient error | nakednature.in | MX | attempt 2/2 | The resolution lifetime expired after 5.013 seconds: Server Do53:218.248.112.193@53 answered The DNS operation timed out.
+2026-07-03 20:34:15 | DEBUG    | ThreadPoolExecutor-0_6 | dns_checker | DNS lookup exhausted retries | nakednature.in | MX | last error: The resolution lifetime expired after 5.013 seconds: Server Do53:218.248.112.193@53 answered The DNS operation timed out.
+2026-07-03 20:34:15 | DEBUG    | ThreadPoolExecutor-0_9 | dns_checker | DNS transient error | oracura.in | MX | attempt 2/2 | The resolution lifetime expired after 5.011 seconds: Server Do53:218.248.112.193@53 answered The DNS operation timed out.
+2026-07-03 20:34:15 | DEBUG    | ThreadPoolExecutor-0_1 | dns_checker | DNS transient error | oneloveorganics.com | MX | attempt 2/2 | The resolution lifetime expired after 5.015 seconds: Server Do53:218.248.112.193@53 answered The DNS operation timed out.
+2026-07-03 20:34:15 | DEBUG    | ThreadPoolExecutor-0_5 | dns_checker | DNS transient error | nakedallnatural.com | MX | attempt 2/2 | The resolution lifetime expired after 5.014 seconds: Server Do53:218.248.112.193@53 answered The DNS operation timed out.
+2026-07-03 20:34:15 | DEBUG    | ThreadPoolExecutor-0_5 | dns_checker | DNS lookup exhausted retries | nakedallnatural.com | MX | last error: The resolution lifetime expired after 5.014 seconds: Server Do53:218.248.112.193@53 answered The DNS operation timed out.
+2026-07-03 20:34:15 | DEBUG    | ThreadPoolExecutor-0_3 | dns_checker | DNS transient error | theorganicriot.com | MX | attempt 2/2 | The resolution lifetime expired after 5.017 seconds: Server Do53:218.248.112.193@53 answered The DNS operation timed out.
+2026-07-03 20:34:15 | DEBUG    | ThreadPoolExecutor-0_4 | dns_checker | DNS lookup exhausted retries | forest-riot.com | MX | last error: The resolution lifetime expired after 5.012 seconds: Server Do53:218.248.112.193@53 answered The DNS operation timed out.
+2026-07-03 20:34:15 | DEBUG    | ThreadPoolExecutor-0_2 | dns_checker | DNS transient error | wareiq.com | MX | attempt 2/2 | The resolution lifetime expired after 5.011 seconds: Server Do53:218.248.112.193@53 answered The DNS operation timed out.
+2026-07-03 20:34:15 | DEBUG    | ThreadPoolExecutor-0_9 | dns_checker | DNS lookup exhausted retries | oracura.in | MX | last error: The resolution lifetime expired after 5.011 seconds: Server Do53:218.248.112.193@53 answered The DNS operation timed out.
+2026-07-03 20:34:15 | DEBUG    | ThreadPoolExecutor-0_1 | dns_checker | DNS lookup exhausted retries | oneloveorganics.com | MX | last error: The resolution lifetime expired after 5.015 seconds: Server Do53:218.248.112.193@53 answered The DNS operation timed out.
+2026-07-03 20:34:15 | DEBUG    | ThreadPoolExecutor-0_7 | dns_checker | DNS lookup exhausted retries | nakednature.in | MX | last error: The resolution lifetime expired after 5.014 seconds: Server Do53:218.248.112.193@53 answered The DNS operation timed out.
+2026-07-03 20:34:15 | DEBUG    | ThreadPoolExecutor-0_3 | dns_checker | DNS lookup exhausted retries | theorganicriot.com | MX | last error: The resolution lifetime expired after 5.017 seconds: Server Do53:218.248.112.193@53 answered The DNS operation timed out.
+2026-07-03 20:34:15 | DEBUG    | ThreadPoolExecutor-0_2 | dns_checker | DNS lookup exhausted retries | wareiq.com | MX | last error: The resolution lifetime expired after 5.011 seconds: Server Do53:218.248.112.193@53 answered The DNS operation timed out.
+2026-07-03 20:34:20 | DEBUG    | ThreadPoolExecutor-0_8 | dns_checker | DNS transient error | gq.comal | A | attempt 1/2 | The resolution lifetime expired after 5.005 seconds: Server Do53:218.248.112.193@53 answered The DNS operation timed out.
+2026-07-03 20:34:20 | DEBUG    | ThreadPoolExecutor-0_0 | dns_checker | DNS transient error | koraorganics.com | A | attempt 1/2 | The resolution lifetime expired after 5.006 seconds: Server Do53:218.248.112.193@53 answered The DNS operation timed out.
+2026-07-03 20:34:20 | DEBUG    | ThreadPoolExecutor-0_6 | dns_checker | DNS transient error | nakednature.in | A | attempt 1/2 | The resolution lifetime expired after 5.006 seconds: Server Do53:218.248.112.193@53 answered The DNS operation timed out.
+2026-07-03 20:34:20 | DEBUG    | ThreadPoolExecutor-0_5 | dns_checker | DNS transient error | nakedallnatural.com | A | attempt 1/2 | The resolution lifetime expired after 5.006 seconds: Server Do53:218.248.112.193@53 answered The DNS operation timed out.
+2026-07-03 20:34:20 | DEBUG    | ThreadPoolExecutor-0_4 | dns_checker | DNS transient error | forest-riot.com | A | attempt 1/2 | The resolution lifetime expired after 5.006 seconds: Server Do53:218.248.112.193@53 answered The DNS operation timed out.
+2026-07-03 20:34:20 | DEBUG    | ThreadPoolExecutor-0_9 | dns_checker | DNS transient error | oracura.in | A | attempt 1/2 | The resolution lifetime expired after 5.006 seconds: Server Do53:218.248.112.193@53 answered The DNS operation timed out.
+2026-07-03 20:34:20 | DEBUG    | ThreadPoolExecutor-0_7 | dns_checker | DNS transient error | nakednature.in | A | attempt 1/2 | The resolution lifetime expired after 5.014 seconds: Server Do53:218.248.112.193@53 answered The DNS operation timed out.
+2026-07-03 20:34:20 | DEBUG    | ThreadPoolExecutor-0_1 | dns_checker | DNS transient error | oneloveorganics.com | A | attempt 1/2 | The resolution lifetime expired after 5.015 seconds: Server Do53:218.248.112.193@53 answered The DNS operation timed out.
+2026-07-03 20:34:20 | DEBUG    | ThreadPoolExecutor-0_3 | dns_checker | DNS transient error | theorganicriot.com | A | attempt 1/2 | The resolution lifetime expired after 5.014 seconds: Server Do53:218.248.112.193@53 answered The DNS operation timed out.
+2026-07-03 20:34:20 | DEBUG    | ThreadPoolExecutor-0_2 | dns_checker | DNS transient error | wareiq.com | A | attempt 1/2 | The resolution lifetime expired after 5.014 seconds: Server Do53:218.248.112.193@53 answered The DNS operation timed out.
+2026-07-03 20:34:25 | DEBUG    | ThreadPoolExecutor-0_8 | dns_checker | DNS transient error | gq.comal | A | attempt 2/2 | The resolution lifetime expired after 5.007 seconds: Server Do53:218.248.112.193@53 answered The DNS operation timed out.
+2026-07-03 20:34:25 | DEBUG    | ThreadPoolExecutor-0_4 | dns_checker | DNS transient error | forest-riot.com | A | attempt 2/2 | The resolution lifetime expired after 5.003 seconds: Server Do53:218.248.112.193@53 answered The DNS operation timed out.
+2026-07-03 20:34:25 | DEBUG    | ThreadPoolExecutor-0_6 | dns_checker | DNS transient error | nakednature.in | A | attempt 2/2 | The resolution lifetime expired after 5.005 seconds: Server Do53:218.248.112.193@53 answered The DNS operation timed out.
+2026-07-03 20:34:25 | DEBUG    | ThreadPoolExecutor-0_8 | dns_checker | DNS lookup exhausted retries | gq.comal | A | last error: The resolution lifetime expired after 5.007 seconds: Server Do53:218.248.112.193@53 answered The DNS operation timed out.
+2026-07-03 20:34:25 | DEBUG    | ThreadPoolExecutor-0_0 | dns_checker | DNS transient error | koraorganics.com | A | attempt 2/2 | The resolution lifetime expired after 5.006 seconds: Server Do53:218.248.112.193@53 answered The DNS operation timed out.
+2026-07-03 20:34:25 | DEBUG    | ThreadPoolExecutor-0_0 | dns_checker | DNS lookup exhausted retries | koraorganics.com | A | last error: The resolution lifetime expired after 5.006 seconds: Server Do53:218.248.112.193@53 answered The DNS operation timed out.
+2026-07-03 20:34:25 | DEBUG    | ThreadPoolExecutor-0_5 | dns_checker | DNS transient error | nakedallnatural.com | A | attempt 2/2 | The resolution lifetime expired after 5.005 seconds: Server Do53:218.248.112.193@53 answered The DNS operation timed out.
+2026-07-03 20:34:25 | DEBUG    | ThreadPoolExecutor-0_4 | dns_checker | DNS lookup exhausted retries | forest-riot.com | A | last error: The resolution lifetime expired after 5.003 seconds: Server Do53:218.248.112.193@53 answered The DNS operation timed out.
+2026-07-03 20:34:25 | DEBUG    | ThreadPoolExecutor-0_6 | dns_checker | DNS lookup exhausted retries | nakednature.in | A | last error: The resolution lifetime expired after 5.005 seconds: Server Do53:218.248.112.193@53 answered The DNS operation timed out.
+2026-07-03 20:34:25 | DEBUG    | ThreadPoolExecutor-0_9 | dns_checker | DNS transient error | oracura.in | A | attempt 2/2 | The resolution lifetime expired after 5.002 seconds: Server Do53:218.248.112.193@53 answered The DNS operation timed out.
+2026-07-03 20:34:25 | DEBUG    | ThreadPoolExecutor-0_5 | dns_checker | DNS lookup exhausted retries | nakedallnatural.com | A | last error: The resolution lifetime expired after 5.005 seconds: Server Do53:218.248.112.193@53 answered The DNS operation timed out.
+2026-07-03 20:34:25 | DEBUG    | ThreadPoolExecutor-0_9 | dns_checker | DNS lookup exhausted retries | oracura.in | A | last error: The resolution lifetime expired after 5.002 seconds: Server Do53:218.248.112.193@53 answered The DNS operation timed out.
+2026-07-03 20:34:25 | DEBUG    | ThreadPoolExecutor-0_1 | dns_checker | DNS transient error | oneloveorganics.com | A | attempt 2/2 | The resolution lifetime expired after 5.007 seconds: Server Do53:218.248.112.193@53 answered The DNS operation timed out.
+2026-07-03 20:34:25 | DEBUG    | ThreadPoolExecutor-0_1 | dns_checker | DNS lookup exhausted retries | oneloveorganics.com | A | last error: The resolution lifetime expired after 5.007 seconds: Server Do53:218.248.112.193@53 answered The DNS operation timed out.
+2026-07-03 20:34:25 | DEBUG    | ThreadPoolExecutor-0_7 | dns_checker | DNS transient error | nakednature.in | A | attempt 2/2 | The resolution lifetime expired after 5.008 seconds: Server Do53:218.248.112.193@53 answered The DNS operation timed out.
+2026-07-03 20:34:25 | DEBUG    | ThreadPoolExecutor-0_3 | dns_checker | DNS transient error | theorganicriot.com | A | attempt 2/2 | The resolution lifetime expired after 5.007 seconds: Server Do53:218.248.112.193@53 answered The DNS operation timed out.
+2026-07-03 20:34:25 | DEBUG    | ThreadPoolExecutor-0_3 | dns_checker | DNS lookup exhausted retries | theorganicriot.com | A | last error: The resolution lifetime expired after 5.007 seconds: Server Do53:218.248.112.193@53 answered The DNS operation timed out.
+2026-07-03 20:34:25 | DEBUG    | ThreadPoolExecutor-0_7 | dns_checker | DNS lookup exhausted retries | nakednature.in | A | last error: The resolution lifetime expired after 5.008 seconds: Server Do53:218.248.112.193@53 answered The DNS operation timed out.
+2026-07-03 20:34:25 | DEBUG    | ThreadPoolExecutor-0_2 | dns_checker | DNS transient error | wareiq.com | A | attempt 2/2 | The resolution lifetime expired after 5.006 seconds: Server Do53:218.248.112.193@53 answered The DNS operation timed out.
+2026-07-03 20:34:25 | DEBUG    | ThreadPoolExecutor-0_2 | dns_checker | DNS lookup exhausted retries | wareiq.com | A | last error: The resolution lifetime expired after 5.006 seconds: Server Do53:218.248.112.193@53 answered The DNS operation timed out.
+2026-07-03 20:34:30 | DEBUG    | ThreadPoolExecutor-0_0 | dns_checker | DNS transient error | koraorganics.com | AAAA | attempt 1/2 | The resolution lifetime expired after 5.006 seconds: Server Do53:218.248.112.193@53 answered The DNS operation timed out.
+2026-07-03 20:34:30 | DEBUG    | ThreadPoolExecutor-0_6 | dns_checker | DNS transient error | nakednature.in | AAAA | attempt 1/2 | The resolution lifetime expired after 5.006 seconds: Server Do53:218.248.112.193@53 answered The DNS operation timed out.
+2026-07-03 20:34:30 | DEBUG    | ThreadPoolExecutor-0_4 | dns_checker | DNS transient error | forest-riot.com | AAAA | attempt 1/2 | The resolution lifetime expired after 5.007 seconds: Server Do53:218.248.112.193@53 answered The DNS operation timed out.
+2026-07-03 20:34:30 | DEBUG    | ThreadPoolExecutor-0_8 | dns_checker | DNS transient error | gq.comal | AAAA | attempt 1/2 | The resolution lifetime expired after 5.008 seconds: Server Do53:218.248.112.193@53 answered The DNS operation timed out.
+2026-07-03 20:34:30 | DEBUG    | ThreadPoolExecutor-0_9 | dns_checker | DNS transient error | oracura.in | AAAA | attempt 1/2 | The resolution lifetime expired after 5.006 seconds: Server Do53:218.248.112.193@53 answered The DNS operation timed out.
+2026-07-03 20:34:30 | DEBUG    | ThreadPoolExecutor-0_5 | dns_checker | DNS transient error | nakedallnatural.com | AAAA | attempt 1/2 | The resolution lifetime expired after 5.007 seconds: Server Do53:218.248.112.193@53 answered The DNS operation timed out.
+2026-07-03 20:34:30 | DEBUG    | ThreadPoolExecutor-0_3 | dns_checker | DNS transient error | theorganicriot.com | AAAA | attempt 1/2 | The resolution lifetime expired after 5.006 seconds: Server Do53:218.248.112.193@53 answered The DNS operation timed out.
+2026-07-03 20:34:30 | DEBUG    | ThreadPoolExecutor-0_1 | dns_checker | DNS transient error | oneloveorganics.com | AAAA | attempt 1/2 | The resolution lifetime expired after 5.007 seconds: Server Do53:218.248.112.193@53 answered The DNS operation timed out.
+2026-07-03 20:34:30 | DEBUG    | ThreadPoolExecutor-0_2 | dns_checker | DNS transient error | wareiq.com | AAAA | attempt 1/2 | The resolution lifetime expired after 5.005 seconds: Server Do53:218.248.112.193@53 answered The DNS operation timed out.
+2026-07-03 20:34:30 | DEBUG    | ThreadPoolExecutor-0_7 | dns_checker | DNS transient error | nakednature.in | AAAA | attempt 1/2 | The resolution lifetime expired after 5.006 seconds: Server Do53:218.248.112.193@53 answered The DNS operation timed out.
+2026-07-03 20:34:35 | DEBUG    | ThreadPoolExecutor-0_8 | dns_checker | DNS transient error | gq.comal | AAAA | attempt 2/2 | The resolution lifetime expired after 5.002 seconds: Server Do53:218.248.112.193@53 answered The DNS operation timed out.
+2026-07-03 20:34:35 | DEBUG    | ThreadPoolExecutor-0_8 | dns_checker | DNS lookup exhausted retries | gq.comal | AAAA | last error: The resolution lifetime expired after 5.002 seconds: Server Do53:218.248.112.193@53 answered The DNS operation timed out.
+2026-07-03 20:34:35 | DEBUG    | ThreadPoolExecutor-0_8 | dns_checker | DNS FAIL | cuma.meroan@gq.comal | Domain 'gq.comal' does not exist or accepts no mail (no MX, no A/AAAA)
+2026-07-03 20:34:35 | INFO     | ThreadPoolExecutor-0_8 | __main__ | INVALID DOMAIN | cuma.meroan@gq.comal | Domain 'gq.comal' does not exist or accepts no mail (no MX, no A/AAAA)
+2026-07-03 20:34:35 | DEBUG    | ThreadPoolExecutor-0_4 | dns_checker | DNS transient error | forest-riot.com | AAAA | attempt 2/2 | The resolution lifetime expired after 5.003 seconds: Server Do53:218.248.112.193@53 answered The DNS operation timed out.
+2026-07-03 20:34:35 | DEBUG    | ThreadPoolExecutor-0_4 | dns_checker | DNS lookup exhausted retries | forest-riot.com | AAAA | last error: The resolution lifetime expired after 5.003 seconds: Server Do53:218.248.112.193@53 answered The DNS operation timed out.
+2026-07-03 20:34:35 | DEBUG    | ThreadPoolExecutor-0_4 | dns_checker | DNS FAIL | john@forest-riot.com | Domain 'forest-riot.com' does not exist or accepts no mail (no MX, no A/AAAA)
+2026-07-03 20:34:35 | INFO     | ThreadPoolExecutor-0_4 | __main__ | INVALID DOMAIN | john@forest-riot.com | Domain 'forest-riot.com' does not exist or accepts no mail (no MX, no A/AAAA)
+2026-07-03 20:34:35 | DEBUG    | ThreadPoolExecutor-0_6 | dns_checker | DNS transient error | nakednature.in | AAAA | attempt 2/2 | The resolution lifetime expired after 5.005 seconds: Server Do53:218.248.112.193@53 answered The DNS operation timed out.
+2026-07-03 20:34:35 | DEBUG    | ThreadPoolExecutor-0_6 | dns_checker | DNS lookup exhausted retries | nakednature.in | AAAA | last error: The resolution lifetime expired after 5.005 seconds: Server Do53:218.248.112.193@53 answered The DNS operation timed out.
+2026-07-03 20:34:35 | DEBUG    | ThreadPoolExecutor-0_6 | dns_checker | DNS FAIL | sales@nakednature.in | Domain 'nakednature.in' does not exist or accepts no mail (no MX, no A/AAAA)
+2026-07-03 20:34:35 | INFO     | ThreadPoolExecutor-0_6 | __main__ | INVALID DOMAIN | sales@nakednature.in | Domain 'nakednature.in' does not exist or accepts no mail (no MX, no A/AAAA)
+2026-07-03 20:34:35 | DEBUG    | ThreadPoolExecutor-0_9 | dns_checker | DNS transient error | oracura.in | AAAA | attempt 2/2 | The resolution lifetime expired after 5.003 seconds: Server Do53:218.248.112.193@53 answered The DNS operation timed out.
+2026-07-03 20:34:35 | DEBUG    | ThreadPoolExecutor-0_9 | dns_checker | DNS lookup exhausted retries | oracura.in | AAAA | last error: The resolution lifetime expired after 5.003 seconds: Server Do53:218.248.112.193@53 answered The DNS operation timed out.
+2026-07-03 20:34:35 | DEBUG    | ThreadPoolExecutor-0_9 | dns_checker | DNS FAIL | support@oracura.in | Domain 'oracura.in' does not exist or accepts no mail (no MX, no A/AAAA)
+2026-07-03 20:34:35 | INFO     | ThreadPoolExecutor-0_9 | __main__ | INVALID DOMAIN | support@oracura.in | Domain 'oracura.in' does not exist or accepts no mail (no MX, no A/AAAA)
+2026-07-03 20:34:35 | DEBUG    | ThreadPoolExecutor-0_0 | dns_checker | DNS transient error | koraorganics.com | AAAA | attempt 2/2 | The resolution lifetime expired after 5.007 seconds: Server Do53:218.248.112.193@53 answered The DNS operation timed out.
+2026-07-03 20:34:35 | DEBUG    | ThreadPoolExecutor-0_0 | dns_checker | DNS lookup exhausted retries | koraorganics.com | AAAA | last error: The resolution lifetime expired after 5.007 seconds: Server Do53:218.248.112.193@53 answered The DNS operation timed out.
+2026-07-03 20:34:35 | DEBUG    | ThreadPoolExecutor-0_0 | dns_checker | DNS FAIL | usainfo@koraorganics.com | Domain 'koraorganics.com' does not exist or accepts no mail (no MX, no A/AAAA)
+2026-07-03 20:34:35 | INFO     | ThreadPoolExecutor-0_0 | __main__ | INVALID DOMAIN | usainfo@koraorganics.com | Domain 'koraorganics.com' does not exist or accepts no mail (no MX, no A/AAAA)
+2026-07-03 20:34:35 | DEBUG    | ThreadPoolExecutor-0_8 | syntax_validator | SYNTAX OK | hr@oracura.in
+2026-07-03 20:34:35 | DEBUG    | ThreadPoolExecutor-0_8 | dns_checker | DNS cache hit | hr@oracura.in | INVALID_DOMAIN
+2026-07-03 20:34:35 | INFO     | ThreadPoolExecutor-0_8 | __main__ | INVALID DOMAIN | hr@oracura.in | Domain 'oracura.in' does not exist or accepts no mail (no MX, no A/AAAA)
+2026-07-03 20:34:35 | DEBUG    | ThreadPoolExecutor-0_8 | syntax_validator | SYNTAX OK | info@cannarma.com
+2026-07-03 20:34:35 | INFO     | MainThread | __main__ | Progress: 2/26 (8%)
+2026-07-03 20:34:35 | DEBUG    | ThreadPoolExecutor-0_6 | syntax_validator | SYNTAX OK | support@cannarma.com
+2026-07-03 20:34:35 | DEBUG    | ThreadPoolExecutor-0_9 | syntax_validator | SYNTAX OK | example@gmail.com
+2026-07-03 20:34:35 | DEBUG    | ThreadPoolExecutor-0_0 | syntax_validator | SYNTAX OK | info@thebrownbear.ca
+2026-07-03 20:34:35 | DEBUG    | ThreadPoolExecutor-0_4 | syntax_validator | SYNTAX OK | care@mycarmesi.com
+2026-07-03 20:34:35 | DEBUG    | ThreadPoolExecutor-0_5 | dns_checker | DNS transient error | nakedallnatural.com | AAAA | attempt 2/2 | The resolution lifetime expired after 5.016 seconds: Server Do53:218.248.112.193@53 answered The DNS operation timed out.
+2026-07-03 20:34:35 | DEBUG    | ThreadPoolExecutor-0_5 | dns_checker | DNS lookup exhausted retries | nakedallnatural.com | AAAA | last error: The resolution lifetime expired after 5.016 seconds: Server Do53:218.248.112.193@53 answered The DNS operation timed out.
+2026-07-03 20:34:35 | DEBUG    | ThreadPoolExecutor-0_5 | dns_checker | DNS FAIL | info@nakedallnatural.com | Domain 'nakedallnatural.com' does not exist or accepts no mail (no MX, no A/AAAA)
+2026-07-03 20:34:35 | INFO     | ThreadPoolExecutor-0_5 | __main__ | INVALID DOMAIN | info@nakedallnatural.com | Domain 'nakedallnatural.com' does not exist or accepts no mail (no MX, no A/AAAA)
+2026-07-03 20:34:35 | DEBUG    | ThreadPoolExecutor-0_7 | dns_checker | DNS transient error | nakednature.in | AAAA | attempt 2/2 | The resolution lifetime expired after 5.004 seconds: Server Do53:218.248.112.193@53 answered The DNS operation timed out.
+2026-07-03 20:34:35 | DEBUG    | ThreadPoolExecutor-0_7 | dns_checker | DNS lookup exhausted retries | nakednature.in | AAAA | last error: The resolution lifetime expired after 5.004 seconds: Server Do53:218.248.112.193@53 answered The DNS operation timed out.
+2026-07-03 20:34:35 | DEBUG    | ThreadPoolExecutor-0_7 | dns_checker | DNS FAIL | collaboration@nakednature.in | Domain 'nakednature.in' does not exist or accepts no mail (no MX, no A/AAAA)
+2026-07-03 20:34:35 | DEBUG    | ThreadPoolExecutor-0_3 | dns_checker | DNS transient error | theorganicriot.com | AAAA | attempt 2/2 | The resolution lifetime expired after 5.007 seconds: Server Do53:218.248.112.193@53 answered The DNS operation timed out.
+2026-07-03 20:34:35 | DEBUG    | ThreadPoolExecutor-0_3 | dns_checker | DNS lookup exhausted retries | theorganicriot.com | AAAA | last error: The resolution lifetime expired after 5.007 seconds: Server Do53:218.248.112.193@53 answered The DNS operation timed out.
+2026-07-03 20:34:35 | DEBUG    | ThreadPoolExecutor-0_3 | dns_checker | DNS FAIL | jane@theorganicriot.com | Domain 'theorganicriot.com' does not exist or accepts no mail (no MX, no A/AAAA)
+2026-07-03 20:34:35 | DEBUG    | ThreadPoolExecutor-0_1 | dns_checker | DNS transient error | oneloveorganics.com | AAAA | attempt 2/2 | The resolution lifetime expired after 5.006 seconds: Server Do53:218.248.112.193@53 answered The DNS operation timed out.
+2026-07-03 20:34:35 | DEBUG    | ThreadPoolExecutor-0_1 | dns_checker | DNS lookup exhausted retries | oneloveorganics.com | AAAA | last error: The resolution lifetime expired after 5.006 seconds: Server Do53:218.248.112.193@53 answered The DNS operation timed out.
+2026-07-03 20:34:35 | DEBUG    | ThreadPoolExecutor-0_1 | dns_checker | DNS FAIL | press@oneloveorganics.com | Domain 'oneloveorganics.com' does not exist or accepts no mail (no MX, no A/AAAA)
+2026-07-03 20:34:35 | DEBUG    | ThreadPoolExecutor-0_2 | dns_checker | DNS transient error | wareiq.com | AAAA | attempt 2/2 | The resolution lifetime expired after 5.005 seconds: Server Do53:218.248.112.193@53 answered The DNS operation timed out.
+2026-07-03 20:34:35 | DEBUG    | ThreadPoolExecutor-0_2 | dns_checker | DNS lookup exhausted retries | wareiq.com | AAAA | last error: The resolution lifetime expired after 5.005 seconds: Server Do53:218.248.112.193@53 answered The DNS operation timed out.
+2026-07-03 20:34:35 | DEBUG    | ThreadPoolExecutor-0_2 | dns_checker | DNS FAIL | support@wareiq.com | Domain 'wareiq.com' does not exist or accepts no mail (no MX, no A/AAAA)
+2026-07-03 20:34:35 | INFO     | ThreadPoolExecutor-0_7 | __main__ | INVALID DOMAIN | collaboration@nakednature.in | Domain 'nakednature.in' does not exist or accepts no mail (no MX, no A/AAAA)
+2026-07-03 20:34:35 | INFO     | ThreadPoolExecutor-0_3 | __main__ | INVALID DOMAIN | jane@theorganicriot.com | Domain 'theorganicriot.com' does not exist or accepts no mail (no MX, no A/AAAA)
+2026-07-03 20:34:35 | INFO     | ThreadPoolExecutor-0_1 | __main__ | INVALID DOMAIN | press@oneloveorganics.com | Domain 'oneloveorganics.com' does not exist or accepts no mail (no MX, no A/AAAA)
+2026-07-03 20:34:35 | INFO     | ThreadPoolExecutor-0_2 | __main__ | INVALID DOMAIN | support@wareiq.com | Domain 'wareiq.com' does not exist or accepts no mail (no MX, no A/AAAA)
+2026-07-03 20:34:35 | INFO     | MainThread | __main__ | Progress: 4/26 (15%)
+2026-07-03 20:34:35 | DEBUG    | ThreadPoolExecutor-0_5 | syntax_validator | SYNTAX OK | support@daybreak-official.com
+2026-07-03 20:34:35 | DEBUG    | ThreadPoolExecutor-0_7 | syntax_validator | SYNTAX OK | mohammadweex21@gmail.com
+2026-07-03 20:34:35 | DEBUG    | ThreadPoolExecutor-0_3 | syntax_validator | SYNTAX OK | community@thedearist.com
+2026-07-03 20:34:35 | DEBUG    | ThreadPoolExecutor-0_1 | syntax_validator | SYNTAX OK | admin@thedearist.com
+2026-07-03 20:34:35 | DEBUG    | ThreadPoolExecutor-0_2 | syntax_validator | SYNTAX OK | customersupport@betterdaysco.com
+2026-07-03 20:34:35 | INFO     | MainThread | __main__ | Progress: 6/26 (23%)
+2026-07-03 20:34:35 | INFO     | MainThread | __main__ | Progress: 8/26 (31%)
+2026-07-03 20:34:35 | INFO     | MainThread | __main__ | Progress: 10/26 (38%)
+2026-07-03 20:34:40 | DEBUG    | ThreadPoolExecutor-0_9 | dns_checker | DNS transient error | gmail.com | MX | attempt 1/2 | The resolution lifetime expired after 5.011 seconds: Server Do53:218.248.112.193@53 answered The DNS operation timed out.
+2026-07-03 20:34:40 | DEBUG    | ThreadPoolExecutor-0_0 | dns_checker | DNS transient error | thebrownbear.ca | MX | attempt 1/2 | The resolution lifetime expired after 5.007 seconds: Server Do53:218.248.112.193@53 answered The DNS operation timed out.
+2026-07-03 20:34:40 | DEBUG    | ThreadPoolExecutor-0_5 | dns_checker | DNS transient error | daybreak-official.com | MX | attempt 1/2 | The resolution lifetime expired after 5.003 seconds: Server Do53:218.248.112.193@53 answered The DNS operation timed out.
+2026-07-03 20:34:40 | DEBUG    | ThreadPoolExecutor-0_4 | dns_checker | DNS transient error | mycarmesi.com | MX | attempt 1/2 | The resolution lifetime expired after 5.009 seconds: Server Do53:218.248.112.193@53 answered The DNS operation timed out.
+2026-07-03 20:34:40 | DEBUG    | ThreadPoolExecutor-0_6 | dns_checker | DNS transient error | cannarma.com | MX | attempt 1/2 | The resolution lifetime expired after 5.018 seconds: Server Do53:218.248.112.193@53 answered The DNS operation timed out.
+2026-07-03 20:34:40 | DEBUG    | ThreadPoolExecutor-0_8 | dns_checker | DNS transient error | cannarma.com | MX | attempt 1/2 | The resolution lifetime expired after 5.020 seconds: Server Do53:218.248.112.193@53 answered The DNS operation timed out.
+2026-07-03 20:34:40 | DEBUG    | ThreadPoolExecutor-0_7 | dns_checker | DNS transient error | gmail.com | MX | attempt 1/2 | The resolution lifetime expired after 5.014 seconds: Server Do53:218.248.112.193@53 answered The DNS operation timed out.
+2026-07-03 20:34:40 | DEBUG    | ThreadPoolExecutor-0_3 | dns_checker | DNS transient error | thedearist.com | MX | attempt 1/2 | The resolution lifetime expired after 5.013 seconds: Server Do53:218.248.112.193@53 answered The DNS operation timed out.
+2026-07-03 20:34:40 | DEBUG    | ThreadPoolExecutor-0_1 | dns_checker | DNS transient error | thedearist.com | MX | attempt 1/2 | The resolution lifetime expired after 5.013 seconds: Server Do53:218.248.112.193@53 answered The DNS operation timed out.
+2026-07-03 20:34:40 | DEBUG    | ThreadPoolExecutor-0_2 | dns_checker | DNS transient error | betterdaysco.com | MX | attempt 1/2 | The resolution lifetime expired after 5.013 seconds: Server Do53:218.248.112.193@53 answered The DNS operation timed out.
+2026-07-03 20:34:45 | DEBUG    | ThreadPoolExecutor-0_9 | dns_checker | DNS transient error | gmail.com | MX | attempt 2/2 | The resolution lifetime expired after 5.010 seconds: Server Do53:218.248.112.193@53 answered The DNS operation timed out.
+2026-07-03 20:34:45 | DEBUG    | ThreadPoolExecutor-0_9 | dns_checker | DNS lookup exhausted retries | gmail.com | MX | last error: The resolution lifetime expired after 5.010 seconds: Server Do53:218.248.112.193@53 answered The DNS operation timed out.
+2026-07-03 20:34:45 | DEBUG    | ThreadPoolExecutor-0_5 | dns_checker | DNS transient error | daybreak-official.com | MX | attempt 2/2 | The resolution lifetime expired after 5.008 seconds: Server Do53:218.248.112.193@53 answered The DNS operation timed out.
+2026-07-03 20:34:45 | DEBUG    | ThreadPoolExecutor-0_8 | dns_checker | DNS transient error | cannarma.com | MX | attempt 2/2 | The resolution lifetime expired after 5.005 seconds: Server Do53:218.248.112.193@53 answered The DNS operation timed out.
+2026-07-03 20:34:45 | DEBUG    | ThreadPoolExecutor-0_8 | dns_checker | DNS lookup exhausted retries | cannarma.com | MX | last error: The resolution lifetime expired after 5.005 seconds: Server Do53:218.248.112.193@53 answered The DNS operation timed out.
+2026-07-03 20:34:45 | DEBUG    | ThreadPoolExecutor-0_0 | dns_checker | DNS transient error | thebrownbear.ca | MX | attempt 2/2 | The resolution lifetime expired after 5.010 seconds: Server Do53:218.248.112.193@53 answered The DNS operation timed out.
+2026-07-03 20:34:45 | DEBUG    | ThreadPoolExecutor-0_0 | dns_checker | DNS lookup exhausted retries | thebrownbear.ca | MX | last error: The resolution lifetime expired after 5.010 seconds: Server Do53:218.248.112.193@53 answered The DNS operation timed out.
+2026-07-03 20:34:45 | DEBUG    | ThreadPoolExecutor-0_5 | dns_checker | DNS lookup exhausted retries | daybreak-official.com | MX | last error: The resolution lifetime expired after 5.008 seconds: Server Do53:218.248.112.193@53 answered The DNS operation timed out.
+2026-07-03 20:34:45 | DEBUG    | ThreadPoolExecutor-0_4 | dns_checker | DNS transient error | mycarmesi.com | MX | attempt 2/2 | The resolution lifetime expired after 5.007 seconds: Server Do53:218.248.112.193@53 answered The DNS operation timed out.
+2026-07-03 20:34:45 | DEBUG    | ThreadPoolExecutor-0_6 | dns_checker | DNS transient error | cannarma.com | MX | attempt 2/2 | The resolution lifetime expired after 5.006 seconds: Server Do53:218.248.112.193@53 answered The DNS operation timed out.
+2026-07-03 20:34:45 | DEBUG    | ThreadPoolExecutor-0_4 | dns_checker | DNS lookup exhausted retries | mycarmesi.com | MX | last error: The resolution lifetime expired after 5.007 seconds: Server Do53:218.248.112.193@53 answered The DNS operation timed out.
+2026-07-03 20:34:45 | DEBUG    | ThreadPoolExecutor-0_6 | dns_checker | DNS lookup exhausted retries | cannarma.com | MX | last error: The resolution lifetime expired after 5.006 seconds: Server Do53:218.248.112.193@53 answered The DNS operation timed out.
+2026-07-03 20:34:45 | DEBUG    | ThreadPoolExecutor-0_1 | dns_checker | DNS transient error | thedearist.com | MX | attempt 2/2 | The resolution lifetime expired after 5.008 seconds: Server Do53:218.248.112.193@53 answered The DNS operation timed out.
+2026-07-03 20:34:45 | DEBUG    | ThreadPoolExecutor-0_1 | dns_checker | DNS lookup exhausted retries | thedearist.com | MX | last error: The resolution lifetime expired after 5.008 seconds: Server Do53:218.248.112.193@53 answered The DNS operation timed out.
+2026-07-03 20:34:45 | DEBUG    | ThreadPoolExecutor-0_2 | dns_checker | DNS transient error | betterdaysco.com | MX | attempt 2/2 | The resolution lifetime expired after 5.008 seconds: Server Do53:218.248.112.193@53 answered The DNS operation timed out.
+2026-07-03 20:34:45 | DEBUG    | ThreadPoolExecutor-0_2 | dns_checker | DNS lookup exhausted retries | betterdaysco.com | MX | last error: The resolution lifetime expired after 5.008 seconds: Server Do53:218.248.112.193@53 answered The DNS operation timed out.
+2026-07-03 20:34:45 | DEBUG    | ThreadPoolExecutor-0_3 | dns_checker | DNS transient error | thedearist.com | MX | attempt 2/2 | The resolution lifetime expired after 5.011 seconds: Server Do53:218.248.112.193@53 answered The DNS operation timed out.
+2026-07-03 20:34:45 | DEBUG    | ThreadPoolExecutor-0_3 | dns_checker | DNS lookup exhausted retries | thedearist.com | MX | last error: The resolution lifetime expired after 5.011 seconds: Server Do53:218.248.112.193@53 answered The DNS operation timed out.
+2026-07-03 20:34:45 | DEBUG    | ThreadPoolExecutor-0_7 | dns_checker | DNS transient error | gmail.com | MX | attempt 2/2 | The resolution lifetime expired after 5.012 seconds: Server Do53:218.248.112.193@53 answered The DNS operation timed out.
+2026-07-03 20:34:45 | DEBUG    | ThreadPoolExecutor-0_7 | dns_checker | DNS lookup exhausted retries | gmail.com | MX | last error: The resolution lifetime expired after 5.012 seconds: Server Do53:218.248.112.193@53 answered The DNS operation timed out.
+2026-07-03 20:34:50 | DEBUG    | ThreadPoolExecutor-0_8 | dns_checker | DNS transient error | cannarma.com | A | attempt 1/2 | The resolution lifetime expired after 5.011 seconds: Server Do53:218.248.112.193@53 answered The DNS operation timed out.
+2026-07-03 20:34:50 | DEBUG    | ThreadPoolExecutor-0_0 | dns_checker | DNS transient error | thebrownbear.ca | A | attempt 1/2 | The resolution lifetime expired after 5.011 seconds: Server Do53:218.248.112.193@53 answered The DNS operation timed out.
+2026-07-03 20:34:50 | DEBUG    | ThreadPoolExecutor-0_5 | dns_checker | DNS transient error | daybreak-official.com | A | attempt 1/2 | The resolution lifetime expired after 5.011 seconds: Server Do53:218.248.112.193@53 answered The DNS operation timed out.
+2026-07-03 20:34:50 | DEBUG    | ThreadPoolExecutor-0_6 | dns_checker | DNS transient error | cannarma.com | A | attempt 1/2 | The resolution lifetime expired after 5.011 seconds: Server Do53:218.248.112.193@53 answered The DNS operation timed out.
+2026-07-03 20:34:50 | DEBUG    | ThreadPoolExecutor-0_4 | dns_checker | DNS transient error | mycarmesi.com | A | attempt 1/2 | The resolution lifetime expired after 5.012 seconds: Server Do53:218.248.112.193@53 answered The DNS operation timed out.
+2026-07-03 20:34:50 | DEBUG    | ThreadPoolExecutor-0_9 | dns_checker | DNS transient error | gmail.com | A | attempt 1/2 | The resolution lifetime expired after 5.015 seconds: Server Do53:218.248.112.193@53 answered The DNS operation timed out.
+2026-07-03 20:34:50 | DEBUG    | ThreadPoolExecutor-0_3 | dns_checker | DNS transient error | thedearist.com | A | attempt 1/2 | The resolution lifetime expired after 5.011 seconds: Server Do53:218.248.112.193@53 answered The DNS operation timed out.
+2026-07-03 20:34:50 | DEBUG    | ThreadPoolExecutor-0_1 | dns_checker | DNS transient error | thedearist.com | A | attempt 1/2 | The resolution lifetime expired after 5.014 seconds: Server Do53:218.248.112.193@53 answered The DNS operation timed out.
+2026-07-03 20:34:50 | DEBUG    | ThreadPoolExecutor-0_2 | dns_checker | DNS transient error | betterdaysco.com | A | attempt 1/2 | The resolution lifetime expired after 5.013 seconds: Server Do53:218.248.112.193@53 answered The DNS operation timed out.
+2026-07-03 20:34:50 | DEBUG    | ThreadPoolExecutor-0_7 | dns_checker | DNS transient error | gmail.com | A | attempt 1/2 | The resolution lifetime expired after 5.012 seconds: Server Do53:218.248.112.193@53 answered The DNS operation timed out.
+2026-07-03 20:34:55 | DEBUG    | ThreadPoolExecutor-0_8 | dns_checker | DNS transient error | cannarma.com | A | attempt 2/2 | The resolution lifetime expired after 5.016 seconds: Server Do53:218.248.112.193@53 answered The DNS operation timed out.
+2026-07-03 20:34:55 | DEBUG    | ThreadPoolExecutor-0_8 | dns_checker | DNS lookup exhausted retries | cannarma.com | A | last error: The resolution lifetime expired after 5.016 seconds: Server Do53:218.248.112.193@53 answered The DNS operation timed out.
+2026-07-03 20:34:55 | DEBUG    | ThreadPoolExecutor-0_0 | dns_checker | DNS transient error | thebrownbear.ca | A | attempt 2/2 | The resolution lifetime expired after 5.016 seconds: Server Do53:218.248.112.193@53 answered The DNS operation timed out.
+2026-07-03 20:34:55 | DEBUG    | ThreadPoolExecutor-0_0 | dns_checker | DNS lookup exhausted retries | thebrownbear.ca | A | last error: The resolution lifetime expired after 5.016 seconds: Server Do53:218.248.112.193@53 answered The DNS operation timed out.
+2026-07-03 20:34:55 | DEBUG    | ThreadPoolExecutor-0_6 | dns_checker | DNS transient error | cannarma.com | A | attempt 2/2 | The resolution lifetime expired after 5.016 seconds: Server Do53:218.248.112.193@53 answered The DNS operation timed out.
+2026-07-03 20:34:55 | DEBUG    | ThreadPoolExecutor-0_6 | dns_checker | DNS lookup exhausted retries | cannarma.com | A | last error: The resolution lifetime expired after 5.016 seconds: Server Do53:218.248.112.193@53 answered The DNS operation timed out.
+2026-07-03 20:34:55 | DEBUG    | ThreadPoolExecutor-0_5 | dns_checker | DNS transient error | daybreak-official.com | A | attempt 2/2 | The resolution lifetime expired after 5.019 seconds: Server Do53:218.248.112.193@53 answered The DNS operation timed out.
+2026-07-03 20:34:55 | DEBUG    | ThreadPoolExecutor-0_5 | dns_checker | DNS lookup exhausted retries | daybreak-official.com | A | last error: The resolution lifetime expired after 5.019 seconds: Server Do53:218.248.112.193@53 answered The DNS operation timed out.
+2026-07-03 20:34:55 | DEBUG    | ThreadPoolExecutor-0_9 | dns_checker | DNS transient error | gmail.com | A | attempt 2/2 | The resolution lifetime expired after 5.015 seconds: Server Do53:218.248.112.193@53 answered The DNS operation timed out.
+2026-07-03 20:34:55 | DEBUG    | ThreadPoolExecutor-0_9 | dns_checker | DNS lookup exhausted retries | gmail.com | A | last error: The resolution lifetime expired after 5.015 seconds: Server Do53:218.248.112.193@53 answered The DNS operation timed out.
+2026-07-03 20:34:55 | DEBUG    | ThreadPoolExecutor-0_3 | dns_checker | DNS transient error | thedearist.com | A | attempt 2/2 | The resolution lifetime expired after 5.005 seconds: Server Do53:218.248.112.193@53 answered The DNS operation timed out.
+2026-07-03 20:34:55 | DEBUG    | ThreadPoolExecutor-0_3 | dns_checker | DNS lookup exhausted retries | thedearist.com | A | last error: The resolution lifetime expired after 5.005 seconds: Server Do53:218.248.112.193@53 answered The DNS operation timed out.
+2026-07-03 20:34:55 | DEBUG    | ThreadPoolExecutor-0_4 | dns_checker | DNS transient error | mycarmesi.com | A | attempt 2/2 | The resolution lifetime expired after 5.016 seconds: Server Do53:218.248.112.193@53 answered The DNS operation timed out.
+2026-07-03 20:34:55 | DEBUG    | ThreadPoolExecutor-0_4 | dns_checker | DNS lookup exhausted retries | mycarmesi.com | A | last error: The resolution lifetime expired after 5.016 seconds: Server Do53:218.248.112.193@53 answered The DNS operation timed out.
+2026-07-03 20:34:55 | DEBUG    | ThreadPoolExecutor-0_1 | dns_checker | DNS transient error | thedearist.com | A | attempt 2/2 | The resolution lifetime expired after 5.015 seconds: Server Do53:218.248.112.193@53 answered The DNS operation timed out.
+2026-07-03 20:34:55 | DEBUG    | ThreadPoolExecutor-0_1 | dns_checker | DNS lookup exhausted retries | thedearist.com | A | last error: The resolution lifetime expired after 5.015 seconds: Server Do53:218.248.112.193@53 answered The DNS operation timed out.
+2026-07-03 20:34:55 | DEBUG    | ThreadPoolExecutor-0_2 | dns_checker | DNS transient error | betterdaysco.com | A | attempt 2/2 | The resolution lifetime expired after 5.015 seconds: Server Do53:218.248.112.193@53 answered The DNS operation timed out.
+2026-07-03 20:34:55 | DEBUG    | ThreadPoolExecutor-0_2 | dns_checker | DNS lookup exhausted retries | betterdaysco.com | A | last error: The resolution lifetime expired after 5.015 seconds: Server Do53:218.248.112.193@53 answered The DNS operation timed out.
+2026-07-03 20:34:55 | DEBUG    | ThreadPoolExecutor-0_7 | dns_checker | DNS transient error | gmail.com | A | attempt 2/2 | The resolution lifetime expired after 5.016 seconds: Server Do53:218.248.112.193@53 answered The DNS operation timed out.
+2026-07-03 20:34:55 | DEBUG    | ThreadPoolExecutor-0_7 | dns_checker | DNS lookup exhausted retries | gmail.com | A | last error: The resolution lifetime expired after 5.016 seconds: Server Do53:218.248.112.193@53 answered The DNS operation timed out.
+2026-07-03 20:35:00 | DEBUG    | ThreadPoolExecutor-0_6 | dns_checker | DNS transient error | cannarma.com | AAAA | attempt 1/2 | The resolution lifetime expired after 5.012 seconds: Server Do53:218.248.112.193@53 answered The DNS operation timed out.
+2026-07-03 20:35:00 | DEBUG    | ThreadPoolExecutor-0_3 | dns_checker | DNS transient error | thedearist.com | AAAA | attempt 1/2 | The resolution lifetime expired after 5.012 seconds: Server Do53:218.248.112.193@53 answered The DNS operation timed out.
+2026-07-03 20:35:00 | DEBUG    | ThreadPoolExecutor-0_9 | dns_checker | DNS transient error | gmail.com | AAAA | attempt 1/2 | The resolution lifetime expired after 5.014 seconds: Server Do53:218.248.112.193@53 answered The DNS operation timed out.
+2026-07-03 20:35:00 | DEBUG    | ThreadPoolExecutor-0_4 | dns_checker | DNS transient error | mycarmesi.com | AAAA | attempt 1/2 | The resolution lifetime expired after 5.013 seconds: Server Do53:218.248.112.193@53 answered The DNS operation timed out.
+2026-07-03 20:35:00 | DEBUG    | ThreadPoolExecutor-0_1 | dns_checker | DNS transient error | thedearist.com | AAAA | attempt 1/2 | The resolution lifetime expired after 5.006 seconds: Server Do53:218.248.112.193@53 answered The DNS operation timed out.
+2026-07-03 20:35:00 | DEBUG    | ThreadPoolExecutor-0_0 | dns_checker | DNS transient error | thebrownbear.ca | AAAA | attempt 1/2 | The resolution lifetime expired after 5.020 seconds: Server Do53:218.248.112.193@53 answered The DNS operation timed out.
+2026-07-03 20:35:00 | DEBUG    | ThreadPoolExecutor-0_5 | dns_checker | DNS transient error | daybreak-official.com | AAAA | attempt 1/2 | The resolution lifetime expired after 5.018 seconds: Server Do53:218.248.112.193@53 answered The DNS operation timed out.
+2026-07-03 20:35:00 | DEBUG    | ThreadPoolExecutor-0_8 | dns_checker | DNS transient error | cannarma.com | AAAA | attempt 1/2 | The resolution lifetime expired after 5.023 seconds: Server Do53:218.248.112.193@53 answered The DNS operation timed out.
+2026-07-03 20:35:00 | DEBUG    | ThreadPoolExecutor-0_2 | dns_checker | DNS transient error | betterdaysco.com | AAAA | attempt 1/2 | The resolution lifetime expired after 5.015 seconds: Server Do53:218.248.112.193@53 answered The DNS operation timed out.
+2026-07-03 20:35:00 | DEBUG    | ThreadPoolExecutor-0_7 | dns_checker | DNS transient error | gmail.com | AAAA | attempt 1/2 | The resolution lifetime expired after 5.015 seconds: Server Do53:218.248.112.193@53 answered The DNS operation timed out.
+2026-07-03 20:35:05 | DEBUG    | ThreadPoolExecutor-0_9 | dns_checker | DNS transient error | gmail.com | AAAA | attempt 2/2 | The resolution lifetime expired after 5.001 seconds: Server Do53:218.248.112.193@53 answered The DNS operation timed out.
+2026-07-03 20:35:05 | DEBUG    | ThreadPoolExecutor-0_9 | dns_checker | DNS lookup exhausted retries | gmail.com | AAAA | last error: The resolution lifetime expired after 5.001 seconds: Server Do53:218.248.112.193@53 answered The DNS operation timed out.
+2026-07-03 20:35:05 | DEBUG    | ThreadPoolExecutor-0_6 | dns_checker | DNS transient error | cannarma.com | AAAA | attempt 2/2 | The resolution lifetime expired after 5.005 seconds: Server Do53:218.248.112.193@53 answered The DNS operation timed out.
+2026-07-03 20:35:05 | DEBUG    | ThreadPoolExecutor-0_4 | dns_checker | DNS transient error | mycarmesi.com | AAAA | attempt 2/2 | The resolution lifetime expired after 5.001 seconds: Server Do53:218.248.112.193@53 answered The DNS operation timed out.
+2026-07-03 20:35:05 | DEBUG    | ThreadPoolExecutor-0_3 | dns_checker | DNS transient error | thedearist.com | AAAA | attempt 2/2 | The resolution lifetime expired after 5.003 seconds: Server Do53:218.248.112.193@53 answered The DNS operation timed out.
+2026-07-03 20:35:05 | DEBUG    | ThreadPoolExecutor-0_9 | dns_checker | DNS FAIL | example@gmail.com | Domain 'gmail.com' does not exist or accepts no mail (no MX, no A/AAAA)
+2026-07-03 20:35:05 | INFO     | ThreadPoolExecutor-0_9 | __main__ | INVALID DOMAIN | example@gmail.com | Domain 'gmail.com' does not exist or accepts no mail (no MX, no A/AAAA)
+2026-07-03 20:35:05 | DEBUG    | ThreadPoolExecutor-0_6 | dns_checker | DNS lookup exhausted retries | cannarma.com | AAAA | last error: The resolution lifetime expired after 5.005 seconds: Server Do53:218.248.112.193@53 answered The DNS operation timed out.
+2026-07-03 20:35:05 | DEBUG    | ThreadPoolExecutor-0_4 | dns_checker | DNS lookup exhausted retries | mycarmesi.com | AAAA | last error: The resolution lifetime expired after 5.001 seconds: Server Do53:218.248.112.193@53 answered The DNS operation timed out.
+2026-07-03 20:35:05 | DEBUG    | ThreadPoolExecutor-0_3 | dns_checker | DNS lookup exhausted retries | thedearist.com | AAAA | last error: The resolution lifetime expired after 5.003 seconds: Server Do53:218.248.112.193@53 answered The DNS operation timed out.
+2026-07-03 20:35:05 | DEBUG    | ThreadPoolExecutor-0_3 | dns_checker | DNS FAIL | community@thedearist.com | Domain 'thedearist.com' does not exist or accepts no mail (no MX, no A/AAAA)
+2026-07-03 20:35:05 | INFO     | ThreadPoolExecutor-0_3 | __main__ | INVALID DOMAIN | community@thedearist.com | Domain 'thedearist.com' does not exist or accepts no mail (no MX, no A/AAAA)
+2026-07-03 20:35:05 | DEBUG    | ThreadPoolExecutor-0_4 | dns_checker | DNS FAIL | care@mycarmesi.com | Domain 'mycarmesi.com' does not exist or accepts no mail (no MX, no A/AAAA)
+2026-07-03 20:35:05 | INFO     | ThreadPoolExecutor-0_4 | __main__ | INVALID DOMAIN | care@mycarmesi.com | Domain 'mycarmesi.com' does not exist or accepts no mail (no MX, no A/AAAA)
+2026-07-03 20:35:05 | DEBUG    | ThreadPoolExecutor-0_6 | dns_checker | DNS FAIL | support@cannarma.com | Domain 'cannarma.com' does not exist or accepts no mail (no MX, no A/AAAA)
+2026-07-03 20:35:05 | INFO     | ThreadPoolExecutor-0_6 | __main__ | INVALID DOMAIN | support@cannarma.com | Domain 'cannarma.com' does not exist or accepts no mail (no MX, no A/AAAA)
+2026-07-03 20:35:05 | DEBUG    | ThreadPoolExecutor-0_9 | syntax_validator | SYNTAX OK | info@daysahead.nl
+2026-07-03 20:35:05 | INFO     | MainThread | __main__ | Progress: 12/26 (46%)
+2026-07-03 20:35:05 | DEBUG    | ThreadPoolExecutor-0_3 | syntax_validator | SYNTAX OK | messages@territoryahead.com
+2026-07-03 20:35:05 | DEBUG    | ThreadPoolExecutor-0_4 | syntax_validator | SYNTAX OK | support@dentalkart.com
+2026-07-03 20:35:05 | DEBUG    | ThreadPoolExecutor-0_6 | syntax_validator | SYNTAX OK | returns@dentalkart.com
+2026-07-03 20:35:05 | INFO     | MainThread | __main__ | Progress: 14/26 (54%)
+2026-07-03 20:35:05 | DEBUG    | ThreadPoolExecutor-0_1 | dns_checker | DNS transient error | thedearist.com | AAAA | attempt 2/2 | The resolution lifetime expired after 5.015 seconds: Server Do53:218.248.112.193@53 answered The DNS operation timed out.
+2026-07-03 20:35:05 | DEBUG    | ThreadPoolExecutor-0_5 | dns_checker | DNS transient error | daybreak-official.com | AAAA | attempt 2/2 | The resolution lifetime expired after 5.014 seconds: Server Do53:218.248.112.193@53 answered The DNS operation timed out.
+2026-07-03 20:35:05 | DEBUG    | ThreadPoolExecutor-0_5 | dns_checker | DNS lookup exhausted retries | daybreak-official.com | AAAA | last error: The resolution lifetime expired after 5.014 seconds: Server Do53:218.248.112.193@53 answered The DNS operation timed out.
+2026-07-03 20:35:05 | DEBUG    | ThreadPoolExecutor-0_5 | dns_checker | DNS FAIL | support@daybreak-official.com | Domain 'daybreak-official.com' does not exist or accepts no mail (no MX, no A/AAAA)
+2026-07-03 20:35:05 | INFO     | ThreadPoolExecutor-0_5 | __main__ | INVALID DOMAIN | support@daybreak-official.com | Domain 'daybreak-official.com' does not exist or accepts no mail (no MX, no A/AAAA)
+2026-07-03 20:35:05 | DEBUG    | ThreadPoolExecutor-0_0 | dns_checker | DNS transient error | thebrownbear.ca | AAAA | attempt 2/2 | The resolution lifetime expired after 5.015 seconds: Server Do53:218.248.112.193@53 answered The DNS operation timed out.
+2026-07-03 20:35:05 | DEBUG    | ThreadPoolExecutor-0_2 | dns_checker | DNS transient error | betterdaysco.com | AAAA | attempt 2/2 | The resolution lifetime expired after 5.005 seconds: Server Do53:218.248.112.193@53 answered The DNS operation timed out.
+2026-07-03 20:35:05 | DEBUG    | ThreadPoolExecutor-0_2 | dns_checker | DNS lookup exhausted retries | betterdaysco.com | AAAA | last error: The resolution lifetime expired after 5.005 seconds: Server Do53:218.248.112.193@53 answered The DNS operation timed out.
+2026-07-03 20:35:05 | DEBUG    | ThreadPoolExecutor-0_7 | dns_checker | DNS transient error | gmail.com | AAAA | attempt 2/2 | The resolution lifetime expired after 5.005 seconds: Server Do53:218.248.112.193@53 answered The DNS operation timed out.
+2026-07-03 20:35:05 | DEBUG    | ThreadPoolExecutor-0_8 | dns_checker | DNS transient error | cannarma.com | AAAA | attempt 2/2 | The resolution lifetime expired after 5.014 seconds: Server Do53:218.248.112.193@53 answered The DNS operation timed out.
+2026-07-03 20:35:05 | DEBUG    | ThreadPoolExecutor-0_8 | dns_checker | DNS lookup exhausted retries | cannarma.com | AAAA | last error: The resolution lifetime expired after 5.014 seconds: Server Do53:218.248.112.193@53 answered The DNS operation timed out.
+2026-07-03 20:35:05 | DEBUG    | ThreadPoolExecutor-0_8 | dns_checker | DNS FAIL | info@cannarma.com | Domain 'cannarma.com' does not exist or accepts no mail (no MX, no A/AAAA)
+2026-07-03 20:35:05 | INFO     | ThreadPoolExecutor-0_8 | __main__ | INVALID DOMAIN | info@cannarma.com | Domain 'cannarma.com' does not exist or accepts no mail (no MX, no A/AAAA)
+2026-07-03 20:35:05 | DEBUG    | ThreadPoolExecutor-0_0 | dns_checker | DNS lookup exhausted retries | thebrownbear.ca | AAAA | last error: The resolution lifetime expired after 5.015 seconds: Server Do53:218.248.112.193@53 answered The DNS operation timed out.
+2026-07-03 20:35:05 | DEBUG    | ThreadPoolExecutor-0_0 | dns_checker | DNS FAIL | info@thebrownbear.ca | Domain 'thebrownbear.ca' does not exist or accepts no mail (no MX, no A/AAAA)
+2026-07-03 20:35:05 | INFO     | ThreadPoolExecutor-0_0 | __main__ | INVALID DOMAIN | info@thebrownbear.ca | Domain 'thebrownbear.ca' does not exist or accepts no mail (no MX, no A/AAAA)
+2026-07-03 20:35:05 | DEBUG    | ThreadPoolExecutor-0_1 | dns_checker | DNS lookup exhausted retries | thedearist.com | AAAA | last error: The resolution lifetime expired after 5.015 seconds: Server Do53:218.248.112.193@53 answered The DNS operation timed out.
+2026-07-03 20:35:05 | DEBUG    | ThreadPoolExecutor-0_1 | dns_checker | DNS FAIL | admin@thedearist.com | Domain 'thedearist.com' does not exist or accepts no mail (no MX, no A/AAAA)
+2026-07-03 20:35:05 | INFO     | ThreadPoolExecutor-0_1 | __main__ | INVALID DOMAIN | admin@thedearist.com | Domain 'thedearist.com' does not exist or accepts no mail (no MX, no A/AAAA)
+2026-07-03 20:35:05 | DEBUG    | ThreadPoolExecutor-0_7 | dns_checker | DNS lookup exhausted retries | gmail.com | AAAA | last error: The resolution lifetime expired after 5.005 seconds: Server Do53:218.248.112.193@53 answered The DNS operation timed out.
+2026-07-03 20:35:05 | DEBUG    | ThreadPoolExecutor-0_7 | dns_checker | DNS FAIL | mohammadweex21@gmail.com | Domain 'gmail.com' does not exist or accepts no mail (no MX, no A/AAAA)
+2026-07-03 20:35:05 | INFO     | ThreadPoolExecutor-0_7 | __main__ | INVALID DOMAIN | mohammadweex21@gmail.com | Domain 'gmail.com' does not exist or accepts no mail (no MX, no A/AAAA)
+2026-07-03 20:35:05 | DEBUG    | ThreadPoolExecutor-0_2 | dns_checker | DNS FAIL | customersupport@betterdaysco.com | Domain 'betterdaysco.com' does not exist or accepts no mail (no MX, no A/AAAA)
+2026-07-03 20:35:05 | INFO     | ThreadPoolExecutor-0_2 | __main__ | INVALID DOMAIN | customersupport@betterdaysco.com | Domain 'betterdaysco.com' does not exist or accepts no mail (no MX, no A/AAAA)
+2026-07-03 20:35:05 | DEBUG    | ThreadPoolExecutor-0_5 | syntax_validator | SYNTAX OK | cs@dentalkart.com
+2026-07-03 20:35:05 | INFO     | MainThread | __main__ | Progress: 16/26 (62%)
+2026-07-03 20:35:05 | INFO     | MainThread | __main__ | Progress: 18/26 (69%)
+2026-07-03 20:35:05 | INFO     | MainThread | __main__ | Progress: 20/26 (77%)
+2026-07-03 20:35:10 | DEBUG    | ThreadPoolExecutor-0_3 | dns_checker | DNS transient error | territoryahead.com | MX | attempt 1/2 | The resolution lifetime expired after 5.014 seconds: Server Do53:218.248.112.193@53 answered The DNS operation timed out.
+2026-07-03 20:35:10 | DEBUG    | ThreadPoolExecutor-0_9 | dns_checker | DNS transient error | daysahead.nl | MX | attempt 1/2 | The resolution lifetime expired after 5.016 seconds: Server Do53:218.248.112.193@53 answered The DNS operation timed out.
+2026-07-03 20:35:10 | DEBUG    | ThreadPoolExecutor-0_6 | dns_checker | DNS transient error | dentalkart.com | MX | attempt 1/2 | The resolution lifetime expired after 5.014 seconds: Server Do53:218.248.112.193@53 answered The DNS operation timed out.
+2026-07-03 20:35:10 | DEBUG    | ThreadPoolExecutor-0_4 | dns_checker | DNS transient error | dentalkart.com | MX | attempt 1/2 | The resolution lifetime expired after 5.015 seconds: Server Do53:218.248.112.193@53 answered The DNS operation timed out.
+2026-07-03 20:35:10 | DEBUG    | ThreadPoolExecutor-0_5 | dns_checker | DNS transient error | dentalkart.com | MX | attempt 1/2 | The resolution lifetime expired after 5.014 seconds: Server Do53:218.248.112.193@53 answered The DNS operation timed out.
+2026-07-03 20:35:15 | DEBUG    | ThreadPoolExecutor-0_9 | dns_checker | DNS transient error | daysahead.nl | MX | attempt 2/2 | The resolution lifetime expired after 5.009 seconds: Server Do53:218.248.112.193@53 answered The DNS operation timed out.
+2026-07-03 20:35:15 | DEBUG    | ThreadPoolExecutor-0_9 | dns_checker | DNS lookup exhausted retries | daysahead.nl | MX | last error: The resolution lifetime expired after 5.009 seconds: Server Do53:218.248.112.193@53 answered The DNS operation timed out.
+2026-07-03 20:35:15 | DEBUG    | ThreadPoolExecutor-0_6 | dns_checker | DNS transient error | dentalkart.com | MX | attempt 2/2 | The resolution lifetime expired after 5.011 seconds: Server Do53:218.248.112.193@53 answered The DNS operation timed out.
+2026-07-03 20:35:15 | DEBUG    | ThreadPoolExecutor-0_6 | dns_checker | DNS lookup exhausted retries | dentalkart.com | MX | last error: The resolution lifetime expired after 5.011 seconds: Server Do53:218.248.112.193@53 answered The DNS operation timed out.
+2026-07-03 20:35:15 | DEBUG    | ThreadPoolExecutor-0_3 | dns_checker | DNS transient error | territoryahead.com | MX | attempt 2/2 | The resolution lifetime expired after 5.011 seconds: Server Do53:218.248.112.193@53 answered The DNS operation timed out.
+2026-07-03 20:35:15 | DEBUG    | ThreadPoolExecutor-0_3 | dns_checker | DNS lookup exhausted retries | territoryahead.com | MX | last error: The resolution lifetime expired after 5.011 seconds: Server Do53:218.248.112.193@53 answered The DNS operation timed out.
+2026-07-03 20:35:15 | DEBUG    | ThreadPoolExecutor-0_4 | dns_checker | DNS transient error | dentalkart.com | MX | attempt 2/2 | The resolution lifetime expired after 5.009 seconds: Server Do53:218.248.112.193@53 answered The DNS operation timed out.
+2026-07-03 20:35:15 | DEBUG    | ThreadPoolExecutor-0_4 | dns_checker | DNS lookup exhausted retries | dentalkart.com | MX | last error: The resolution lifetime expired after 5.009 seconds: Server Do53:218.248.112.193@53 answered The DNS operation timed out.
+2026-07-03 20:35:15 | DEBUG    | ThreadPoolExecutor-0_5 | dns_checker | DNS transient error | dentalkart.com | MX | attempt 2/2 | The resolution lifetime expired after 5.011 seconds: Server Do53:218.248.112.193@53 answered The DNS operation timed out.
+2026-07-03 20:35:15 | DEBUG    | ThreadPoolExecutor-0_5 | dns_checker | DNS lookup exhausted retries | dentalkart.com | MX | last error: The resolution lifetime expired after 5.011 seconds: Server Do53:218.248.112.193@53 answered The DNS operation timed out.
+2026-07-03 20:35:20 | DEBUG    | ThreadPoolExecutor-0_9 | dns_checker | DNS transient error | daysahead.nl | A | attempt 1/2 | The resolution lifetime expired after 5.013 seconds: Server Do53:218.248.112.193@53 answered The DNS operation timed out.
+2026-07-03 20:35:20 | DEBUG    | ThreadPoolExecutor-0_6 | dns_checker | DNS transient error | dentalkart.com | A | attempt 1/2 | The resolution lifetime expired after 5.014 seconds: Server Do53:218.248.112.193@53 answered The DNS operation timed out.
+2026-07-03 20:35:20 | DEBUG    | ThreadPoolExecutor-0_3 | dns_checker | DNS transient error | territoryahead.com | A | attempt 1/2 | The resolution lifetime expired after 5.014 seconds: Server Do53:218.248.112.193@53 answered The DNS operation timed out.
+2026-07-03 20:35:20 | DEBUG    | ThreadPoolExecutor-0_4 | dns_checker | DNS transient error | dentalkart.com | A | attempt 1/2 | The resolution lifetime expired after 5.014 seconds: Server Do53:218.248.112.193@53 answered The DNS operation timed out.
+2026-07-03 20:35:20 | DEBUG    | ThreadPoolExecutor-0_5 | dns_checker | DNS transient error | dentalkart.com | A | attempt 1/2 | The resolution lifetime expired after 5.014 seconds: Server Do53:218.248.112.193@53 answered The DNS operation timed out.
+2026-07-03 20:35:25 | DEBUG    | ThreadPoolExecutor-0_3 | dns_checker | DNS transient error | territoryahead.com | A | attempt 2/2 | The resolution lifetime expired after 5.004 seconds: Server Do53:218.248.112.193@53 answered The DNS operation timed out.
+2026-07-03 20:35:25 | DEBUG    | ThreadPoolExecutor-0_3 | dns_checker | DNS lookup exhausted retries | territoryahead.com | A | last error: The resolution lifetime expired after 5.004 seconds: Server Do53:218.248.112.193@53 answered The DNS operation timed out.
+2026-07-03 20:35:25 | DEBUG    | ThreadPoolExecutor-0_6 | dns_checker | DNS transient error | dentalkart.com | A | attempt 2/2 | The resolution lifetime expired after 5.005 seconds: Server Do53:218.248.112.193@53 answered The DNS operation timed out.
+2026-07-03 20:35:25 | DEBUG    | ThreadPoolExecutor-0_6 | dns_checker | DNS lookup exhausted retries | dentalkart.com | A | last error: The resolution lifetime expired after 5.005 seconds: Server Do53:218.248.112.193@53 answered The DNS operation timed out.
+2026-07-03 20:35:25 | DEBUG    | ThreadPoolExecutor-0_4 | dns_checker | DNS transient error | dentalkart.com | A | attempt 2/2 | The resolution lifetime expired after 5.003 seconds: Server Do53:218.248.112.193@53 answered The DNS operation timed out.
+2026-07-03 20:35:25 | DEBUG    | ThreadPoolExecutor-0_4 | dns_checker | DNS lookup exhausted retries | dentalkart.com | A | last error: The resolution lifetime expired after 5.003 seconds: Server Do53:218.248.112.193@53 answered The DNS operation timed out.
+2026-07-03 20:35:25 | DEBUG    | ThreadPoolExecutor-0_9 | dns_checker | DNS transient error | daysahead.nl | A | attempt 2/2 | The resolution lifetime expired after 5.007 seconds: Server Do53:218.248.112.193@53 answered The DNS operation timed out.
+2026-07-03 20:35:25 | DEBUG    | ThreadPoolExecutor-0_9 | dns_checker | DNS lookup exhausted retries | daysahead.nl | A | last error: The resolution lifetime expired after 5.007 seconds: Server Do53:218.248.112.193@53 answered The DNS operation timed out.
+2026-07-03 20:35:25 | DEBUG    | ThreadPoolExecutor-0_5 | dns_checker | DNS transient error | dentalkart.com | A | attempt 2/2 | The resolution lifetime expired after 5.005 seconds: Server Do53:218.248.112.193@53 answered The DNS operation timed out.
+2026-07-03 20:35:25 | DEBUG    | ThreadPoolExecutor-0_5 | dns_checker | DNS lookup exhausted retries | dentalkart.com | A | last error: The resolution lifetime expired after 5.005 seconds: Server Do53:218.248.112.193@53 answered The DNS operation timed out.
+2026-07-03 20:35:30 | DEBUG    | ThreadPoolExecutor-0_6 | dns_checker | DNS transient error | dentalkart.com | AAAA | attempt 1/2 | The resolution lifetime expired after 5.004 seconds: Server Do53:218.248.112.193@53 answered The DNS operation timed out.
+2026-07-03 20:35:30 | DEBUG    | ThreadPoolExecutor-0_9 | dns_checker | DNS transient error | daysahead.nl | AAAA | attempt 1/2 | The resolution lifetime expired after 5.004 seconds: Server Do53:218.248.112.193@53 answered The DNS operation timed out.
+2026-07-03 20:35:30 | DEBUG    | ThreadPoolExecutor-0_4 | dns_checker | DNS transient error | dentalkart.com | AAAA | attempt 1/2 | The resolution lifetime expired after 5.005 seconds: Server Do53:218.248.112.193@53 answered The DNS operation timed out.
+2026-07-03 20:35:30 | DEBUG    | ThreadPoolExecutor-0_3 | dns_checker | DNS transient error | territoryahead.com | AAAA | attempt 1/2 | The resolution lifetime expired after 5.008 seconds: Server Do53:218.248.112.193@53 answered The DNS operation timed out.
+2026-07-03 20:35:30 | DEBUG    | ThreadPoolExecutor-0_5 | dns_checker | DNS transient error | dentalkart.com | AAAA | attempt 1/2 | The resolution lifetime expired after 5.007 seconds: Server Do53:218.248.112.193@53 answered The DNS operation timed out.
+2026-07-03 20:35:35 | DEBUG    | ThreadPoolExecutor-0_6 | dns_checker | DNS transient error | dentalkart.com | AAAA | attempt 2/2 | The resolution lifetime expired after 5.000 seconds: Server Do53:218.248.112.193@53 answered The DNS operation timed out.
+2026-07-03 20:35:35 | DEBUG    | ThreadPoolExecutor-0_6 | dns_checker | DNS lookup exhausted retries | dentalkart.com | AAAA | last error: The resolution lifetime expired after 5.000 seconds: Server Do53:218.248.112.193@53 answered The DNS operation timed out.
+2026-07-03 20:35:35 | DEBUG    | ThreadPoolExecutor-0_6 | dns_checker | DNS FAIL | returns@dentalkart.com | Domain 'dentalkart.com' does not exist or accepts no mail (no MX, no A/AAAA)
+2026-07-03 20:35:35 | INFO     | ThreadPoolExecutor-0_6 | __main__ | INVALID DOMAIN | returns@dentalkart.com | Domain 'dentalkart.com' does not exist or accepts no mail (no MX, no A/AAAA)
+2026-07-03 20:35:35 | INFO     | MainThread | __main__ | Progress: 22/26 (85%)
+2026-07-03 20:35:35 | DEBUG    | ThreadPoolExecutor-0_9 | dns_checker | DNS transient error | daysahead.nl | AAAA | attempt 2/2 | The resolution lifetime expired after 5.014 seconds: Server Do53:218.248.112.193@53 answered The DNS operation timed out.
+2026-07-03 20:35:35 | DEBUG    | ThreadPoolExecutor-0_4 | dns_checker | DNS transient error | dentalkart.com | AAAA | attempt 2/2 | The resolution lifetime expired after 5.013 seconds: Server Do53:218.248.112.193@53 answered The DNS operation timed out.
+2026-07-03 20:35:35 | DEBUG    | ThreadPoolExecutor-0_9 | dns_checker | DNS lookup exhausted retries | daysahead.nl | AAAA | last error: The resolution lifetime expired after 5.014 seconds: Server Do53:218.248.112.193@53 answered The DNS operation timed out.
+2026-07-03 20:35:35 | DEBUG    | ThreadPoolExecutor-0_5 | dns_checker | DNS transient error | dentalkart.com | AAAA | attempt 2/2 | The resolution lifetime expired after 5.002 seconds: Server Do53:218.248.112.193@53 answered The DNS operation timed out.
+2026-07-03 20:35:35 | DEBUG    | ThreadPoolExecutor-0_5 | dns_checker | DNS lookup exhausted retries | dentalkart.com | AAAA | last error: The resolution lifetime expired after 5.002 seconds: Server Do53:218.248.112.193@53 answered The DNS operation timed out.
+2026-07-03 20:35:35 | DEBUG    | ThreadPoolExecutor-0_5 | dns_checker | DNS FAIL | cs@dentalkart.com | Domain 'dentalkart.com' does not exist or accepts no mail (no MX, no A/AAAA)
+2026-07-03 20:35:35 | INFO     | ThreadPoolExecutor-0_5 | __main__ | INVALID DOMAIN | cs@dentalkart.com | Domain 'dentalkart.com' does not exist or accepts no mail (no MX, no A/AAAA)
+2026-07-03 20:35:35 | DEBUG    | ThreadPoolExecutor-0_3 | dns_checker | DNS transient error | territoryahead.com | AAAA | attempt 2/2 | The resolution lifetime expired after 5.013 seconds: Server Do53:218.248.112.193@53 answered The DNS operation timed out.
+2026-07-03 20:35:35 | DEBUG    | ThreadPoolExecutor-0_3 | dns_checker | DNS lookup exhausted retries | territoryahead.com | AAAA | last error: The resolution lifetime expired after 5.013 seconds: Server Do53:218.248.112.193@53 answered The DNS operation timed out.
+2026-07-03 20:35:35 | DEBUG    | ThreadPoolExecutor-0_3 | dns_checker | DNS FAIL | messages@territoryahead.com | Domain 'territoryahead.com' does not exist or accepts no mail (no MX, no A/AAAA)
+2026-07-03 20:35:35 | INFO     | ThreadPoolExecutor-0_3 | __main__ | INVALID DOMAIN | messages@territoryahead.com | Domain 'territoryahead.com' does not exist or accepts no mail (no MX, no A/AAAA)
+2026-07-03 20:35:35 | DEBUG    | ThreadPoolExecutor-0_4 | dns_checker | DNS lookup exhausted retries | dentalkart.com | AAAA | last error: The resolution lifetime expired after 5.013 seconds: Server Do53:218.248.112.193@53 answered The DNS operation timed out.
+2026-07-03 20:35:35 | DEBUG    | ThreadPoolExecutor-0_4 | dns_checker | DNS FAIL | support@dentalkart.com | Domain 'dentalkart.com' does not exist or accepts no mail (no MX, no A/AAAA)
+2026-07-03 20:35:35 | INFO     | ThreadPoolExecutor-0_4 | __main__ | INVALID DOMAIN | support@dentalkart.com | Domain 'dentalkart.com' does not exist or accepts no mail (no MX, no A/AAAA)
+2026-07-03 20:35:35 | DEBUG    | ThreadPoolExecutor-0_9 | dns_checker | DNS FAIL | info@daysahead.nl | Domain 'daysahead.nl' does not exist or accepts no mail (no MX, no A/AAAA)
+2026-07-03 20:35:35 | INFO     | ThreadPoolExecutor-0_9 | __main__ | INVALID DOMAIN | info@daysahead.nl | Domain 'daysahead.nl' does not exist or accepts no mail (no MX, no A/AAAA)
+2026-07-03 20:35:35 | INFO     | MainThread | __main__ | Progress: 24/26 (92%)
+2026-07-03 20:35:35 | INFO     | MainThread | __main__ | Progress: 26/26 (100%)
+2026-07-03 20:35:35 | INFO     | MainThread | __main__ | Validation finished in 90.3 seconds
+2026-07-03 20:35:35 | INFO     | MainThread | excel_handler | Results saved -> C:\Users\manas\Downloads\Email_Validator-\output\validation_results.xlsx (26 rows)
+2026-07-03 20:35:35 | INFO     | MainThread | excel_handler | Failed emails saved -> C:\Users\manas\Downloads\Email_Validator-\output\failed_emails.xlsx (26 rows)
+2026-07-03 20:35:35 | INFO     | MainThread | __main__ | Summary report saved -> C:\Users\manas\Downloads\Email_Validator-\output\summary_report.txt
+2026-07-03 20:35:35 | INFO     | MainThread | __main__ | All done. Check the 'output/' folder for results.
+2026-07-03 20:44:15 | INFO     | MainThread | __main__ | ============================================================
+2026-07-03 20:44:15 | INFO     | MainThread | __main__ | Email Validation System - starting
+2026-07-03 20:44:15 | INFO     | MainThread | __main__ | Input file: input\Raw_Email.xlsx
+2026-07-03 20:44:15 | INFO     | MainThread | excel_handler | Reading input file: input\Raw_Email.xlsx
+2026-07-03 20:44:15 | INFO     | MainThread | excel_handler | Using column 'Scraped_Email' for email addresses
+2026-07-03 20:44:15 | INFO     | MainThread | excel_handler | Found 26 email address(es)
+2026-07-03 20:44:15 | INFO     | MainThread | __main__ | Validating 26 emails with 10 workers (max 3 concurrent per domain)…
+2026-07-03 20:44:15 | DEBUG    | ThreadPoolExecutor-0_0 | syntax_validator | SYNTAX OK | usainfo@koraorganics.com
+2026-07-03 20:44:15 | DEBUG    | ThreadPoolExecutor-0_1 | syntax_validator | SYNTAX OK | press@oneloveorganics.com
+2026-07-03 20:44:15 | DEBUG    | ThreadPoolExecutor-0_2 | syntax_validator | SYNTAX OK | support@wareiq.com
+2026-07-03 20:44:15 | DEBUG    | ThreadPoolExecutor-0_7 | syntax_validator | SYNTAX OK | collaboration@nakednature.in
+2026-07-03 20:44:15 | DEBUG    | ThreadPoolExecutor-0_3 | syntax_validator | SYNTAX OK | jane@theorganicriot.com
+2026-07-03 20:44:15 | DEBUG    | ThreadPoolExecutor-0_8 | syntax_validator | SYNTAX OK | cuma.meroan@gq.comal
+2026-07-03 20:44:15 | DEBUG    | ThreadPoolExecutor-0_4 | syntax_validator | SYNTAX OK | john@forest-riot.com
+2026-07-03 20:44:15 | DEBUG    | ThreadPoolExecutor-0_5 | syntax_validator | SYNTAX OK | info@nakedallnatural.com
+2026-07-03 20:44:15 | DEBUG    | ThreadPoolExecutor-0_6 | syntax_validator | SYNTAX OK | sales@nakednature.in
+2026-07-03 20:44:15 | DEBUG    | ThreadPoolExecutor-0_9 | syntax_validator | SYNTAX OK | support@oracura.in
+2026-07-03 20:44:20 | DEBUG    | ThreadPoolExecutor-0_0 | dns_checker | DNS resolution failure | koraorganics.com | MX | primary resolver | attempt 1/2 | The resolution lifetime expired after 5.011 seconds: Server Do53:218.248.112.193@53 answered The DNS operation timed out.
+2026-07-03 20:44:20 | DEBUG    | ThreadPoolExecutor-0_7 | dns_checker | DNS resolution failure | nakednature.in | MX | primary resolver | attempt 1/2 | The resolution lifetime expired after 5.009 seconds: Server Do53:218.248.112.193@53 answered The DNS operation timed out.
+2026-07-03 20:44:20 | DEBUG    | ThreadPoolExecutor-0_4 | dns_checker | DNS resolution failure | forest-riot.com | MX | primary resolver | attempt 1/2 | The resolution lifetime expired after 5.008 seconds: Server Do53:218.248.112.193@53 answered The DNS operation timed out.
+2026-07-03 20:44:20 | DEBUG    | ThreadPoolExecutor-0_8 | dns_checker | DNS resolution failure | gq.comal | MX | primary resolver | attempt 1/2 | The resolution lifetime expired after 5.009 seconds: Server Do53:218.248.112.193@53 answered The DNS operation timed out.
+2026-07-03 20:44:20 | DEBUG    | ThreadPoolExecutor-0_6 | dns_checker | DNS resolution failure | nakednature.in | MX | primary resolver | attempt 1/2 | The resolution lifetime expired after 5.008 seconds: Server Do53:218.248.112.193@53 answered The DNS operation timed out.
+2026-07-03 20:44:20 | DEBUG    | ThreadPoolExecutor-0_5 | dns_checker | DNS resolution failure | nakedallnatural.com | MX | primary resolver | attempt 1/2 | The resolution lifetime expired after 5.008 seconds: Server Do53:218.248.112.193@53 answered The DNS operation timed out.
+2026-07-03 20:44:20 | DEBUG    | ThreadPoolExecutor-0_9 | dns_checker | DNS resolution failure | oracura.in | MX | primary resolver | attempt 1/2 | The resolution lifetime expired after 5.008 seconds: Server Do53:218.248.112.193@53 answered The DNS operation timed out.
+2026-07-03 20:44:20 | DEBUG    | ThreadPoolExecutor-0_1 | dns_checker | DNS resolution failure | oneloveorganics.com | MX | primary resolver | attempt 1/2 | The resolution lifetime expired after 5.011 seconds: Server Do53:218.248.112.193@53 answered The DNS operation timed out.
+2026-07-03 20:44:20 | DEBUG    | ThreadPoolExecutor-0_2 | dns_checker | DNS resolution failure | wareiq.com | MX | primary resolver | attempt 1/2 | The resolution lifetime expired after 5.011 seconds: Server Do53:218.248.112.193@53 answered The DNS operation timed out.
+2026-07-03 20:44:20 | DEBUG    | ThreadPoolExecutor-0_3 | dns_checker | DNS resolution failure | theorganicriot.com | MX | primary resolver | attempt 1/2 | The resolution lifetime expired after 5.010 seconds: Server Do53:218.248.112.193@53 answered The DNS operation timed out.
+2026-07-03 20:44:25 | DEBUG    | ThreadPoolExecutor-0_7 | dns_checker | DNS resolution failure | nakednature.in | MX | primary resolver | attempt 2/2 | The resolution lifetime expired after 5.014 seconds: Server Do53:218.248.112.193@53 answered The DNS operation timed out.
+2026-07-03 20:44:25 | DEBUG    | ThreadPoolExecutor-0_7 | dns_checker | primary resolver exhausted retries for nakednature.in | MX - trying next resolver
+2026-07-03 20:44:25 | DEBUG    | ThreadPoolExecutor-0_8 | dns_checker | DNS resolution failure | gq.comal | MX | primary resolver | attempt 2/2 | The resolution lifetime expired after 5.014 seconds: Server Do53:218.248.112.193@53 answered The DNS operation timed out.
+2026-07-03 20:44:25 | DEBUG    | ThreadPoolExecutor-0_8 | dns_checker | primary resolver exhausted retries for gq.comal | MX - trying next resolver
+2026-07-03 20:44:25 | DEBUG    | ThreadPoolExecutor-0_6 | dns_checker | DNS resolution failure | nakednature.in | MX | primary resolver | attempt 2/2 | The resolution lifetime expired after 5.014 seconds: Server Do53:218.248.112.193@53 answered The DNS operation timed out.
+2026-07-03 20:44:25 | DEBUG    | ThreadPoolExecutor-0_6 | dns_checker | primary resolver exhausted retries for nakednature.in | MX - trying next resolver
+2026-07-03 20:44:25 | DEBUG    | ThreadPoolExecutor-0_5 | dns_checker | DNS resolution failure | nakedallnatural.com | MX | primary resolver | attempt 2/2 | The resolution lifetime expired after 5.015 seconds: Server Do53:218.248.112.193@53 answered The DNS operation timed out.
+2026-07-03 20:44:25 | DEBUG    | ThreadPoolExecutor-0_5 | dns_checker | primary resolver exhausted retries for nakedallnatural.com | MX - trying next resolver
+2026-07-03 20:44:25 | DEBUG    | ThreadPoolExecutor-0_9 | dns_checker | DNS resolution failure | oracura.in | MX | primary resolver | attempt 2/2 | The resolution lifetime expired after 5.016 seconds: Server Do53:218.248.112.193@53 answered The DNS operation timed out.
+2026-07-03 20:44:25 | DEBUG    | ThreadPoolExecutor-0_9 | dns_checker | primary resolver exhausted retries for oracura.in | MX - trying next resolver
+2026-07-03 20:44:25 | DEBUG    | ThreadPoolExecutor-0_1 | dns_checker | DNS resolution failure | oneloveorganics.com | MX | primary resolver | attempt 2/2 | The resolution lifetime expired after 5.016 seconds: Server Do53:218.248.112.193@53 answered The DNS operation timed out.
+2026-07-03 20:44:25 | DEBUG    | ThreadPoolExecutor-0_1 | dns_checker | primary resolver exhausted retries for oneloveorganics.com | MX - trying next resolver
+2026-07-03 20:44:25 | DEBUG    | ThreadPoolExecutor-0_2 | dns_checker | DNS resolution failure | wareiq.com | MX | primary resolver | attempt 2/2 | The resolution lifetime expired after 5.016 seconds: Server Do53:218.248.112.193@53 answered The DNS operation timed out.
+2026-07-03 20:44:25 | DEBUG    | ThreadPoolExecutor-0_2 | dns_checker | primary resolver exhausted retries for wareiq.com | MX - trying next resolver
+2026-07-03 20:44:25 | DEBUG    | ThreadPoolExecutor-0_3 | dns_checker | DNS resolution failure | theorganicriot.com | MX | primary resolver | attempt 2/2 | The resolution lifetime expired after 5.017 seconds: Server Do53:218.248.112.193@53 answered The DNS operation timed out.
+2026-07-03 20:44:25 | DEBUG    | ThreadPoolExecutor-0_3 | dns_checker | primary resolver exhausted retries for theorganicriot.com | MX - trying next resolver
+2026-07-03 20:44:25 | DEBUG    | ThreadPoolExecutor-0_0 | dns_checker | DNS resolution failure | koraorganics.com | MX | primary resolver | attempt 2/2 | The resolution lifetime expired after 5.024 seconds: Server Do53:218.248.112.193@53 answered The DNS operation timed out.
+2026-07-03 20:44:25 | DEBUG    | ThreadPoolExecutor-0_0 | dns_checker | primary resolver exhausted retries for koraorganics.com | MX - trying next resolver
+2026-07-03 20:44:25 | DEBUG    | ThreadPoolExecutor-0_4 | dns_checker | DNS resolution failure | forest-riot.com | MX | primary resolver | attempt 2/2 | The resolution lifetime expired after 5.022 seconds: Server Do53:218.248.112.193@53 answered The DNS operation timed out.
+2026-07-03 20:44:25 | DEBUG    | ThreadPoolExecutor-0_4 | dns_checker | primary resolver exhausted retries for forest-riot.com | MX - trying next resolver
+2026-07-03 20:44:25 | DEBUG    | ThreadPoolExecutor-0_2 | dns_checker | DNS OK | support@wareiq.com | MX: ['aspmx.l.google.com', 'alt1.aspmx.l.google.com', 'alt2.aspmx.l.google.com', 'alt3.aspmx.l.googlemail.com', 'alt4.aspmx.l.googlemail.com']
+2026-07-03 20:44:25 | DEBUG    | ThreadPoolExecutor-0_6 | dns_checker | DNS OK | sales@nakednature.in | MX: ['mx.nakednature.in.cust.b.hostedemail.com']
+2026-07-03 20:44:25 | DEBUG    | ThreadPoolExecutor-0_7 | dns_checker | DNS OK | collaboration@nakednature.in | MX: ['mx.nakednature.in.cust.b.hostedemail.com']
+2026-07-03 20:44:25 | DEBUG    | ThreadPoolExecutor-0_4 | dns_checker | DNS OK | john@forest-riot.com | MX: ['smtp.google.com']
+2026-07-03 20:44:25 | DEBUG    | ThreadPoolExecutor-0_9 | dns_checker | DNS OK | support@oracura.in | MX: ['aspmx.l.google.com', 'alt1.aspmx.l.google.com', 'alt2.aspmx.l.google.com', 'aspmx2.googlemail.com', 'aspmx3.googlemail.com']
+2026-07-03 20:44:25 | DEBUG    | ThreadPoolExecutor-0_5 | dns_checker | DNS OK | info@nakedallnatural.com | MX: ['mail.nakedallnatural.com']
+2026-07-03 20:44:25 | DEBUG    | ThreadPoolExecutor-0_3 | dns_checker | DNS OK | jane@theorganicriot.com | MX: ['aspmx.l.google.com', 'alt1.aspmx.l.google.com', 'alt2.aspmx.l.google.com', 'aspmx2.googlemail.com', 'aspmx3.googlemail.com']
+2026-07-03 20:44:25 | DEBUG    | ThreadPoolExecutor-0_0 | dns_checker | DNS OK | usainfo@koraorganics.com | MX: ['koraorganics-com.mail.protection.outlook.com']
+2026-07-03 20:44:25 | DEBUG    | ThreadPoolExecutor-0_1 | dns_checker | DNS OK | press@oneloveorganics.com | MX: ['mx1-us1.ppe-hosted.com', 'mx2-us1.ppe-hosted.com']
+2026-07-03 20:44:27 | DEBUG    | ThreadPoolExecutor-0_4 | smtp_validator | SMTP INVALID_MAILBOX | john@forest-riot.com | MX=smtp.google.com | 550 5.1.1 The email account that you tried to reach does not exist. Please try
+5.1.1 double-checking the recipient's email address for typos or
+5.1.1 unnecessary spaces. For more information, go to
+5.1.1  https://support.google.com/mail/?p=NoSuchUser a92af1059eb24-13b3c7faba3si24945018c88.22 - gsmtp
+2026-07-03 20:44:27 | INFO     | ThreadPoolExecutor-0_4 | __main__ | INVALID_MAILBOX | john@forest-riot.com | Mailbox does not exist
+2026-07-03 20:44:27 | DEBUG    | ThreadPoolExecutor-0_3 | smtp_validator | SMTP INVALID_MAILBOX | jane@theorganicriot.com | MX=aspmx.l.google.com | 550 5.1.1 The email account that you tried to reach does not exist. Please try
+5.1.1 double-checking the recipient's email address for typos or
+5.1.1 unnecessary spaces. For more information, go to
+5.1.1  https://support.google.com/mail/?p=NoSuchUser a92af1059eb24-13b3c8731absi26106738c88.53 - gsmtp
+2026-07-03 20:44:27 | INFO     | ThreadPoolExecutor-0_3 | __main__ | INVALID_MAILBOX | jane@theorganicriot.com | Mailbox does not exist
+2026-07-03 20:44:27 | DEBUG    | ThreadPoolExecutor-0_4 | syntax_validator | SYNTAX OK | hr@oracura.in
+2026-07-03 20:44:27 | DEBUG    | ThreadPoolExecutor-0_4 | dns_checker | DNS cache hit | hr@oracura.in | VALID
+2026-07-03 20:44:27 | DEBUG    | ThreadPoolExecutor-0_3 | syntax_validator | SYNTAX OK | info@cannarma.com
+2026-07-03 20:44:27 | INFO     | MainThread | __main__ | Progress: 2/26 (8%)
+2026-07-03 20:44:27 | DEBUG    | ThreadPoolExecutor-0_2 | smtp_validator | SMTP VALID | support@wareiq.com | MX=aspmx.l.google.com | 250 2.1.5 OK 5a478bee46e88-30f0bc2794esi26156318eec.80 - gsmtp
+2026-07-03 20:44:27 | DEBUG    | ThreadPoolExecutor-0_9 | smtp_validator | SMTP VALID | support@oracura.in | MX=aspmx.l.google.com | 250 2.1.5 OK 5a478bee46e88-30f0bc27bdfsi25637025eec.71 - gsmtp
+2026-07-03 20:44:27 | DEBUG    | ThreadPoolExecutor-0_6 | smtp_validator | SMTP unrecoverable on host | sales@nakednature.in | SMTPServerDisconnected on mx.nakednature.in.cust.b.hostedemail.com: Connection unexpectedly closed: [WinError 10054] An existing connection was forcibly closed by the remote host
+2026-07-03 20:44:27 | DEBUG    | ThreadPoolExecutor-0_6 | smtp_validator | SMTP exhausted all hosts | sales@nakednature.in | SMTPServerDisconnected on mx.nakednature.in.cust.b.hostedemail.com: Connection unexpectedly closed: [WinError 10054] An existing connection was forcibly closed by the remote host
+2026-07-03 20:44:27 | INFO     | ThreadPoolExecutor-0_6 | __main__ | TEMPORARY_FAILURE | sales@nakednature.in | SMTPServerDisconnected on mx.nakednature.in.cust.b.hostedemail.com: Connection unexpectedly closed: [WinError 10054] An existing connection was forcibly closed by the remote host
+2026-07-03 20:44:27 | DEBUG    | ThreadPoolExecutor-0_6 | syntax_validator | SYNTAX OK | support@cannarma.com
+2026-07-03 20:44:27 | DEBUG    | ThreadPoolExecutor-0_7 | smtp_validator | SMTP unrecoverable on host | collaboration@nakednature.in | SMTPServerDisconnected on mx.nakednature.in.cust.b.hostedemail.com: Connection unexpectedly closed: [WinError 10054] An existing connection was forcibly closed by the remote host
+2026-07-03 20:44:27 | DEBUG    | ThreadPoolExecutor-0_7 | smtp_validator | SMTP exhausted all hosts | collaboration@nakednature.in | SMTPServerDisconnected on mx.nakednature.in.cust.b.hostedemail.com: Connection unexpectedly closed: [WinError 10054] An existing connection was forcibly closed by the remote host
+2026-07-03 20:44:27 | INFO     | ThreadPoolExecutor-0_7 | __main__ | TEMPORARY_FAILURE | collaboration@nakednature.in | SMTPServerDisconnected on mx.nakednature.in.cust.b.hostedemail.com: Connection unexpectedly closed: [WinError 10054] An existing connection was forcibly closed by the remote host
+2026-07-03 20:44:27 | DEBUG    | ThreadPoolExecutor-0_7 | syntax_validator | SYNTAX OK | example@gmail.com
+2026-07-03 20:44:27 | INFO     | MainThread | __main__ | Progress: 4/26 (15%)
+2026-07-03 20:44:28 | DEBUG    | ThreadPoolExecutor-0_0 | smtp_validator | SMTP INVALID_MAILBOX | usainfo@koraorganics.com | MX=koraorganics-com.mail.protection.outlook.com | 550 5.7.1 Service unavailable, Client host [2401:4900:88ad:37f5:5dc4:e622:2665:4248] blocked using Spamhaus. To request removal from this list see https://www.spamhaus.org/query/ip/2401:4900:88ad:37f5:5dc4:e622:2665:4248 AS(1440) [SY2PEPF00004FF5.ausprd01.prod.outlook.com 2026-07-03T15:14:24.128Z 08DED20D48B3EC25]
+2026-07-03 20:44:28 | INFO     | ThreadPoolExecutor-0_0 | __main__ | INVALID_MAILBOX | usainfo@koraorganics.com | Mailbox does not exist
+2026-07-03 20:44:28 | DEBUG    | ThreadPoolExecutor-0_0 | syntax_validator | SYNTAX OK | info@thebrownbear.ca
+2026-07-03 20:44:29 | DEBUG    | ThreadPoolExecutor-0_2 | smtp_validator | SMTP INVALID_MAILBOX | zz_catchall_probe_p2l4e8ey@wareiq.com | MX=aspmx.l.google.com | 550 5.1.1 The email account that you tried to reach does not exist. Please try
+5.1.1 double-checking the recipient's email address for typos or
+5.1.1 unnecessary spaces. For more information, go to
+5.1.1  https://support.google.com/mail/?p=NoSuchUser 5a478bee46e88-30f0b73d98fsi24939785eec.1 - gsmtp
+2026-07-03 20:44:29 | DEBUG    | ThreadPoolExecutor-0_2 | catch_all_detector | Catch-all status UNKNOWN | wareiq.com | ambiguous probe result (INVALID_MAILBOX)
+2026-07-03 20:44:29 | INFO     | ThreadPoolExecutor-0_2 | __main__ | VALID | support@wareiq.com
+2026-07-03 20:44:29 | DEBUG    | ThreadPoolExecutor-0_2 | syntax_validator | SYNTAX OK | care@mycarmesi.com
+2026-07-03 20:44:29 | INFO     | MainThread | __main__ | Progress: 6/26 (23%)
+2026-07-03 20:44:29 | DEBUG    | ThreadPoolExecutor-0_4 | smtp_validator | SMTP VALID | hr@oracura.in | MX=aspmx.l.google.com | 250 2.1.5 OK a92af1059eb24-13b42bd1094si15807169c88.65 - gsmtp
+2026-07-03 20:44:30 | DEBUG    | ThreadPoolExecutor-0_8 | dns_checker | DNS resolution failure | gq.comal | A | primary resolver | attempt 1/2 | The resolution lifetime expired after 5.008 seconds: Server Do53:218.248.112.193@53 answered The DNS operation timed out.
+2026-07-03 20:44:31 | DEBUG    | ThreadPoolExecutor-0_9 | smtp_validator | SMTP INVALID_MAILBOX | zz_catchall_probe_te9qg2at@oracura.in | MX=aspmx.l.google.com | 550 5.1.1 The email account that you tried to reach does not exist. Please try
+5.1.1 double-checking the recipient's email address for typos or
+5.1.1 unnecessary spaces. For more information, go to
+5.1.1  https://support.google.com/mail/?p=NoSuchUser a92af1059eb24-13b3c888bcbsi37150286c88.75 - gsmtp
+2026-07-03 20:44:31 | DEBUG    | ThreadPoolExecutor-0_9 | catch_all_detector | Catch-all status UNKNOWN | oracura.in | ambiguous probe result (INVALID_MAILBOX)
+2026-07-03 20:44:31 | INFO     | ThreadPoolExecutor-0_9 | __main__ | VALID | support@oracura.in
+2026-07-03 20:44:31 | INFO     | ThreadPoolExecutor-0_4 | __main__ | VALID | hr@oracura.in
+2026-07-03 20:44:31 | DEBUG    | ThreadPoolExecutor-0_9 | syntax_validator | SYNTAX OK | support@daybreak-official.com
+2026-07-03 20:44:31 | DEBUG    | ThreadPoolExecutor-0_4 | syntax_validator | SYNTAX OK | mohammadweex21@gmail.com
+2026-07-03 20:44:31 | INFO     | MainThread | __main__ | Progress: 8/26 (31%)
+2026-07-03 20:44:32 | DEBUG    | ThreadPoolExecutor-0_3 | dns_checker | DNS resolution failure | cannarma.com | MX | primary resolver | attempt 1/2 | The resolution lifetime expired after 5.009 seconds: Server Do53:218.248.112.193@53 answered The DNS operation timed out.
+2026-07-03 20:44:32 | DEBUG    | ThreadPoolExecutor-0_6 | dns_checker | DNS resolution failure | cannarma.com | MX | primary resolver | attempt 1/2 | The resolution lifetime expired after 5.011 seconds: Server Do53:218.248.112.193@53 answered The DNS operation timed out.
+2026-07-03 20:44:32 | DEBUG    | ThreadPoolExecutor-0_7 | dns_checker | DNS resolution failure | gmail.com | MX | primary resolver | attempt 1/2 | The resolution lifetime expired after 5.009 seconds: Server Do53:218.248.112.193@53 answered The DNS operation timed out.
+2026-07-03 20:44:33 | DEBUG    | ThreadPoolExecutor-0_0 | dns_checker | DNS resolution failure | thebrownbear.ca | MX | primary resolver | attempt 1/2 | The resolution lifetime expired after 5.012 seconds: Server Do53:218.248.112.193@53 answered The DNS operation timed out.
+2026-07-03 20:44:33 | DEBUG    | ThreadPoolExecutor-0_1 | smtp_validator | SMTP VALID | press@oneloveorganics.com | MX=mx1-us1.ppe-hosted.com | 250 2.1.5 Ok
+2026-07-03 20:44:34 | DEBUG    | ThreadPoolExecutor-0_2 | dns_checker | DNS resolution failure | mycarmesi.com | MX | primary resolver | attempt 1/2 | The resolution lifetime expired after 5.015 seconds: Server Do53:218.248.112.193@53 answered The DNS operation timed out.
+2026-07-03 20:44:35 | DEBUG    | ThreadPoolExecutor-0_8 | dns_checker | DNS resolution failure | gq.comal | A | primary resolver | attempt 2/2 | The resolution lifetime expired after 5.014 seconds: Server Do53:218.248.112.193@53 answered The DNS operation timed out.
+2026-07-03 20:44:35 | DEBUG    | ThreadPoolExecutor-0_8 | dns_checker | primary resolver exhausted retries for gq.comal | A - trying next resolver
+2026-07-03 20:44:36 | DEBUG    | ThreadPoolExecutor-0_9 | dns_checker | DNS resolution failure | daybreak-official.com | MX | primary resolver | attempt 1/2 | The resolution lifetime expired after 5.002 seconds: Server Do53:218.248.112.193@53 answered The DNS operation timed out.
+2026-07-03 20:44:36 | DEBUG    | ThreadPoolExecutor-0_4 | dns_checker | DNS resolution failure | gmail.com | MX | primary resolver | attempt 1/2 | The resolution lifetime expired after 5.001 seconds: Server Do53:218.248.112.193@53 answered The DNS operation timed out.
+2026-07-03 20:44:36 | DEBUG    | ThreadPoolExecutor-0_5 | smtp_validator | SMTP unrecoverable on host | info@nakedallnatural.com | SMTPServerDisconnected on mail.nakedallnatural.com: Connection unexpectedly closed: timed out
+2026-07-03 20:44:36 | DEBUG    | ThreadPoolExecutor-0_5 | smtp_validator | SMTP exhausted all hosts | info@nakedallnatural.com | SMTPServerDisconnected on mail.nakedallnatural.com: Connection unexpectedly closed: timed out
+2026-07-03 20:44:36 | INFO     | ThreadPoolExecutor-0_5 | __main__ | TEMPORARY_FAILURE | info@nakedallnatural.com | SMTPServerDisconnected on mail.nakedallnatural.com: Connection unexpectedly closed: timed out
+2026-07-03 20:44:36 | DEBUG    | ThreadPoolExecutor-0_5 | syntax_validator | SYNTAX OK | community@thedearist.com
+2026-07-03 20:44:37 | DEBUG    | ThreadPoolExecutor-0_3 | dns_checker | DNS resolution failure | cannarma.com | MX | primary resolver | attempt 2/2 | The resolution lifetime expired after 5.011 seconds: Server Do53:218.248.112.193@53 answered The DNS operation timed out.
+2026-07-03 20:44:37 | DEBUG    | ThreadPoolExecutor-0_3 | dns_checker | primary resolver exhausted retries for cannarma.com | MX - trying next resolver
+2026-07-03 20:44:37 | DEBUG    | ThreadPoolExecutor-0_3 | dns_checker | DNS OK | info@cannarma.com | MX: ['aspmx.l.google.com', 'alt1.aspmx.l.google.com', 'alt2.aspmx.l.google.com', 'alt3.aspmx.l.google.com', 'alt4.aspmx.l.google.com']
+2026-07-03 20:44:37 | DEBUG    | ThreadPoolExecutor-0_6 | dns_checker | DNS resolution failure | cannarma.com | MX | primary resolver | attempt 2/2 | The resolution lifetime expired after 5.010 seconds: Server Do53:218.248.112.193@53 answered The DNS operation timed out.
+2026-07-03 20:44:37 | DEBUG    | ThreadPoolExecutor-0_6 | dns_checker | primary resolver exhausted retries for cannarma.com | MX - trying next resolver
+2026-07-03 20:44:37 | DEBUG    | ThreadPoolExecutor-0_7 | dns_checker | DNS resolution failure | gmail.com | MX | primary resolver | attempt 2/2 | The resolution lifetime expired after 5.010 seconds: Server Do53:218.248.112.193@53 answered The DNS operation timed out.
+2026-07-03 20:44:37 | DEBUG    | ThreadPoolExecutor-0_7 | dns_checker | primary resolver exhausted retries for gmail.com | MX - trying next resolver
+2026-07-03 20:44:37 | DEBUG    | ThreadPoolExecutor-0_7 | dns_checker | DNS OK | example@gmail.com | MX: ['gmail-smtp-in.l.google.com', 'alt1.gmail-smtp-in.l.google.com', 'alt2.gmail-smtp-in.l.google.com', 'alt3.gmail-smtp-in.l.google.com', 'alt4.gmail-smtp-in.l.google.com']
+2026-07-03 20:44:38 | DEBUG    | ThreadPoolExecutor-0_6 | dns_checker | DNS OK | support@cannarma.com | MX: ['aspmx.l.google.com', 'alt1.aspmx.l.google.com', 'alt2.aspmx.l.google.com', 'alt3.aspmx.l.google.com', 'alt4.aspmx.l.google.com']
+2026-07-03 20:44:38 | DEBUG    | ThreadPoolExecutor-0_0 | dns_checker | DNS resolution failure | thebrownbear.ca | MX | primary resolver | attempt 2/2 | The resolution lifetime expired after 5.009 seconds: Server Do53:218.248.112.193@53 answered The DNS operation timed out.
+2026-07-03 20:44:38 | DEBUG    | ThreadPoolExecutor-0_0 | dns_checker | primary resolver exhausted retries for thebrownbear.ca | MX - trying next resolver
+2026-07-03 20:44:38 | DEBUG    | ThreadPoolExecutor-0_0 | dns_checker | DNS OK | info@thebrownbear.ca | MX: ['aspmx.l.google.com', 'alt1.aspmx.l.google.com', 'alt2.aspmx.l.google.com', 'aspmx2.googlemail.com', 'aspmx3.googlemail.com']
+2026-07-03 20:44:39 | DEBUG    | ThreadPoolExecutor-0_2 | dns_checker | DNS resolution failure | mycarmesi.com | MX | primary resolver | attempt 2/2 | The resolution lifetime expired after 5.001 seconds: Server Do53:218.248.112.193@53 answered The DNS operation timed out.
+2026-07-03 20:44:39 | DEBUG    | ThreadPoolExecutor-0_2 | dns_checker | primary resolver exhausted retries for mycarmesi.com | MX - trying next resolver
+2026-07-03 20:44:39 | DEBUG    | ThreadPoolExecutor-0_2 | dns_checker | DNS OK | care@mycarmesi.com | MX: ['aspmx.l.google.com', 'alt1.aspmx.l.google.com', 'alt2.aspmx.l.google.com', 'aspmx2.googlemail.com', 'aspmx3.googlemail.com']
+2026-07-03 20:44:39 | DEBUG    | ThreadPoolExecutor-0_3 | smtp_validator | SMTP VALID | info@cannarma.com | MX=aspmx.l.google.com | 250 2.1.5 OK a92af1059eb24-13b3c862d9csi24355719c88.51 - gsmtp
+2026-07-03 20:44:39 | DEBUG    | ThreadPoolExecutor-0_7 | smtp_validator | SMTP INVALID_MAILBOX | example@gmail.com | MX=gmail-smtp-in.l.google.com | 550 5.1.1 The email account that you tried to reach does not exist. Please try
+5.1.1 double-checking the recipient's email address for typos or
+5.1.1 unnecessary spaces. For more information, go to
+5.1.1  https://support.google.com/mail/?p=NoSuchUser a92af1059eb24-13b3c886b61si36336524c88.73 - gsmtp
+2026-07-03 20:44:39 | INFO     | ThreadPoolExecutor-0_7 | __main__ | INVALID_MAILBOX | example@gmail.com | Mailbox does not exist
+2026-07-03 20:44:39 | DEBUG    | ThreadPoolExecutor-0_7 | syntax_validator | SYNTAX OK | admin@thedearist.com
+2026-07-03 20:44:39 | INFO     | MainThread | __main__ | Progress: 10/26 (38%)
+2026-07-03 20:44:40 | DEBUG    | ThreadPoolExecutor-0_0 | smtp_validator | SMTP VALID | info@thebrownbear.ca | MX=aspmx.l.google.com | 250 2.1.5 OK a92af1059eb24-13b3c7fbc39si33097313c88.24 - gsmtp
+2026-07-03 20:44:40 | DEBUG    | ThreadPoolExecutor-0_8 | dns_checker | DNS resolution failure | gq.comal | AAAA | primary resolver | attempt 1/2 | The resolution lifetime expired after 5.002 seconds: Server Do53:218.248.112.193@53 answered The DNS operation timed out.
+2026-07-03 20:44:41 | DEBUG    | ThreadPoolExecutor-0_4 | dns_checker | DNS resolution failure | gmail.com | MX | primary resolver | attempt 2/2 | The resolution lifetime expired after 5.004 seconds: Server Do53:218.248.112.193@53 answered The DNS operation timed out.
+2026-07-03 20:44:41 | DEBUG    | ThreadPoolExecutor-0_9 | dns_checker | DNS resolution failure | daybreak-official.com | MX | primary resolver | attempt 2/2 | The resolution lifetime expired after 5.006 seconds: Server Do53:218.248.112.193@53 answered The DNS operation timed out.
+2026-07-03 20:44:41 | DEBUG    | ThreadPoolExecutor-0_9 | dns_checker | primary resolver exhausted retries for daybreak-official.com | MX - trying next resolver
+2026-07-03 20:44:41 | DEBUG    | ThreadPoolExecutor-0_4 | dns_checker | primary resolver exhausted retries for gmail.com | MX - trying next resolver
+2026-07-03 20:44:41 | DEBUG    | ThreadPoolExecutor-0_5 | dns_checker | DNS resolution failure | thedearist.com | MX | primary resolver | attempt 1/2 | The resolution lifetime expired after 5.003 seconds: Server Do53:218.248.112.193@53 answered The DNS operation timed out.
+2026-07-03 20:44:41 | DEBUG    | ThreadPoolExecutor-0_4 | dns_checker | DNS OK | mohammadweex21@gmail.com | MX: ['gmail-smtp-in.l.google.com', 'alt1.gmail-smtp-in.l.google.com', 'alt2.gmail-smtp-in.l.google.com', 'alt3.gmail-smtp-in.l.google.com', 'alt4.gmail-smtp-in.l.google.com']
+2026-07-03 20:44:41 | DEBUG    | ThreadPoolExecutor-0_2 | smtp_validator | SMTP VALID | care@mycarmesi.com | MX=aspmx.l.google.com | 250 2.1.5 OK 5a478bee46e88-30f0bc3765csi25527183eec.75 - gsmtp
+2026-07-03 20:44:42 | DEBUG    | ThreadPoolExecutor-0_6 | smtp_validator | SMTP VALID | support@cannarma.com | MX=aspmx.l.google.com | 250 2.1.5 OK a92af1059eb24-13b47538017si10020160c88.63 - gsmtp
+2026-07-03 20:44:43 | DEBUG    | ThreadPoolExecutor-0_4 | smtp_validator | SMTP VALID | mohammadweex21@gmail.com | MX=gmail-smtp-in.l.google.com | 250 2.1.5 OK 5a478bee46e88-30f30aa00d7si5233707eec.62 - gsmtp
+2026-07-03 20:44:44 | DEBUG    | ThreadPoolExecutor-0_7 | dns_checker | DNS resolution failure | thedearist.com | MX | primary resolver | attempt 1/2 | The resolution lifetime expired after 5.005 seconds: Server Do53:218.248.112.193@53 answered The DNS operation timed out.
+2026-07-03 20:44:45 | DEBUG    | ThreadPoolExecutor-0_8 | dns_checker | DNS resolution failure | gq.comal | AAAA | primary resolver | attempt 2/2 | The resolution lifetime expired after 5.010 seconds: Server Do53:218.248.112.193@53 answered The DNS operation timed out.
+2026-07-03 20:44:45 | DEBUG    | ThreadPoolExecutor-0_8 | dns_checker | primary resolver exhausted retries for gq.comal | AAAA - trying next resolver
+2026-07-03 20:44:45 | DEBUG    | ThreadPoolExecutor-0_8 | dns_checker | DNS FAIL | cuma.meroan@gq.comal | Domain 'gq.comal' does not exist or accepts no mail (no MX, no A/AAAA)
+2026-07-03 20:44:45 | INFO     | ThreadPoolExecutor-0_8 | __main__ | INVALID DOMAIN | cuma.meroan@gq.comal | Domain 'gq.comal' does not exist or accepts no mail (no MX, no A/AAAA)
+2026-07-03 20:44:45 | DEBUG    | ThreadPoolExecutor-0_8 | syntax_validator | SYNTAX OK | customersupport@betterdaysco.com
+2026-07-03 20:44:46 | DEBUG    | ThreadPoolExecutor-0_5 | dns_checker | DNS resolution failure | thedearist.com | MX | primary resolver | attempt 2/2 | The resolution lifetime expired after 5.009 seconds: Server Do53:218.248.112.193@53 answered The DNS operation timed out.
+2026-07-03 20:44:46 | DEBUG    | ThreadPoolExecutor-0_5 | dns_checker | primary resolver exhausted retries for thedearist.com | MX - trying next resolver
+2026-07-03 20:44:46 | DEBUG    | ThreadPoolExecutor-0_9 | dns_checker | DNS resolution failure | daybreak-official.com | A | primary resolver | attempt 1/2 | The resolution lifetime expired after 5.006 seconds: Server Do53:218.248.112.193@53 answered The DNS operation timed out.
+2026-07-03 20:44:46 | DEBUG    | ThreadPoolExecutor-0_5 | dns_checker | DNS OK | community@thedearist.com | MX: ['aspmx.l.google.com', 'alt1.aspmx.l.google.com', 'alt2.aspmx.l.google.com', 'alt3.aspmx.l.google.com', 'alt4.aspmx.l.google.com']
+2026-07-03 20:44:47 | DEBUG    | ThreadPoolExecutor-0_1 | smtp_validator | SMTP VALID | zz_catchall_probe_mspdkfdt@oneloveorganics.com | MX=mx1-us1.ppe-hosted.com | 250 2.1.5 Ok
+2026-07-03 20:44:47 | DEBUG    | ThreadPoolExecutor-0_1 | catch_all_detector | CATCH-ALL detected | oneloveorganics.com | probe accepted
+2026-07-03 20:44:47 | INFO     | ThreadPoolExecutor-0_1 | __main__ | CATCH-ALL | press@oneloveorganics.com
+2026-07-03 20:44:47 | DEBUG    | ThreadPoolExecutor-0_1 | syntax_validator | SYNTAX OK | info@daysahead.nl
+2026-07-03 20:44:47 | INFO     | MainThread | __main__ | Progress: 12/26 (46%)
+2026-07-03 20:44:48 | DEBUG    | ThreadPoolExecutor-0_5 | smtp_validator | SMTP VALID | community@thedearist.com | MX=aspmx.l.google.com | 250 2.1.5 OK a92af1059eb24-13b3c888bcbsi37154460c88.75 - gsmtp
+2026-07-03 20:44:48 | DEBUG    | ThreadPoolExecutor-0_3 | smtp_validator | SMTP INVALID_MAILBOX | zz_catchall_probe_wgk4uhme@cannarma.com | MX=aspmx.l.google.com | 550 5.1.1 The email account that you tried to reach does not exist. Please try
+5.1.1 double-checking the recipient's email address for typos or
+5.1.1 unnecessary spaces. For more information, go to
+5.1.1  https://support.google.com/mail/?p=NoSuchUser a92af1059eb24-13b42351875si14749592c88.67 - gsmtp
+2026-07-03 20:44:48 | DEBUG    | ThreadPoolExecutor-0_3 | catch_all_detector | Catch-all status UNKNOWN | cannarma.com | ambiguous probe result (INVALID_MAILBOX)
+2026-07-03 20:44:48 | INFO     | ThreadPoolExecutor-0_3 | __main__ | VALID | info@cannarma.com
+2026-07-03 20:44:48 | DEBUG    | ThreadPoolExecutor-0_3 | syntax_validator | SYNTAX OK | messages@territoryahead.com
+2026-07-03 20:44:49 | DEBUG    | ThreadPoolExecutor-0_7 | dns_checker | DNS resolution failure | thedearist.com | MX | primary resolver | attempt 2/2 | The resolution lifetime expired after 5.014 seconds: Server Do53:218.248.112.193@53 answered The DNS operation timed out.
+2026-07-03 20:44:49 | DEBUG    | ThreadPoolExecutor-0_7 | dns_checker | primary resolver exhausted retries for thedearist.com | MX - trying next resolver
+2026-07-03 20:44:49 | DEBUG    | ThreadPoolExecutor-0_7 | dns_checker | DNS OK | admin@thedearist.com | MX: ['aspmx.l.google.com', 'alt1.aspmx.l.google.com', 'alt2.aspmx.l.google.com', 'alt3.aspmx.l.google.com', 'alt4.aspmx.l.google.com']
+2026-07-03 20:44:50 | DEBUG    | ThreadPoolExecutor-0_0 | smtp_validator | SMTP INVALID_MAILBOX | zz_catchall_probe_sf1uut35@thebrownbear.ca | MX=aspmx.l.google.com | 550 5.1.1 The email account that you tried to reach does not exist. Please try
+5.1.1 double-checking the recipient's email address for typos or
+5.1.1 unnecessary spaces. For more information, go to
+5.1.1  https://support.google.com/mail/?p=NoSuchUser 5a478bee46e88-30f0bc37378si24751224eec.79 - gsmtp
+2026-07-03 20:44:50 | DEBUG    | ThreadPoolExecutor-0_0 | catch_all_detector | Catch-all status UNKNOWN | thebrownbear.ca | ambiguous probe result (INVALID_MAILBOX)
+2026-07-03 20:44:50 | INFO     | ThreadPoolExecutor-0_0 | __main__ | VALID | info@thebrownbear.ca
+2026-07-03 20:44:50 | DEBUG    | ThreadPoolExecutor-0_0 | syntax_validator | SYNTAX OK | support@dentalkart.com
+2026-07-03 20:44:50 | INFO     | MainThread | __main__ | Progress: 14/26 (54%)
+2026-07-03 20:44:50 | DEBUG    | ThreadPoolExecutor-0_8 | dns_checker | DNS resolution failure | betterdaysco.com | MX | primary resolver | attempt 1/2 | The resolution lifetime expired after 5.007 seconds: Server Do53:218.248.112.193@53 answered The DNS operation timed out.
+2026-07-03 20:44:51 | DEBUG    | ThreadPoolExecutor-0_9 | dns_checker | DNS resolution failure | daybreak-official.com | A | primary resolver | attempt 2/2 | The resolution lifetime expired after 5.014 seconds: Server Do53:218.248.112.193@53 answered The DNS operation timed out.
+2026-07-03 20:44:51 | DEBUG    | ThreadPoolExecutor-0_9 | dns_checker | primary resolver exhausted retries for daybreak-official.com | A - trying next resolver
+2026-07-03 20:44:51 | DEBUG    | ThreadPoolExecutor-0_9 | dns_checker | DNS OK (implicit MX) | support@daybreak-official.com | No MX records; using domain's A/AAAA record as implicit MX
+2026-07-03 20:44:52 | DEBUG    | ThreadPoolExecutor-0_2 | smtp_validator | SMTP INVALID_MAILBOX | zz_catchall_probe_u049go26@mycarmesi.com | MX=aspmx.l.google.com | 550 5.1.1 The email account that you tried to reach does not exist. Please try
+5.1.1 double-checking the recipient's email address for typos or
+5.1.1 unnecessary spaces. For more information, go to
+5.1.1  https://support.google.com/mail/?p=NoSuchUser a92af1059eb24-13b3c873994si22929327c88.52 - gsmtp
+2026-07-03 20:44:52 | DEBUG    | ThreadPoolExecutor-0_2 | catch_all_detector | Catch-all status UNKNOWN | mycarmesi.com | ambiguous probe result (INVALID_MAILBOX)
+2026-07-03 20:44:52 | INFO     | ThreadPoolExecutor-0_2 | __main__ | VALID | care@mycarmesi.com
+2026-07-03 20:44:52 | INFO     | ThreadPoolExecutor-0_6 | __main__ | VALID | support@cannarma.com
+2026-07-03 20:44:52 | DEBUG    | ThreadPoolExecutor-0_2 | syntax_validator | SYNTAX OK | returns@dentalkart.com
+2026-07-03 20:44:52 | DEBUG    | ThreadPoolExecutor-0_6 | syntax_validator | SYNTAX OK | cs@dentalkart.com
+2026-07-03 20:44:52 | INFO     | MainThread | __main__ | Progress: 16/26 (62%)
+2026-07-03 20:44:52 | DEBUG    | ThreadPoolExecutor-0_1 | dns_checker | DNS resolution failure | daysahead.nl | MX | primary resolver | attempt 1/2 | The resolution lifetime expired after 5.010 seconds: Server Do53:218.248.112.193@53 answered The DNS operation timed out.
+2026-07-03 20:44:52 | DEBUG    | ThreadPoolExecutor-0_7 | smtp_validator | SMTP VALID | admin@thedearist.com | MX=aspmx.l.google.com | 250 2.1.5 OK a92af1059eb24-13b3c886b6csi23432422c88.72 - gsmtp
+2026-07-03 20:44:53 | DEBUG    | ThreadPoolExecutor-0_4 | smtp_validator | SMTP INVALID_MAILBOX | zz_catchall_probe_2rnmxts9@gmail.com | MX=gmail-smtp-in.l.google.com | 550 5.1.1 The email account that you tried to reach does not exist. Please try
+5.1.1 double-checking the recipient's email address for typos or
+5.1.1 unnecessary spaces. For more information, go to
+5.1.1  https://support.google.com/mail/?p=NoSuchUser a92af1059eb24-13b47538017si10021685c88.63 - gsmtp
+2026-07-03 20:44:53 | DEBUG    | ThreadPoolExecutor-0_4 | catch_all_detector | Catch-all status UNKNOWN | gmail.com | ambiguous probe result (INVALID_MAILBOX)
+2026-07-03 20:44:53 | INFO     | ThreadPoolExecutor-0_4 | __main__ | VALID | mohammadweex21@gmail.com
+2026-07-03 20:44:53 | DEBUG    | ThreadPoolExecutor-0_3 | dns_checker | DNS resolution failure | territoryahead.com | MX | primary resolver | attempt 1/2 | The resolution lifetime expired after 5.004 seconds: Server Do53:218.248.112.193@53 answered The DNS operation timed out.
+2026-07-03 20:44:55 | DEBUG    | ThreadPoolExecutor-0_0 | dns_checker | DNS resolution failure | dentalkart.com | MX | primary resolver | attempt 1/2 | The resolution lifetime expired after 5.007 seconds: Server Do53:218.248.112.193@53 answered The DNS operation timed out.
+2026-07-03 20:44:55 | DEBUG    | ThreadPoolExecutor-0_5 | smtp_validator | SMTP VALID | zz_catchall_probe_bulgnhih@thedearist.com | MX=aspmx.l.google.com | 250 2.1.5 OK 5a478bee46e88-30f2d35b3d8si7247294eec.39 - gsmtp
+2026-07-03 20:44:55 | DEBUG    | ThreadPoolExecutor-0_5 | catch_all_detector | CATCH-ALL detected | thedearist.com | probe accepted
+2026-07-03 20:44:55 | INFO     | ThreadPoolExecutor-0_5 | __main__ | CATCH-ALL | community@thedearist.com
+2026-07-03 20:44:55 | INFO     | ThreadPoolExecutor-0_7 | __main__ | CATCH-ALL | admin@thedearist.com
+2026-07-03 20:44:55 | INFO     | MainThread | __main__ | Progress: 18/26 (69%)
+2026-07-03 20:44:55 | DEBUG    | ThreadPoolExecutor-0_8 | dns_checker | DNS resolution failure | betterdaysco.com | MX | primary resolver | attempt 2/2 | The resolution lifetime expired after 5.007 seconds: Server Do53:218.248.112.193@53 answered The DNS operation timed out.
+2026-07-03 20:44:55 | DEBUG    | ThreadPoolExecutor-0_8 | dns_checker | primary resolver exhausted retries for betterdaysco.com | MX - trying next resolver
+2026-07-03 20:44:56 | DEBUG    | ThreadPoolExecutor-0_8 | dns_checker | DNS OK | customersupport@betterdaysco.com | MX: ['aspmx.l.google.com', 'alt1.aspmx.l.google.com', 'alt2.aspmx.l.google.com', 'alt3.aspmx.l.google.com', 'alt4.aspmx.l.google.com']
+2026-07-03 20:44:57 | DEBUG    | ThreadPoolExecutor-0_2 | dns_checker | DNS resolution failure | dentalkart.com | MX | primary resolver | attempt 1/2 | The resolution lifetime expired after 5.014 seconds: Server Do53:218.248.112.193@53 answered The DNS operation timed out.
+2026-07-03 20:44:57 | DEBUG    | ThreadPoolExecutor-0_6 | dns_checker | DNS resolution failure | dentalkart.com | MX | primary resolver | attempt 1/2 | The resolution lifetime expired after 5.013 seconds: Server Do53:218.248.112.193@53 answered The DNS operation timed out.
+2026-07-03 20:44:57 | DEBUG    | ThreadPoolExecutor-0_1 | dns_checker | DNS resolution failure | daysahead.nl | MX | primary resolver | attempt 2/2 | The resolution lifetime expired after 5.014 seconds: Server Do53:218.248.112.193@53 answered The DNS operation timed out.
+2026-07-03 20:44:57 | DEBUG    | ThreadPoolExecutor-0_1 | dns_checker | primary resolver exhausted retries for daysahead.nl | MX - trying next resolver
+2026-07-03 20:44:57 | DEBUG    | ThreadPoolExecutor-0_8 | smtp_validator | SMTP VALID | customersupport@betterdaysco.com | MX=aspmx.l.google.com | 250 2.1.5 OK 5a478bee46e88-30f0bc37378si24752219eec.79 - gsmtp
+2026-07-03 20:44:58 | DEBUG    | ThreadPoolExecutor-0_3 | dns_checker | DNS resolution failure | territoryahead.com | MX | primary resolver | attempt 2/2 | The resolution lifetime expired after 5.003 seconds: Server Do53:218.248.112.193@53 answered The DNS operation timed out.
+2026-07-03 20:44:58 | DEBUG    | ThreadPoolExecutor-0_3 | dns_checker | primary resolver exhausted retries for territoryahead.com | MX - trying next resolver
+2026-07-03 20:44:58 | DEBUG    | ThreadPoolExecutor-0_3 | dns_checker | DNS OK | messages@territoryahead.com | MX: ['territoryahead-com.mail.protection.outlook.com']
+2026-07-03 20:44:59 | DEBUG    | ThreadPoolExecutor-0_8 | smtp_validator | SMTP INVALID_MAILBOX | zz_catchall_probe_a4g5lg99@betterdaysco.com | MX=aspmx.l.google.com | 550 5.1.1 The email account that you tried to reach does not exist. Please try
+5.1.1 double-checking the recipient's email address for typos or
+5.1.1 unnecessary spaces. For more information, go to
+5.1.1  https://support.google.com/mail/?p=NoSuchUser 5a478bee46e88-30f0bb5ec3bsi31628432eec.48 - gsmtp
+2026-07-03 20:44:59 | DEBUG    | ThreadPoolExecutor-0_8 | catch_all_detector | Catch-all status UNKNOWN | betterdaysco.com | ambiguous probe result (INVALID_MAILBOX)
+2026-07-03 20:44:59 | INFO     | ThreadPoolExecutor-0_8 | __main__ | VALID | customersupport@betterdaysco.com
+2026-07-03 20:44:59 | INFO     | MainThread | __main__ | Progress: 20/26 (77%)
+2026-07-03 20:45:00 | DEBUG    | ThreadPoolExecutor-0_0 | dns_checker | DNS resolution failure | dentalkart.com | MX | primary resolver | attempt 2/2 | The resolution lifetime expired after 5.005 seconds: Server Do53:218.248.112.193@53 answered The DNS operation timed out.
+2026-07-03 20:45:00 | DEBUG    | ThreadPoolExecutor-0_0 | dns_checker | primary resolver exhausted retries for dentalkart.com | MX - trying next resolver
+2026-07-03 20:45:00 | DEBUG    | ThreadPoolExecutor-0_0 | dns_checker | DNS OK | support@dentalkart.com | MX: ['mx.zoho.in', 'mx.zoho.in', 'mx.zoho.in']
+2026-07-03 20:45:00 | DEBUG    | ThreadPoolExecutor-0_3 | smtp_validator | SMTP INVALID_MAILBOX | messages@territoryahead.com | MX=territoryahead-com.mail.protection.outlook.com | 550 5.7.1 Service unavailable, Client host [2401:4900:88ad:37f5:5dc4:e622:2665:4248] blocked using Spamhaus. To request removal from this list see https://www.spamhaus.org/query/ip/2401:4900:88ad:37f5:5dc4:e622:2665:4248 AS(1440) [SN1PEPF0002BA50.namprd03.prod.outlook.com 2026-07-03T15:14:56.733Z 08DED2622BD8F971]
+2026-07-03 20:45:00 | INFO     | ThreadPoolExecutor-0_3 | __main__ | INVALID_MAILBOX | messages@territoryahead.com | Mailbox does not exist
+2026-07-03 20:45:01 | DEBUG    | ThreadPoolExecutor-0_0 | smtp_validator | SMTP INVALID_MAILBOX | support@dentalkart.com | MX=mx.zoho.in | 550 Mail rejected by <Zoho Mail> for policy reasons. We generally do not accept email from dynamic IP's as they are typically used to deliver unauthenticated SMTP e-mail to an Internet mail server. http://www.spamhaus.org maintains lists of dynamic and residential IP addresses. If you are not an email/network admin please contact your E-mail/Internet Service Provider for help. Email/network admins, please contact <support@zohomail.com> for email delivery information and support
+2026-07-03 20:45:01 | INFO     | ThreadPoolExecutor-0_0 | __main__ | INVALID_MAILBOX | support@dentalkart.com | Mailbox does not exist
+2026-07-03 20:45:01 | INFO     | MainThread | __main__ | Progress: 22/26 (85%)
+2026-07-03 20:45:02 | DEBUG    | ThreadPoolExecutor-0_2 | dns_checker | DNS resolution failure | dentalkart.com | MX | primary resolver | attempt 2/2 | The resolution lifetime expired after 5.015 seconds: Server Do53:218.248.112.193@53 answered The DNS operation timed out.
+2026-07-03 20:45:02 | DEBUG    | ThreadPoolExecutor-0_6 | dns_checker | DNS resolution failure | dentalkart.com | MX | primary resolver | attempt 2/2 | The resolution lifetime expired after 5.014 seconds: Server Do53:218.248.112.193@53 answered The DNS operation timed out.
+2026-07-03 20:45:02 | DEBUG    | ThreadPoolExecutor-0_2 | dns_checker | primary resolver exhausted retries for dentalkart.com | MX - trying next resolver
+2026-07-03 20:45:02 | DEBUG    | ThreadPoolExecutor-0_6 | dns_checker | primary resolver exhausted retries for dentalkart.com | MX - trying next resolver
+2026-07-03 20:45:02 | DEBUG    | ThreadPoolExecutor-0_2 | dns_checker | DNS OK | returns@dentalkart.com | MX: ['mx.zoho.in', 'mx.zoho.in', 'mx.zoho.in']
+2026-07-03 20:45:02 | DEBUG    | ThreadPoolExecutor-0_6 | dns_checker | DNS OK | cs@dentalkart.com | MX: ['mx.zoho.in', 'mx.zoho.in', 'mx.zoho.in']
+2026-07-03 20:45:02 | DEBUG    | ThreadPoolExecutor-0_1 | dns_checker | DNS resolution failure | daysahead.nl | A | primary resolver | attempt 1/2 | The resolution lifetime expired after 5.004 seconds: Server Do53:218.248.112.193@53 answered The DNS operation timed out.
+2026-07-03 20:45:02 | DEBUG    | ThreadPoolExecutor-0_2 | smtp_validator | SMTP INVALID_MAILBOX | returns@dentalkart.com | MX=mx.zoho.in | 550 Mail rejected by <Zoho Mail> for policy reasons. We generally do not accept email from dynamic IP's as they are typically used to deliver unauthenticated SMTP e-mail to an Internet mail server. http://www.spamhaus.org maintains lists of dynamic and residential IP addresses. If you are not an email/network admin please contact your E-mail/Internet Service Provider for help. Email/network admins, please contact <support@zohomail.com> for email delivery information and support
+2026-07-03 20:45:02 | INFO     | ThreadPoolExecutor-0_2 | __main__ | INVALID_MAILBOX | returns@dentalkart.com | Mailbox does not exist
+2026-07-03 20:45:02 | DEBUG    | ThreadPoolExecutor-0_6 | smtp_validator | SMTP INVALID_MAILBOX | cs@dentalkart.com | MX=mx.zoho.in | 550 Mail rejected by <Zoho Mail> for policy reasons. We generally do not accept email from dynamic IP's as they are typically used to deliver unauthenticated SMTP e-mail to an Internet mail server. http://www.spamhaus.org maintains lists of dynamic and residential IP addresses. If you are not an email/network admin please contact your E-mail/Internet Service Provider for help. Email/network admins, please contact <support@zohomail.com> for email delivery information and support
+2026-07-03 20:45:02 | INFO     | ThreadPoolExecutor-0_6 | __main__ | INVALID_MAILBOX | cs@dentalkart.com | Mailbox does not exist
+2026-07-03 20:45:02 | INFO     | MainThread | __main__ | Progress: 24/26 (92%)
+2026-07-03 20:45:07 | DEBUG    | ThreadPoolExecutor-0_1 | dns_checker | DNS resolution failure | daysahead.nl | A | primary resolver | attempt 2/2 | The resolution lifetime expired after 5.002 seconds: Server Do53:218.248.112.193@53 answered The DNS operation timed out.
+2026-07-03 20:45:07 | DEBUG    | ThreadPoolExecutor-0_1 | dns_checker | primary resolver exhausted retries for daysahead.nl | A - trying next resolver
+2026-07-03 20:45:11 | DEBUG    | ThreadPoolExecutor-0_9 | smtp_validator | SMTP unrecoverable on host | support@daybreak-official.com | TimeoutError on daybreak-official.com: timed out
+2026-07-03 20:45:11 | DEBUG    | ThreadPoolExecutor-0_9 | smtp_validator | SMTP exhausted all hosts | support@daybreak-official.com | TimeoutError on daybreak-official.com: timed out
+2026-07-03 20:45:11 | INFO     | ThreadPoolExecutor-0_9 | __main__ | TEMPORARY_FAILURE | support@daybreak-official.com | TimeoutError on daybreak-official.com: timed out
+2026-07-03 20:45:12 | DEBUG    | ThreadPoolExecutor-0_1 | dns_checker | DNS resolution failure | daysahead.nl | AAAA | primary resolver | attempt 1/2 | The resolution lifetime expired after 5.007 seconds: Server Do53:218.248.112.193@53 answered The DNS operation timed out.
+2026-07-03 20:45:17 | DEBUG    | ThreadPoolExecutor-0_1 | dns_checker | DNS resolution failure | daysahead.nl | AAAA | primary resolver | attempt 2/2 | The resolution lifetime expired after 5.004 seconds: Server Do53:218.248.112.193@53 answered The DNS operation timed out.
+2026-07-03 20:45:17 | DEBUG    | ThreadPoolExecutor-0_1 | dns_checker | primary resolver exhausted retries for daysahead.nl | AAAA - trying next resolver
+2026-07-03 20:45:17 | DEBUG    | ThreadPoolExecutor-0_1 | dns_checker | DNS FAIL | info@daysahead.nl | Domain 'daysahead.nl' does not exist or accepts no mail (no MX, no A/AAAA)
+2026-07-03 20:45:17 | INFO     | ThreadPoolExecutor-0_1 | __main__ | INVALID DOMAIN | info@daysahead.nl | Domain 'daysahead.nl' does not exist or accepts no mail (no MX, no A/AAAA)
+2026-07-03 20:45:17 | INFO     | MainThread | __main__ | Progress: 26/26 (100%)
+2026-07-03 20:45:17 | INFO     | MainThread | __main__ | Validation finished in 61.7 seconds
+2026-07-03 20:45:17 | INFO     | MainThread | excel_handler | Results saved -> C:\Users\manas\Downloads\Email_Validator-\output\validation_results.xlsx (26 rows)
+2026-07-03 20:45:17 | INFO     | MainThread | excel_handler | Failed emails saved -> C:\Users\manas\Downloads\Email_Validator-\output\failed_emails.xlsx (17 rows)
+2026-07-03 20:45:17 | INFO     | MainThread | __main__ | Summary report saved -> C:\Users\manas\Downloads\Email_Validator-\output\summary_report.txt
+2026-07-03 20:45:17 | INFO     | MainThread | __main__ | All done. Check the 'output/' folder for results.
